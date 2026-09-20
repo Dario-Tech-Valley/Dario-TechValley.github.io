@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+
+<head>
+
+    <!-- Google Analytics: se carga únicamente tras consentimiento -->
+<script>
+  window.DTV_ANALYTICS = {
+    id: "G-ZKTD705NXM",
+    storageKey: "dtv_analytics_consent"
+  };
+
+  window.dataLayer = window.dataLayer || [];
+
+  window.gtag = function () {
+    dataLayer.push(arguments);
+  };
+
+  window.dtvLoadAnalytics = function () {
+    if (window.__dtvAnalyticsLoaded) return;
+
+    window.__dtvAnalyticsLoaded = true;
+
+    const script = document.createElement("script");
+    script.async = true;
+    script.src =
+      "https://www.googletagmanager.com/gtag/js?id=" +
+      window.DTV_ANALYTICS.id;
+
+    document.head.appendChild(script);
+
+    gtag("js", new Date());
+    gtag("config", window.DTV_ANALYTICS.id);
+  };
+
+  try {
+    const consent = localStorage.getItem(
+      window.DTV_ANALYTICS.storageKey
+    );
+
+    if (consent === "accepted") {
+      window.dtvLoadAnalytics();
+    }
+  } catch (error) {
+    console.warn("No se pudo consultar el consentimiento.");
+  }
+</script>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Contacto de Darío Nieto Lorente, técnico informático de sistemas y redes."
+    >
+
+    <meta
+        name="author"
+        content="Darío Nieto Lorente"
+    >
+
+    <title>
+        Contacto · Darío Nieto Lorente
+    </title>
+
+    <link
+        rel="icon"
+        href="assets/img/avatar/icono.png"
+    >
+
+    <link
+        rel="stylesheet"
+        href="assets/css/contacto.css"
+    >
+    <link
+    rel="stylesheet"
+    href="assets/css/shared.css"
+    >
+    <script
+    src="assets/js/main.js"
+    defer
+></script>
+
+    <script
+        src="assets/js/contacto.js"
+        defer
+    ></script>
+</head>
+
+
+<body>
+
+    <a
+        class="skip-link"
+        href="#contenido"
+    >
+        Saltar al contenido
+    </a>
+
+
+    <canvas
+        class="contact-background"
+        data-contact-background
+        aria-hidden="true"
+    ></canvas>
+
+
+
+    <!-- =====================================================
+         HEADER
+         ===================================================== -->
+
+    <header class="site-header">
+
+        <div class="site-header__inner">
+
+            <a
+                class="brand"
+                href="index.html"
+                aria-label="Ir al Inicio"
+            >
+
+                <img
+                    class="brand__avatar"
+                    src="assets/img/avatar/icono.png"
+                    alt=""
+                >
+
+                <span class="brand__identity">
+
+                    <strong>
+                        DARÍO NIETO LORENTE
+                    </strong>
+
+                    <span>
+                        Portfolio Personal
+                    </span>
+
+                </span>
+
+            </a>
+
+
+            <nav
+                class="site-nav"
+                data-navigation
+                aria-label="Navegación principal"
+            >
+
+                <a href="index.html">
+                    Inicio
+                </a>
+
+                <a href="sobre-mi.html">
+                    Sobre mí
+                </a>
+
+                <a href="formacion.html">
+                    Formación
+                </a>
+
+                <a href="experiencia.html">
+                    Experiencia
+                </a>
+
+                <a href="proyectos.html">
+                    Proyectos
+                </a>
+
+                <a
+                    href="contacto.html"
+                    class="is-active"
+                    aria-current="page"
+                >
+                    Contacto
+                </a>
+
+            </nav>
+
+
+            <div class="site-header__actions">
+
+                <button
+                    class="theme-toggle"
+                    type="button"
+                    data-theme-toggle
+                    aria-label="Activar modo oscuro"
+                >
+
+                    <img
+                        class="theme-toggle__icon theme-toggle__icon--light"
+                        src="assets/img/iconos/modo-claro.svg"
+                        alt=""
+                    >
+
+                    <img
+                        class="theme-toggle__icon theme-toggle__icon--dark"
+                        src="assets/img/iconos/modo-oscuro.svg"
+                        alt=""
+                    >
+
+                </button>
+
+
+                <button
+                    class="menu-toggle"
+                    type="button"
+                    data-menu-toggle
+                    aria-expanded="false"
+                    aria-label="Abrir menú"
+                >
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <main id="contenido">
+
+
+        <!-- =================================================
+             01 · CONTACT HERO
+             ================================================= -->
+
+        <section class="contact-hero">
+
+            <div
+                class="contact-hero__system-meta"
+                aria-hidden="true"
+            >
+
+                <span>
+                    CONTACT / OPEN_CHANNEL
+                </span>
+
+                <span>
+                    DNL_ENDPOINT / 01
+                </span>
+
+                <span>
+                    STATUS / AVAILABLE
+                </span>
+
+            </div>
+
+
+
+            <!-- =============================================
+                 CONTENIDO
+                 ============================================= -->
+
+            <div class="contact-hero__content">
+
+                <div class="contact-status">
+
+                    <span class="contact-status__signal">
+
+                        <i></i>
+
+                        <i></i>
+
+                        <i></i>
+
+                    </span>
+
+
+                    <div>
+
+                        <small>
+                            CONNECTION_STATUS
+                        </small>
+
+                        <strong>
+                            OPEN CHANNEL
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <p class="section-code">
+                    01 / CONTACTO
+                </p>
+
+
+                <h1>
+                    Canal
+                    <span>abierto.</span>
+                </h1>
+
+
+                <p class="contact-hero__lead">
+                    Después de enseñarte lo que hago,
+                    <br>
+                    lo más fácil es hablar.
+                </p>
+
+
+                <p class="contact-hero__text">
+                    El siguiente mensaje puede empezar aquí.
+                </p>
+
+
+
+                <!-- =========================================
+                     EMAIL PRINCIPAL
+                     ========================================= -->
+
+                <div
+                    class="primary-channel"
+                    data-primary-channel
+                >
+
+                    <div class="primary-channel__top">
+
+                        <span>
+                            PRIMARY_CHANNEL
+                        </span>
+
+                        <strong>
+                            EMAIL
+                        </strong>
+
+                    </div>
+
+
+                    <div class="primary-channel__body">
+
+                        <div class="primary-channel__identity">
+
+                            <span>
+                                TO:
+                            </span>
+
+
+                            <a
+                                href="mailto:365darionieto@gmail.com"
+                                class="primary-channel__email"
+                            >
+                                365darionieto@gmail.com
+                            </a>
+
+                        </div>
+
+
+                        <button
+                            class="copy-email"
+                            type="button"
+                            data-copy-email="365darionieto@gmail.com"
+                            aria-label="Copiar dirección de correo electrónico"
+                        >
+
+                            <span data-copy-label>
+                                COPY
+                            </span>
+
+                            <i aria-hidden="true">
+                                ↗
+                            </i>
+
+                        </button>
+
+                    </div>
+
+
+                    <div class="primary-channel__footer">
+
+                        <span>
+                            DIRECT_MESSAGE
+                        </span>
+
+                        <strong>
+                            AVAILABLE
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =============================================
+                 FOTO / IDENTITY NODE
+                 ============================================= -->
+
+            <div class="contact-identity">
+
+                <div class="contact-identity__frame">
+
+                    <img
+                        src="assets/img/avatar/dario-contacto.png"
+                        alt="Darío Nieto Lorente"
+                    >
+
+
+                    <div
+                        class="contact-identity__scan"
+                        aria-hidden="true"
+                    ></div>
+
+
+                    <div class="contact-identity__label">
+
+                        <span>
+                            DNL / CONTACT
+                        </span>
+
+                        <strong>
+                            01
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="contact-identity__data">
+
+                    <div>
+
+                        <span>
+                            NAME
+                        </span>
+
+                        <strong>
+                            Darío Nieto Lorente
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            ROLE
+                        </span>
+
+                        <strong>
+                            Técnico informático
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            FOCUS
+                        </span>
+
+                        <strong>
+                            Sistemas · Redes · IT
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             02 · CHANNEL ROUTER
+             ================================================= -->
+
+        <section class="channels-section">
+
+            <header
+                class="section-heading"
+                data-reveal
+            >
+
+                <div>
+
+                    <p class="section-code">
+                        02 / CHANNEL_ROUTER
+                    </p>
+
+                    <h2>
+                        Elige el canal.
+                    </h2>
+
+                </div>
+
+
+                <p>
+                    El correo es la vía principal.
+                    <br>
+                    También puedes encontrar mi actividad profesional,
+                    contenido técnico y currículum en estos canales.
+                </p>
+
+            </header>
+
+
+
+            <div
+                class="channel-router"
+                data-channel-router
+                data-reveal
+            >
+
+
+                <!-- =========================================
+                     CENTRO
+                     ========================================= -->
+
+                <div
+                    class="channel-router__core"
+                    aria-hidden="true"
+                >
+
+                    <div class="channel-router__rings">
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                    </div>
+
+
+                    <div class="channel-router__avatar">
+
+                        <img
+                            src="assets/img/avatar/icono.png"
+                            alt=""
+                        >
+
+                        <span>
+                            DNL
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =========================================
+                     CONEXIONES
+                     ========================================= -->
+
+                <div
+                    class="channel-router__connections"
+                    aria-hidden="true"
+                >
+
+                    <span class="connection connection--email"></span>
+
+                    <span class="connection connection--linkedin"></span>
+
+                    <span class="connection connection--youtube"></span>
+
+                    <span class="connection connection--cv"></span>
+
+                </div>
+
+
+
+                <!-- =========================================
+                     EMAIL
+                     ========================================= -->
+
+                <a
+                    class="contact-channel contact-channel--email"
+                    href="mailto:365darionieto@gmail.com"
+                    data-contact-channel
+                >
+
+                    <span class="contact-channel__index">
+                        01
+                    </span>
+
+
+                    <span class="contact-channel__body">
+
+                        <small>
+                            PRIMARY / EMAIL
+                        </small>
+
+                        <strong>
+                            365darionieto@gmail.com
+                        </strong>
+
+                        <span>
+                            Escribir directamente
+                        </span>
+
+                    </span>
+
+
+                    <span
+                        class="contact-channel__status"
+                        aria-hidden="true"
+                    >
+
+                        <i></i>
+
+                        OPEN
+
+                    </span>
+
+
+                    <span
+                        class="contact-channel__arrow"
+                        aria-hidden="true"
+                    >
+                        ↗
+                    </span>
+
+                </a>
+
+
+
+                <!-- =========================================
+                     LINKEDIN
+                     ========================================= -->
+
+                <a
+                    class="contact-channel contact-channel--linkedin"
+                    href="https://www.linkedin.com/in/dar%C3%ADo-nieto-lorente/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-contact-channel
+                >
+
+                    <span class="contact-channel__index">
+                        02
+                    </span>
+
+
+                    <span class="contact-channel__body">
+
+                        <small>
+                            PROFESSIONAL / LINKEDIN
+                        </small>
+
+                        <strong>
+                            Darío Nieto Lorente
+                        </strong>
+
+                        <span>
+                            Experiencia y actividad profesional
+                        </span>
+
+                    </span>
+
+
+                    <span class="contact-channel__protocol">
+                        HTTPS
+                    </span>
+
+
+                    <span
+                        class="contact-channel__arrow"
+                        aria-hidden="true"
+                    >
+                        ↗
+                    </span>
+
+                </a>
+
+
+
+                <!-- =========================================
+                     YOUTUBE
+                     ========================================= -->
+
+                <a
+                    class="contact-channel contact-channel--youtube"
+                    href="https://www.youtube.com/@dario_techValley"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-contact-channel
+                >
+
+                    <span class="contact-channel__index">
+                        03
+                    </span>
+
+
+                    <span class="contact-channel__body">
+
+                        <small>
+                            CONTENT / YOUTUBE
+                        </small>
+
+                        <strong>
+                            @dario_techValley
+                        </strong>
+
+                        <span>
+                            Vídeos y contenido técnico
+                        </span>
+
+                    </span>
+
+
+                    <span class="contact-channel__protocol">
+                        VIDEO
+                    </span>
+
+
+                    <span
+                        class="contact-channel__arrow"
+                        aria-hidden="true"
+                    >
+                        ↗
+                    </span>
+
+                </a>
+
+
+
+                <!-- =========================================
+                     CV
+                     ========================================= -->
+
+                <a
+                    class="contact-channel contact-channel--cv"
+                    href="assets/docs/documentos/DNL-CV.pdf"
+                    target="_blank"
+                    data-contact-channel
+                >
+
+                    <span class="contact-channel__index">
+                        04
+                    </span>
+
+
+                    <span class="contact-channel__body">
+
+                        <small>
+                            DOCUMENT / CV
+                        </small>
+
+                        <strong>
+                            Currículum Vitae
+                        </strong>
+
+                        <span>
+                            Abrir documento completo
+                        </span>
+
+                    </span>
+
+
+                    <span class="contact-channel__protocol">
+                        PDF
+                    </span>
+
+
+                    <span
+                        class="contact-channel__arrow"
+                        aria-hidden="true"
+                    >
+                        ↗
+                    </span>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             03 · FINAL SIGNAL
+             ================================================= -->
+
+        <section class="final-signal">
+
+            <div
+                class="final-signal__graphic"
+                data-reveal
+                aria-hidden="true"
+            >
+
+                <div class="final-signal__line">
+
+                    <span></span>
+
+                    <i></i>
+
+                    <strong></strong>
+
+                </div>
+
+
+                <div class="final-signal__data">
+
+                    <span>
+                        TX
+                    </span>
+
+                    <span>
+                        READY
+                    </span>
+
+                    <span>
+                        01
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <div
+                class="final-signal__content"
+                data-reveal
+            >
+
+                <p class="section-code">
+                    03 / ENDPOINT
+                </p>
+
+
+                <h2>
+                    Del portfolio
+                    <span>al mensaje.</span>
+                </h2>
+
+
+                <p>
+                    No hace falta una reunión preparada ni un formulario
+                    de diez campos.
+                    <br>
+                    Si hay algo de mi trabajo que te interese,
+                    puedes escribirme directamente.
+                </p>
+
+
+                <a
+                    class="final-signal__email"
+                    href="mailto:365darionieto@gmail.com"
+                >
+
+                    <span>
+                        START_MESSAGE
+                    </span>
+
+                    <strong>
+                        365darionieto@gmail.com
+                    </strong>
+
+                    <i aria-hidden="true">
+                        →
+                    </i>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             04 · LOOP BACK
+             ================================================= -->
+
+        <section
+            class="portfolio-loop"
+            data-reveal
+        >
+
+            <div class="portfolio-loop__meta">
+
+                <span>
+                    END_OF_ROUTE
+                </span>
+
+                <strong>
+                    LOOP / AVAILABLE
+                </strong>
+
+            </div>
+
+
+            <div class="portfolio-loop__body">
+
+                <div>
+
+                    <p class="section-code">
+                        04 / PORTFOLIO
+                    </p>
+
+
+                    <h2>
+                        O vuelve al principio.
+                    </h2>
+
+                </div>
+
+
+                <a
+                    href="index.html"
+                    class="portfolio-loop__link"
+                >
+
+                    <span>
+                        Volver a Inicio
+                    </span>
+
+                    <strong aria-hidden="true">
+                        ↺
+                    </strong>
+
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <footer class="site-footer">
+
+        <div class="site-footer__identity">
+
+            <img
+                src="assets/img/avatar/icono.png"
+                alt=""
+            >
+        </div>
+
+
+        <div class="site-footer__status">
+
+            <i aria-hidden="true"></i>
+
+            <span>
+                OPEN CHANNEL
+            </span>
+
+        </div>
+
+
+        <p class="site-footer__legal">
+    © <span data-current-year></span> Darío Nieto Lorente ·
+    Código bajo licencia MIT ·
+    Contenido propio: todos los derechos reservados ·
+    <a href="assets/docs/documentos/licencia.html">
+        Licencia y derechos
+    </a>
+
+        <br>
+
+    <button
+  type="button"
+  class="footer-link"
+  data-cookie-settings
+>
+  Configurar cookies
+</button>
+</p>
+
+    </footer>
+
+</body>
+
+</html>

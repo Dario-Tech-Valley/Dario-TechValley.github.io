@@ -1,0 +1,5358 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+
+<head>
+
+<!-- Google Analytics: se carga únicamente tras consentimiento -->
+<script>
+  window.DTV_ANALYTICS = {
+    id: "G-ZKTD705NXM",
+    storageKey: "dtv_analytics_consent"
+  };
+
+  window.dataLayer = window.dataLayer || [];
+
+  window.gtag = function () {
+    dataLayer.push(arguments);
+  };
+
+  window.dtvLoadAnalytics = function () {
+    if (window.__dtvAnalyticsLoaded) return;
+
+    window.__dtvAnalyticsLoaded = true;
+
+    const script = document.createElement("script");
+    script.async = true;
+    script.src =
+      "https://www.googletagmanager.com/gtag/js?id=" +
+      window.DTV_ANALYTICS.id;
+
+    document.head.appendChild(script);
+
+    gtag("js", new Date());
+    gtag("config", window.DTV_ANALYTICS.id);
+  };
+
+  try {
+    const consent = localStorage.getItem(
+      window.DTV_ANALYTICS.storageKey
+    );
+
+    if (consent === "accepted") {
+      window.dtvLoadAnalytics();
+    }
+  } catch (error) {
+    console.warn("No se pudo consultar el consentimiento.");
+  }
+</script>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Proyectos, prácticas, documentación técnica y evidencias de Darío Nieto Lorente."
+    >
+
+    <meta
+        name="author"
+        content="Darío Nieto Lorente"
+    >
+
+    <meta
+        name="theme-color"
+        content="#edf3f6"
+    >
+
+    <title>
+        Proyectos · Darío Nieto Lorente
+    </title>
+
+    <link
+        rel="icon"
+        href="assets/img/avatar/icono.png"
+    >
+
+    <link
+        rel="stylesheet"
+        href="assets/css/proyectos.css"
+    >
+    <link
+    rel="stylesheet"
+    href="assets/css/shared.css"
+    >
+
+    <script
+    src="assets/js/main.js"
+    defer
+></script>
+
+    <script
+        src="assets/js/proyectos.js"
+        defer
+    ></script>
+</head>
+
+
+<body>
+
+    <a
+        class="skip-link"
+        href="#contenido"
+    >
+        Saltar al contenido
+    </a>
+
+
+    <canvas
+        class="archive-background"
+        data-archive-background
+        aria-hidden="true"
+    ></canvas>
+
+
+
+    <!-- =====================================================
+         HEADER
+         ===================================================== -->
+
+    <header class="site-header">
+
+        <div class="site-header__inner">
+
+            <a
+                class="brand"
+                href="index.html"
+                aria-label="Ir al Inicio"
+            >
+
+                <img
+                    class="brand__avatar"
+                    src="assets/img/avatar/icono.png"
+                    alt=""
+                >
+
+                <span class="brand__identity">
+
+                    <strong>
+                        DARÍO NIETO LORENTE
+                    </strong>
+
+                    <span>
+                        Portfolio Personal
+                    </span>
+
+                </span>
+
+            </a>
+
+
+            <nav
+                class="site-nav"
+                data-navigation
+                aria-label="Navegación principal"
+            >
+
+                <a href="index.html">
+                    Inicio
+                </a>
+
+                <a href="sobre-mi.html">
+                    Sobre mí
+                </a>
+
+                <a href="formacion.html">
+                    Formación
+                </a>
+
+                <a href="experiencia.html">
+                    Experiencia
+                </a>
+
+                <a
+                    href="proyectos.html"
+                    class="is-active"
+                    aria-current="page"
+                >
+                    Proyectos
+                </a>
+
+                <a href="contacto.html">
+                    Contacto
+                </a>
+
+            </nav>
+
+
+            <div class="site-header__actions">
+
+                <button
+                    class="theme-toggle"
+                    type="button"
+                    data-theme-toggle
+                    aria-label="Activar modo oscuro"
+                >
+
+                    <img
+                        class="theme-toggle__icon theme-toggle__icon--light"
+                        src="assets/img/iconos/modo-claro.svg"
+                        alt=""
+                    >
+
+                    <img
+                        class="theme-toggle__icon theme-toggle__icon--dark"
+                        src="assets/img/iconos/modo-oscuro.svg"
+                        alt=""
+                    >
+
+                </button>
+
+
+                <button
+                    class="menu-toggle"
+                    type="button"
+                    data-menu-toggle
+                    aria-expanded="false"
+                    aria-label="Abrir menú"
+                >
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <main id="contenido">
+
+
+        <!-- =================================================
+             01 · HERO
+             ================================================= -->
+
+        <section class="projects-hero">
+
+            <div
+                class="projects-hero__meta"
+                aria-hidden="true"
+            >
+
+                <span>
+                    PROJECT_ARCHIVE / 01
+                </span>
+
+                <span>
+                    58 FILES INDEXED
+                </span>
+
+                <span>
+                    STATUS / AVAILABLE
+                </span>
+
+            </div>
+
+
+            <div class="projects-hero__content">
+
+                <p class="section-code">
+                    01 / PROYECTOS
+                </p>
+
+
+                <h1>
+                    No solo te digo que sé hacerlo.
+                        <span>Te dejo comprobarlo.</span>
+                </h1>
+
+
+                <p class="projects-hero__lead">
+                    Siempre hay que documentar el proceso.
+                </p>
+
+
+                <p class="projects-hero__text">
+                    Redes, sistemas, desarrollo, bases de datos,
+                    documentación y casos reales.
+                    <br>
+                    Este archivo reúne trabajos desarrollados durante mi
+                    formación y experiencias prácticas.
+                </p>
+
+
+                <p class="projects-hero__text">
+                    Algunos son proyectos completos.
+                    <br>
+                    Otros son pequeñas prácticas que documentan una idea,
+                    una herramienta o una forma concreta de resolver un
+                    problema.
+                </p>
+
+
+                <a
+                    class="action-link"
+                    href="#archivo"
+                >
+                    Explorar archivo
+                    <span aria-hidden="true">
+                        ↓
+                    </span>
+                </a>
+
+            </div>
+
+
+
+            <!-- =============================================
+                 FILE SYSTEM
+                 ============================================= -->
+
+            <div
+                class="archive-index"
+                data-archive-index
+                aria-label="Resumen del archivo de proyectos"
+            >
+
+                <div class="archive-index__top">
+
+                    <span>
+                        dario@portfolio:~/projects
+                    </span>
+
+                    <strong>
+                        ONLINE
+                    </strong>
+
+                </div>
+
+
+                <div class="archive-index__path">
+
+                    <span>
+                        /
+                    </span>
+
+                    <strong>
+                        PROJECT_ARCHIVE
+                    </strong>
+
+                </div>
+
+
+                <div class="archive-index__tree">
+
+                    <div
+                        class="archive-index__row archive-index__row--root"
+                    >
+
+                        <span>
+                            ├──
+                        </span>
+
+                        <strong>
+                            redes/
+                        </strong>
+
+                        <small>
+                            22
+                        </small>
+
+                    </div>
+
+
+                    <div class="archive-index__row">
+
+                        <span>
+                            ├──
+                        </span>
+
+                        <strong>
+                            sistemas/
+                        </strong>
+
+                        <small>
+                            20
+                        </small>
+
+                    </div>
+
+
+                    <div class="archive-index__row">
+
+                        <span>
+                            ├──
+                        </span>
+
+                        <strong>
+                            bbdd/
+                        </strong>
+
+                        <small>
+                            07
+                        </small>
+
+                    </div>
+
+
+                    <div class="archive-index__row">
+
+                        <span>
+                            ├──
+                        </span>
+
+                        <strong>
+                            desarrollo/
+                        </strong>
+
+                        <small>
+                            04
+                        </small>
+
+                    </div>
+
+
+                    <div class="archive-index__row">
+
+                        <span>
+                            ├──
+                        </span>
+
+                        <strong>
+                            casos_reales/
+                        </strong>
+
+                        <small>
+                            01
+                        </small>
+
+                    </div>
+
+
+                    <div class="archive-index__row">
+
+                        <span>
+                            └──
+                        </span>
+
+                        <strong>
+                            documentos/
+                        </strong>
+
+                        <small>
+                            04
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="archive-index__status">
+
+                    <span>
+                        indexed:
+                    </span>
+
+                    <strong>
+                        58 / 58
+                    </strong>
+
+
+                    <div aria-hidden="true">
+
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+
+                    </div>
+
+                </div>
+
+
+                <div class="archive-index__cursor">
+
+                    <span>
+                        $
+                    </span>
+
+                    <strong>
+                        explore --all
+                    </strong>
+
+                    <i></i>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             02 · DESTACADOS
+             ================================================= -->
+
+        <section class="featured-section">
+
+            <header
+                class="section-heading"
+                data-reveal
+            >
+
+                <div>
+
+                    <p class="section-code">
+                        02 / FEATURED_WORK
+                    </p>
+
+                    <h2>
+                        Cinco trabajos para empezar.
+                    </h2>
+
+                </div>
+
+
+                <p>
+                    No son necesariamente los únicos importantes.
+                    <br>
+                    Son cinco proyectos que permiten ver distintas partes
+                    de mi forma de trabajar: Diseño, sistemas, redes,
+                    pruebas y documentación.
+                </p>
+
+            </header>
+
+
+
+            <div class="featured-grid">
+
+
+                <!-- =========================================
+                     CABLEADO
+                     ========================================= -->
+
+                <article
+                    class="featured-project featured-project--cableado"
+                    data-project-card
+                    data-project="cableado"
+                    data-reveal
+                >
+
+                    <button
+                        class="featured-project__button"
+                        type="button"
+                        data-open-project="cableado"
+                        aria-label="Ver ficha de Cableado estructurado"
+                    >
+
+                        <figure class="featured-project__visual">
+
+                            <img
+                                src="assets/img/proyectos/cableado-portada.png"
+                                alt="Portada del proyecto de cableado estructurado"
+                            >
+
+                            <span class="featured-project__visual-code">
+                                NETWORK_DESIGN / 01
+                            </span>
+
+                        </figure>
+
+
+                        <div class="featured-project__body">
+
+                            <div class="featured-project__top">
+
+                                <span>
+                                    REDES
+                                </span>
+
+                                <small>
+                                    PROJECT / ZIP
+                                </small>
+
+                            </div>
+
+
+                            <h3>
+                                Cableado estructurado
+                            </h3>
+
+
+                            <p>
+                                Proyecto compuesto de infraestructura,
+                                planificación y documentación de una
+                                instalación de cableado estructurado.
+                            </p>
+
+
+                            <div class="featured-project__tags">
+
+                                <span>
+                                    Planos
+                                </span>
+
+                                <span>
+                                    Armarios
+                                </span>
+
+                                <span>
+                                    Gantt
+                                </span>
+
+                                <span>
+                                    Presupuesto
+                                </span>
+
+                            </div>
+
+
+                            <div class="featured-project__open">
+
+                                <span>
+                                    Abrir ficha
+                                </span>
+
+                                <strong>
+                                    ↗
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                    </button>
+
+                </article>
+
+
+
+                <!-- =========================================
+                     PRUEBA FINAL
+                     ========================================= -->
+
+                <article
+                    class="featured-project featured-project--final"
+                    data-project-card
+                    data-project="prueba-final"
+                    data-reveal
+                >
+
+                    <button
+                        class="featured-project__button"
+                        type="button"
+                        data-open-project="prueba-final"
+                        aria-label="Ver ficha de Prueba Final SMR"
+                    >
+
+                        <figure class="featured-project__visual">
+
+                            <img
+                                src="assets/img/proyectos/prueba-final-smr-portada.png"
+                                alt="Portada de la Prueba Final de SMR"
+                            >
+
+                            <span class="featured-project__visual-code">
+                                INTEGRATION / 02
+                            </span>
+
+                        </figure>
+
+
+                        <div class="featured-project__body">
+
+                            <div class="featured-project__top">
+
+                                <span>
+                                    SISTEMAS
+                                </span>
+
+                                <small>
+                                    DOCX
+                                </small>
+
+                            </div>
+
+
+                            <h3>
+                                Prueba Final SMR
+                            </h3>
+
+
+                            <p>
+                                Integración de servicios Windows y Linux
+                                dentro de una infraestructura completa.
+                            </p>
+
+
+                            <div class="featured-project__tags">
+
+                                <span>
+                                    DNS
+                                </span>
+
+                                <span>
+                                    DHCP
+                                </span>
+
+                                <span>
+                                    Apache
+                                </span>
+
+                                <span>
+                                    VPN
+                                </span>
+
+                            </div>
+
+
+                            <div class="featured-project__open">
+
+                                <span>
+                                    Abrir ficha
+                                </span>
+
+                                <strong>
+                                    ↗
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                    </button>
+
+                </article>
+
+
+
+                <!-- =========================================
+                     LVM
+                     ========================================= -->
+
+                <article
+                    class="featured-project featured-project--lvm"
+                    data-project-card
+                    data-project="lvm"
+                    data-reveal
+                >
+
+                    <button
+                        class="featured-project__button"
+                        type="button"
+                        data-open-project="lvm"
+                        aria-label="Ver ficha del proyecto LVM"
+                    >
+
+                        <div
+                            class="featured-project__visual featured-project__visual--lvm"
+                            aria-hidden="true"
+                        >
+
+                            <div class="lvm-diagram">
+
+                                <div class="lvm-diagram__layer">
+
+                                    <span>
+                                        PV01
+                                    </span>
+
+                                    <span>
+                                        PV02
+                                    </span>
+
+                                    <span>
+                                        PV03
+                                    </span>
+
+                                </div>
+
+
+                                <div class="lvm-diagram__link">
+
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+
+                                </div>
+
+
+                                <div class="lvm-diagram__vg">
+
+                                    <small>
+                                        VOLUME GROUP
+                                    </small>
+
+                                    <strong>
+                                        VG_DATA
+                                    </strong>
+
+                                </div>
+
+
+                                <div class="lvm-diagram__link">
+
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+
+                                </div>
+
+
+                                <div class="lvm-diagram__layer">
+
+                                    <span>
+                                        LV01
+                                    </span>
+
+                                    <span>
+                                        LV02
+                                    </span>
+
+                                    <span>
+                                        LV03
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <span class="featured-project__visual-code">
+                                STORAGE / LVM
+                            </span>
+
+                        </div>
+
+
+                        <div class="featured-project__body">
+
+                            <div class="featured-project__top">
+
+                                <span>
+                                    SISTEMAS
+                                </span>
+
+                                <small>
+                                    DOCX
+                                </small>
+
+                            </div>
+
+
+                            <h3>
+                                LVM
+                            </h3>
+
+
+                            <p>
+                                Gestión flexible de almacenamiento mediante
+                                volúmenes físicos, grupos y volúmenes lógicos.
+                            </p>
+
+
+                            <div class="featured-project__tags">
+
+                                <span>
+                                    PV
+                                </span>
+
+                                <span>
+                                    VG
+                                </span>
+
+                                <span>
+                                    LV
+                                </span>
+
+                                <span>
+                                    Snapshot
+                                </span>
+
+                            </div>
+
+
+                            <div class="featured-project__open">
+
+                                <span>
+                                    Abrir ficha
+                                </span>
+
+                                <strong>
+                                    ↗
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                    </button>
+
+                </article>
+
+
+
+                <!-- =========================================
+                     RAID
+                     ========================================= -->
+
+                <article
+                    class="featured-project featured-project--raid"
+                    data-project-card
+                    data-project="raid"
+                    data-reveal
+                >
+
+                    <button
+                        class="featured-project__button"
+                        type="button"
+                        data-open-project="raid"
+                        aria-label="Ver ficha del proyecto RAID"
+                    >
+
+                        <div
+                            class="featured-project__visual featured-project__visual--raid"
+                            aria-hidden="true"
+                        >
+
+                            <div class="raid-visual">
+
+                                <div class="raid-visual__disk">
+
+                                    <small>
+                                        DISK / 01
+                                    </small>
+
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+
+                                </div>
+
+
+                                <div class="raid-visual__disk">
+
+                                    <small>
+                                        DISK / 02
+                                    </small>
+
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+
+                                </div>
+
+
+                                <div class="raid-visual__disk">
+
+                                    <small>
+                                        DISK / 03
+                                    </small>
+
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+
+                                </div>
+
+
+                                <div class="raid-visual__parity">
+
+                                    <span>
+                                        DATA
+                                    </span>
+
+                                    <span>
+                                        DATA
+                                    </span>
+
+                                    <strong>
+                                        P
+                                    </strong>
+
+                                </div>
+
+                            </div>
+
+
+                            <span class="featured-project__visual-code">
+                                STORAGE / RAID
+                            </span>
+
+                        </div>
+
+
+                        <div class="featured-project__body">
+
+                            <div class="featured-project__top">
+
+                                <span>
+                                    SISTEMAS
+                                </span>
+
+                                <small>
+                                    DOCX
+                                </small>
+
+                            </div>
+
+
+                            <h3>
+                                RAID
+                            </h3>
+
+
+                            <p>
+                                Trabajo con distintos modelos de distribución,
+                                redundancia y tolerancia a fallos.
+                            </p>
+
+
+                            <div class="featured-project__tags">
+
+                                <span>
+                                    RAID 0
+                                </span>
+
+                                <span>
+                                    RAID 1
+                                </span>
+
+                                <span>
+                                    RAID 5
+                                </span>
+
+                                <span>
+                                    Paridad
+                                </span>
+
+                            </div>
+
+
+                            <div class="featured-project__open">
+
+                                <span>
+                                    Abrir ficha
+                                </span>
+
+                                <strong>
+                                    ↗
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                    </button>
+
+                </article>
+
+
+
+                <!-- =========================================
+                     ROUTERS LINUX
+                     ========================================= -->
+
+                <article
+                    class="featured-project featured-project--routers"
+                    data-project-card
+                    data-project="routers-linux-anillo"
+                    data-reveal
+                >
+
+                    <button
+                        class="featured-project__button"
+                        type="button"
+                        data-open-project="routers-linux-anillo"
+                        aria-label="Ver ficha de Routers Linux en anillo"
+                    >
+
+                        <figure class="featured-project__visual">
+
+                            <img
+                                src="assets/img/proyectos/routers-portada.png"
+                                alt="Portada del proyecto de routers Linux"
+                            >
+
+                            <span class="featured-project__visual-code">
+                                ROUTING / LINUX
+                            </span>
+
+                        </figure>
+
+
+                        <div class="featured-project__body">
+
+                            <div class="featured-project__top">
+
+                                <span>
+                                    REDES
+                                </span>
+
+                                <small>
+                                    DOCX
+                                </small>
+
+                            </div>
+
+
+                            <h3>
+                                Routers Linux en anillo
+                            </h3>
+
+
+                            <p>
+                                Topología formada por tres routers Linux y
+                                distintos segmentos conectados mediante
+                                encaminamiento estático.
+                            </p>
+
+
+                            <div class="featured-project__tags">
+
+                                <span>
+                                    Linux
+                                </span>
+
+                                <span>
+                                    Netplan
+                                </span>
+
+                                <span>
+                                    Routing
+                                </span>
+
+                                <span>
+                                    IPv4
+                                </span>
+
+                            </div>
+
+
+                            <div class="featured-project__open">
+
+                                <span>
+                                    Abrir ficha
+                                </span>
+
+                                <strong>
+                                    ↗
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                    </button>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             03 · MANIFEST
+             ================================================= -->
+
+        <section class="project-manifest">
+
+            <div
+                class="project-manifest__intro"
+                data-reveal
+            >
+
+                <p class="section-code">
+                    03 / WORKFLOW
+                </p>
+
+                <h2>
+                    El documento también forma parte del proyecto.
+                </h2>
+
+            </div>
+
+
+            <div
+                class="project-manifest__route"
+                data-reveal
+            >
+
+                <div>
+
+                    <span>
+                        01
+                    </span>
+
+                    <strong>
+                        Plantear
+                    </strong>
+
+                </div>
+
+
+                <i></i>
+
+
+                <div>
+
+                    <span>
+                        02
+                    </span>
+
+                    <strong>
+                        Construir
+                    </strong>
+
+                </div>
+
+
+                <i></i>
+
+
+                <div>
+
+                    <span>
+                        03
+                    </span>
+
+                    <strong>
+                        Probar
+                    </strong>
+
+                </div>
+
+
+                <i></i>
+
+
+                <div>
+
+                    <span>
+                        04
+                    </span>
+
+                    <strong>
+                        Documentar
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             04 · ARCHIVO COMPLETO
+             ================================================= -->
+
+        <section
+            class="archive-section"
+            id="archivo"
+        >
+
+            <header
+                class="section-heading"
+                data-reveal
+            >
+
+                <div>
+
+                    <p class="section-code">
+                        04 / FULL_ARCHIVE
+                    </p>
+
+                    <h2>
+                        Todo el archivo.
+                    </h2>
+
+                </div>
+
+
+                <p>
+                    Filtra por área, busca un término o abre una ficha.
+                    <br>
+                    Los documentos originales siguen disponibles desde
+                    cada entrada.
+                </p>
+
+            </header>
+
+
+
+            <!-- =============================================
+                 CONTROL BAR
+                 ============================================= -->
+
+            <div
+                class="archive-controls"
+                data-reveal
+            >
+
+                <div
+                    class="archive-filters"
+                    role="group"
+                    aria-label="Filtrar proyectos"
+                >
+
+                    <button
+                        class="is-active"
+                        type="button"
+                        data-filter="all"
+                    >
+                        Todos
+                        <span>
+                            58
+                        </span>
+                    </button>
+
+
+                    <button
+                        type="button"
+                        data-filter="featured"
+                    >
+                        Destacados
+                        <span>
+                            05
+                        </span>
+                    </button>
+
+
+                    <button
+                        type="button"
+                        data-filter="redes"
+                    >
+                        Redes
+                        <span>
+                            22
+                        </span>
+                    </button>
+
+
+                    <button
+                        type="button"
+                        data-filter="sistemas"
+                    >
+                        Sistemas
+                        <span>
+                            20
+                        </span>
+                    </button>
+
+
+                    <button
+                        type="button"
+                        data-filter="desarrollo"
+                    >
+                        Desarrollo
+                        <span>
+                            04
+                        </span>
+                    </button>
+
+
+                    <button
+                        type="button"
+                        data-filter="bbdd"
+                    >
+                        BBDD
+                        <span>
+                            07
+                        </span>
+                    </button>
+
+
+                    <button
+                        type="button"
+                        data-filter="casos"
+                    >
+                        Casos reales
+                        <span>
+                            01
+                        </span>
+                    </button>
+
+
+                    <button
+                        type="button"
+                        data-filter="documentos"
+                    >
+                        Documentos
+                        <span>
+                            04
+                        </span>
+                    </button>
+
+                </div>
+
+
+                <label class="archive-search">
+
+                    <span>
+                        SEARCH
+                    </span>
+
+                    <input
+                        type="search"
+                        placeholder="DNS, Linux, VLAN, RAID..."
+                        autocomplete="off"
+                        data-project-search
+                    >
+
+                    <i aria-hidden="true">
+                        /
+                    </i>
+
+                </label>
+
+            </div>
+
+
+
+            <!-- =============================================
+                 EXPLORER HEADER
+                 ============================================= -->
+
+            <div class="archive-explorer">
+
+                <div class="archive-explorer__header">
+
+                    <span>
+                        VISUAL
+                    </span>
+
+                    <span>
+                        PROJECT
+                    </span>
+
+                    <span>
+                        CATEGORY
+                    </span>
+
+                    <span>
+                        TYPE
+                    </span>
+
+                    <span>
+                        OPEN
+                    </span>
+
+                </div>
+
+
+
+                <div
+                    class="archive-list"
+                    data-project-list
+                >
+
+
+                    <!-- =================================================
+                         DESTACADOS
+                         ================================================= -->
+
+
+                    <!-- CABLEADO -->
+
+                    <article
+                        class="archive-row"
+                        data-project-row
+                        data-project="cableado"
+                        data-category="redes"
+                        data-featured="true"
+                        data-search="cableado estructurado planos armarios gantt presupuesto redes"
+                    >
+
+                        <button
+                            class="archive-row__main"
+                            type="button"
+                            data-open-project="cableado"
+                        >
+
+                            <span class="archive-row__visual archive-row__visual--cover">
+
+                                <img
+                                    src="assets/img/proyectos/cableado-portada.png"
+                                    alt=""
+                                >
+
+                            </span>
+
+
+                            <span class="archive-row__identity">
+
+                                <small>
+                                    FEATURED / 01
+                                </small>
+
+                                <strong>
+                                    Cableado estructurado
+                                </strong>
+
+                            </span>
+
+
+                            <span class="archive-row__category">
+                                REDES
+                            </span>
+
+
+                            <span class="archive-row__type">
+                                ZIP
+                            </span>
+
+                        </button>
+
+
+                        <a
+                            class="archive-row__file"
+                            href="assets/docs/proyectos/destacados/DNL-CableadoEstructurado.zip"
+                            aria-label="Abrir archivo de Cableado estructurado"
+                        >
+                            ↗
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- PRUEBA FINAL -->
+
+                    <article
+                        class="archive-row"
+                        data-project-row
+                        data-project="prueba-final"
+                        data-category="sistemas"
+                        data-featured="true"
+                        data-search="prueba final smr windows linux dns dhcp apache ftp vpn sistemas"
+                    >
+
+                        <button
+                            class="archive-row__main"
+                            type="button"
+                            data-open-project="prueba-final"
+                        >
+
+                            <span class="archive-row__visual archive-row__visual--cover">
+
+                                <img
+                                    src="assets/img/proyectos/prueba-final-smr-portada.png"
+                                    alt=""
+                                >
+
+                            </span>
+
+
+                            <span class="archive-row__identity">
+
+                                <small>
+                                    FEATURED / 02
+                                </small>
+
+                                <strong>
+                                    Prueba Final SMR
+                                </strong>
+
+                            </span>
+
+
+                            <span class="archive-row__category">
+                                SISTEMAS
+                            </span>
+
+
+                            <span class="archive-row__type">
+                                DOCX
+                            </span>
+
+                        </button>
+
+
+                        <a
+                            class="archive-row__file"
+                            href="assets/docs/proyectos/destacados/DNL-PruebaFinal.docx"
+                            target="_blank"
+                            aria-label="Abrir documento Prueba Final SMR"
+                        >
+                            ↗
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- LVM -->
+
+                    <article
+                        class="archive-row"
+                        data-project-row
+                        data-project="lvm"
+                        data-category="sistemas"
+                        data-featured="true"
+                        data-search="lvm logical volume manager pv vg lv snapshots mirroring striping linux sistemas"
+                    >
+
+                        <button
+                            class="archive-row__main"
+                            type="button"
+                            data-open-project="lvm"
+                        >
+
+                            <span class="archive-row__visual archive-row__visual--sistemas">
+
+                                <i></i>
+
+                                <strong>
+                                    LVM
+                                </strong>
+
+                            </span>
+
+
+                            <span class="archive-row__identity">
+
+                                <small>
+                                    FEATURED / 03
+                                </small>
+
+                                <strong>
+                                    LVM
+                                </strong>
+
+                            </span>
+
+
+                            <span class="archive-row__category">
+                                SISTEMAS
+                            </span>
+
+
+                            <span class="archive-row__type">
+                                DOCX
+                            </span>
+
+                        </button>
+
+
+                        <a
+                            class="archive-row__file"
+                            href="assets/docs/proyectos/destacados/DNL-LVM.docx"
+                            target="_blank"
+                            aria-label="Abrir documento LVM"
+                        >
+                            ↗
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- RAID -->
+
+                    <article
+                        class="archive-row"
+                        data-project-row
+                        data-project="raid"
+                        data-category="sistemas"
+                        data-featured="true"
+                        data-search="raid 0 raid 1 raid 5 discos redundancia paridad sistemas"
+                    >
+
+                        <button
+                            class="archive-row__main"
+                            type="button"
+                            data-open-project="raid"
+                        >
+
+                            <span class="archive-row__visual archive-row__visual--sistemas">
+
+                                <i></i>
+
+                                <strong>
+                                    RAID
+                                </strong>
+
+                            </span>
+
+
+                            <span class="archive-row__identity">
+
+                                <small>
+                                    FEATURED / 04
+                                </small>
+
+                                <strong>
+                                    RAID
+                                </strong>
+
+                            </span>
+
+
+                            <span class="archive-row__category">
+                                SISTEMAS
+                            </span>
+
+
+                            <span class="archive-row__type">
+                                DOCX
+                            </span>
+
+                        </button>
+
+
+                        <a
+                            class="archive-row__file"
+                            href="assets/docs/proyectos/destacados/DNL-RAID.docx"
+                            target="_blank"
+                            aria-label="Abrir documento RAID"
+                        >
+                            ↗
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- ROUTERS LINUX -->
+
+                    <article
+                        class="archive-row"
+                        data-project-row
+                        data-project="routers-linux-anillo"
+                        data-category="redes"
+                        data-featured="true"
+                        data-search="routers linux tres routers anillo routing netplan ipv4 redes"
+                    >
+
+                        <button
+                            class="archive-row__main"
+                            type="button"
+                            data-open-project="routers-linux-anillo"
+                        >
+
+                            <span class="archive-row__visual archive-row__visual--cover">
+
+                                <img
+                                    src="assets/img/proyectos/routers-portada.png"
+                                    alt=""
+                                >
+
+                            </span>
+
+
+                            <span class="archive-row__identity">
+
+                                <small>
+                                    FEATURED / 05
+                                </small>
+
+                                <strong>
+                                    Routers Linux · 3 routers en anillo
+                                </strong>
+
+                            </span>
+
+
+                            <span class="archive-row__category">
+                                REDES
+                            </span>
+
+
+                            <span class="archive-row__type">
+                                DOCX
+                            </span>
+
+                        </button>
+
+
+                        <a
+                            class="archive-row__file"
+                            href="assets/docs/proyectos/destacados/516-DaríoNL-PARP604-RoutersLinux-3RoutersAnillo.docx"
+                            target="_blank"
+                            aria-label="Abrir documento Routers Linux en anillo"
+                        >
+                            ↗
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- =================================================
+                         REDES
+                         ================================================= -->
+
+
+                    <!-- LINUX NETWORK -->
+
+                    <article
+                        class="archive-row"
+                        data-project-row
+                        data-project="linux-network"
+                        data-category="redes"
+                        data-search="linux network red configuración redes"
+                    >
+
+                        <button
+                            class="archive-row__main"
+                            type="button"
+                            data-open-project="linux-network"
+                        >
+
+                            <span class="archive-row__visual archive-row__visual--redes">
+                                <i></i>
+                                <strong>NET</strong>
+                            </span>
+
+
+                            <span class="archive-row__identity">
+
+                                <small>
+                                    PAR / NETWORK
+                                </small>
+
+                                <strong>
+                                    Linux Network
+                                </strong>
+
+                            </span>
+
+
+                            <span class="archive-row__category">
+                                REDES
+                            </span>
+
+
+                            <span class="archive-row__type">
+                                DOCX
+                            </span>
+
+                        </button>
+
+
+                        <a
+                            class="archive-row__file"
+                            href="assets/docs/proyectos/redes/516-DaríoNL-PARP405-LinuxNetwork.docx"
+                            target="_blank"
+                            aria-label="Abrir Linux Network"
+                        >
+                            ↗
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- DNS -->
+
+                    <article
+                        class="archive-row"
+                        data-project-row
+                        data-project="dns"
+                        data-category="redes"
+                        data-search="dns servidor resolución nombres redes"
+                    >
+
+                        <button
+                            class="archive-row__main"
+                            type="button"
+                            data-open-project="dns"
+                        >
+
+                            <span class="archive-row__visual archive-row__visual--redes">
+                                <i></i>
+                                <strong>DNS</strong>
+                            </span>
+
+
+                            <span class="archive-row__identity">
+
+                                <small>
+                                    SERVICES / DNS
+                                </small>
+
+                                <strong>
+                                    Práctica DNS
+                                </strong>
+
+                            </span>
+
+
+                            <span class="archive-row__category">
+                                REDES
+                            </span>
+
+
+                            <span class="archive-row__type">
+                                DOCX
+                            </span>
+
+                        </button>
+
+
+                        <a
+                            class="archive-row__file"
+                            href="assets/docs/proyectos/redes/DNL-DNS.docx"
+                            target="_blank"
+                            aria-label="Abrir práctica DNS"
+                        >
+                            ↗
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- ICS -->
+
+                    <article
+                        class="archive-row"
+                        data-project-row
+                        data-project="ics"
+                        data-category="redes"
+                        data-search="ics internet connection sharing windows linux redes"
+                    >
+
+                        <button
+                            class="archive-row__main"
+                            type="button"
+                            data-open-project="ics"
+                        >
+
+                            <span class="archive-row__visual archive-row__visual--redes">
+                                <i></i>
+                                <strong>ICS</strong>
+                            </span>
+
+
+                            <span class="archive-row__identity">
+
+                                <small>
+                                    NETWORK / SHARING
+                                </small>
+
+                                <strong>
+                                    ICS · Windows / Linux
+                                </strong>
+
+                            </span>
+
+
+                            <span class="archive-row__category">
+                                REDES
+                            </span>
+
+
+                            <span class="archive-row__type">
+                                DOCX
+                            </span>
+
+                        </button>
+
+
+                        <a
+                            class="archive-row__file"
+                            href="assets/docs/proyectos/redes/DNL-ICS.docx"
+                            target="_blank"
+                            aria-label="Abrir documento ICS"
+                        >
+                            ↗
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- WLAN -->
+
+                    <article
+                        class="archive-row"
+                        data-project-row
+                        data-project="wlan"
+                        data-category="redes"
+                        data-search="wlan wifi wireless adhoc infraestructura redes"
+                    >
+
+                        <button
+                            class="archive-row__main"
+                            type="button"
+                            data-open-project="wlan"
+                        >
+
+                            <span class="archive-row__visual archive-row__visual--redes">
+                                <i></i>
+                                <strong>WLAN</strong>
+                            </span>
+
+
+                            <span class="archive-row__identity">
+
+                                <small>
+                                    WIRELESS / 01
+                                </small>
+
+                                <strong>
+                                    WLAN · Ad-Hoc e Infraestructura
+                                </strong>
+
+                            </span>
+
+
+                            <span class="archive-row__category">
+                                REDES
+                            </span>
+
+
+                            <span class="archive-row__type">
+                                DOCX
+                            </span>
+
+                        </button>
+
+
+                        <a
+                            class="archive-row__file"
+                            href="assets/docs/proyectos/redes/DNL-WLAN.docx"
+                            target="_blank"
+                            aria-label="Abrir práctica WLAN"
+                        >
+                            ↗
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- ROUTERS WINDOWS -->
+
+                    <article
+                        class="archive-row"
+                        data-project-row
+                        data-project="routers-win"
+                        data-category="redes"
+                        data-search="routers windows routing redes"
+                    >
+
+                        <button
+                            class="archive-row__main"
+                            type="button"
+                            data-open-project="routers-win"
+                        >
+
+                            <span class="archive-row__visual archive-row__visual--redes">
+                                <i></i>
+                                <strong>RTR</strong>
+                            </span>
+
+
+                            <span class="archive-row__identity">
+
+                                <small>
+                                    ROUTING / WINDOWS
+                                </small>
+
+                                <strong>
+                                    Routers en Windows
+                                </strong>
+
+                            </span>
+
+
+                            <span class="archive-row__category">
+                                REDES
+                            </span>
+
+
+                            <span class="archive-row__type">
+                                DOCX
+                            </span>
+
+                        </button>
+
+
+                        <a
+                            class="archive-row__file"
+                            href="assets/docs/proyectos/redes/516-DaríoNL-PARP603-RoutersWIN.docx"
+                            target="_blank"
+                            aria-label="Abrir Routers Windows"
+                        >
+                            ↗
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- VLANS -->
+
+                    <article
+                        class="archive-row"
+                        data-project-row
+                        data-project="vlans"
+                        data-category="redes"
+                        data-search="vlan vlans switches segmentación redes"
+                    >
+
+                        <button
+                            class="archive-row__main"
+                            type="button"
+                            data-open-project="vlans"
+                        >
+
+                            <span class="archive-row__visual archive-row__visual--redes">
+                                <i></i>
+                                <strong>VLAN</strong>
+                            </span>
+
+
+                            <span class="archive-row__identity">
+
+                                <small>
+                                    SWITCHING / VLAN
+                                </small>
+
+                                <strong>
+                                    Creación de VLANs
+                                </strong>
+
+                            </span>
+
+
+                            <span class="archive-row__category">
+                                REDES
+                            </span>
+
+
+                            <span class="archive-row__type">
+                                DOCX
+                            </span>
+
+                        </button>
+
+
+                        <a
+                            class="archive-row__file"
+                            href="assets/docs/proyectos/redes/DNL-VLANS.docx"
+                            target="_blank"
+                            aria-label="Abrir práctica VLANs"
+                        >
+                            ↗
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- PING ARP -->
+
+                    <article
+                        class="archive-row"
+                        data-project-row
+                        data-project="ping-arp"
+                        data-category="redes"
+                        data-search="ping arp icmp resolución mac redes"
+                    >
+
+                        <button
+                            class="archive-row__main"
+                            type="button"
+                            data-open-project="ping-arp"
+                        >
+
+                            <span class="archive-row__visual archive-row__visual--redes">
+                                <i></i>
+                                <strong>ARP</strong>
+                            </span>
+
+
+                            <span class="archive-row__identity">
+
+                                <small>
+                                    DIAGNOSTICS / 01
+                                </small>
+
+                                <strong>
+                                    Ping + ARP
+                                </strong>
+
+                            </span>
+
+
+                            <span class="archive-row__category">
+                                REDES
+                            </span>
+
+
+                            <span class="archive-row__type">
+                                DOCX
+                            </span>
+
+                        </button>
+
+
+                        <a
+                            class="archive-row__file"
+                            href="assets/docs/proyectos/redes/516-DaríoNL-PARP503-PingArp.docx"
+                            target="_blank"
+                            aria-label="Abrir práctica Ping ARP"
+                        >
+                            ↗
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- MIRRORING -->
+
+                    <article
+                        class="archive-row"
+                        data-project-row
+                        data-project="mirroring-puertos"
+                        data-category="redes"
+                        data-search="port mirroring espejo puertos switches redes"
+                    >
+
+                        <button
+                            class="archive-row__main"
+                            type="button"
+                            data-open-project="mirroring-puertos"
+                        >
+
+                            <span class="archive-row__visual archive-row__visual--redes">
+                                <i></i>
+                                <strong>SPAN</strong>
+                            </span>
+
+
+                            <span class="archive-row__identity">
+
+                                <small>
+                                    SWITCHING / MIRROR
+                                </small>
+
+                                <strong>
+                                    Mirroring de puertos
+                                </strong>
+
+                            </span>
+
+
+                            <span class="archive-row__category">
+                                REDES
+                            </span>
+
+
+                            <span class="archive-row__type">
+                                DOCX
+                            </span>
+
+                        </button>
+
+
+                        <a
+                            class="archive-row__file"
+                            href="assets/docs/proyectos/redes/DNL-MIRRORING_PUERTOS.docx"
+                            target="_blank"
+                            aria-label="Abrir Mirroring de puertos"
+                        >
+                            ↗
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- COMPARTIR WINDOWS -->
+
+                    <article
+                        class="archive-row"
+                        data-project-row
+                        data-project="compartir-win"
+                        data-category="redes"
+                        data-search="compartir windows recursos red carpetas permisos"
+                    >
+
+                        <button
+                            class="archive-row__main"
+                            type="button"
+                            data-open-project="compartir-win"
+                        >
+
+                            <span class="archive-row__visual archive-row__visual--redes">
+                                <i></i>
+                                <strong>SMB</strong>
+                            </span>
+
+
+                            <span class="archive-row__identity">
+
+                                <small>
+                                    WINDOWS / SHARE
+                                </small>
+
+                                <strong>
+                                    Compartir en Windows
+                                </strong>
+
+                            </span>
+
+
+                            <span class="archive-row__category">
+                                REDES
+                            </span>
+
+
+                            <span class="archive-row__type">
+                                DOCX
+                            </span>
+
+                        </button>
+
+
+                        <a
+                            class="archive-row__file"
+                            href="assets/docs/proyectos/redes/516-DaríoNL-101-CompartirWIN.docx"
+                            target="_blank"
+                            aria-label="Abrir Compartir en Windows"
+                        >
+                            ↗
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- OPENDNS -->
+
+                    <article
+                        class="archive-row"
+                        data-project-row
+                        data-project="opendns"
+                        data-category="redes"
+                        data-search="opendns parental dns filtrado redes seguridad"
+                    >
+
+                        <button
+                            class="archive-row__main"
+                            type="button"
+                            data-open-project="opendns"
+                        >
+
+                            <span class="archive-row__visual archive-row__visual--redes">
+                                <i></i>
+                                <strong>DNS</strong>
+                            </span>
+
+
+                            <span class="archive-row__identity">
+
+                                <small>
+                                    DNS / FILTERING
+                                </small>
+
+                                <strong>
+                                    Control parental con OpenDNS
+                                </strong>
+
+                            </span>
+
+
+                            <span class="archive-row__category">
+                                REDES
+                            </span>
+
+
+                            <span class="archive-row__type">
+                                DOCX
+                            </span>
+
+                        </button>
+
+
+                        <a
+                            class="archive-row__file"
+                            href="assets/docs/proyectos/redes/516-DaríoNL-PARP411-OpenDNS.docx"
+                            target="_blank"
+                            aria-label="Abrir práctica OpenDNS"
+                        >
+                            ↗
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- SNIFFERS -->
+
+                    <article
+                        class="archive-row"
+                        data-project-row
+                        data-project="sniffers"
+                        data-category="redes"
+                        data-search="sniffer sniffers captura tráfico análisis red paquetes"
+                    >
+
+                        <button
+                            class="archive-row__main"
+                            type="button"
+                            data-open-project="sniffers"
+                        >
+
+                            <span class="archive-row__visual archive-row__visual--redes">
+                                <i></i>
+                                <strong>PCAP</strong>
+                            </span>
+
+
+                            <span class="archive-row__identity">
+
+                                <small>
+                                    ANALYSIS / TRAFFIC
+                                </small>
+
+                                <strong>
+                                    Operaciones con sniffers
+                                </strong>
+
+                            </span>
+
+
+                            <span class="archive-row__category">
+                                REDES
+                            </span>
+
+
+                            <span class="archive-row__type">
+                                DOCX
+                            </span>
+
+                        </button>
+
+
+                        <a
+                            class="archive-row__file"
+                            href="assets/docs/proyectos/redes/516-DaríoNL-PARP401-Sniffers.docx"
+                            target="_blank"
+                            aria-label="Abrir práctica Sniffers"
+                        >
+                            ↗
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- TRUNKS -->
+
+                    <article
+                        class="archive-row"
+                        data-project-row
+                        data-project="trunks-puertos"
+                        data-category="redes"
+                        data-search="trunk trunks puertos vlan switching redes"
+                    >
+
+                        <button
+                            class="archive-row__main"
+                            type="button"
+                            data-open-project="trunks-puertos"
+                        >
+
+                            <span class="archive-row__visual archive-row__visual--redes">
+                                <i></i>
+                                <strong>TRK</strong>
+                            </span>
+
+
+                            <span class="archive-row__identity">
+
+                                <small>
+                                    SWITCHING / TRUNK
+                                </small>
+
+                                <strong>
+                                    Trunk de puertos
+                                </strong>
+
+                            </span>
+
+
+                            <span class="archive-row__category">
+                                REDES
+                            </span>
+
+
+                            <span class="archive-row__type">
+                                DOCX
+                            </span>
+
+                        </button>
+
+
+                        <a
+                            class="archive-row__file"
+                            href="assets/docs/proyectos/redes/DNL-TRUNKS_PUERTOS.docx"
+                            target="_blank"
+                            aria-label="Abrir práctica Trunk de puertos"
+                        >
+                            ↗
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- DHCP -->
+
+                    <article
+                        class="archive-row"
+                        data-project-row
+                        data-project="dhcp"
+                        data-category="redes"
+                        data-search="dhcp ip servidor asignación direcciones redes"
+                    >
+
+                        <button
+                            class="archive-row__main"
+                            type="button"
+                            data-open-project="dhcp"
+                        >
+
+                            <span class="archive-row__visual archive-row__visual--redes">
+                                <i></i>
+                                <strong>DHCP</strong>
+                            </span>
+
+
+                            <span class="archive-row__identity">
+
+                                <small>
+                                    SERVICES / DHCP
+                                </small>
+
+                                <strong>
+                                    Práctica DHCP
+                                </strong>
+
+                            </span>
+
+
+                            <span class="archive-row__category">
+                                REDES
+                            </span>
+
+
+                            <span class="archive-row__type">
+                                DOCX
+                            </span>
+
+                        </button>
+
+
+                        <a
+                            class="archive-row__file"
+                            href="assets/docs/proyectos/redes/DNL-DHCP.docx"
+                            target="_blank"
+                            aria-label="Abrir práctica DHCP"
+                        >
+                            ↗
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- DLNA -->
+
+                    <article
+                        class="archive-row"
+                        data-project-row
+                        data-project="dlna"
+                        data-category="redes"
+                        data-search="dlna multimedia streaming red servicios"
+                    >
+
+                        <button
+                            class="archive-row__main"
+                            type="button"
+                            data-open-project="dlna"
+                        >
+
+                            <span class="archive-row__visual archive-row__visual--redes">
+                                <i></i>
+                                <strong>DLNA</strong>
+                            </span>
+
+
+                            <span class="archive-row__identity">
+
+                                <small>
+                                    SERVICES / MEDIA
+                                </small>
+
+                                <strong>
+                                    DLNA
+                                </strong>
+
+                            </span>
+
+
+                            <span class="archive-row__category">
+                                REDES
+                            </span>
+
+
+                            <span class="archive-row__type">
+                                DOCX
+                            </span>
+
+                        </button>
+
+
+                        <a
+                            class="archive-row__file"
+                            href="assets/docs/proyectos/redes/516-DaríoNL-PARP204-DLNA.docx"
+                            target="_blank"
+                            aria-label="Abrir práctica DLNA"
+                        >
+                            ↗
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- ROUTERS WIN LINUX -->
+
+                    <article
+                        class="archive-row"
+                        data-project-row
+                        data-project="routers-win-linux"
+                        data-category="redes"
+                        data-search="routers windows linux routing mixto redes"
+                    >
+
+                        <button
+                            class="archive-row__main"
+                            type="button"
+                            data-open-project="routers-win-linux"
+                        >
+
+                            <span class="archive-row__visual archive-row__visual--redes">
+                                <i></i>
+                                <strong>W/L</strong>
+                            </span>
+
+
+                            <span class="archive-row__identity">
+
+                                <small>
+                                    ROUTING / MIXED
+                                </small>
+
+                                <strong>
+                                    Routers Windows / Linux
+                                </strong>
+
+                            </span>
+
+
+                            <span class="archive-row__category">
+                                REDES
+                            </span>
+
+
+                            <span class="archive-row__type">
+                                DOCX
+                            </span>
+
+                        </button>
+
+
+                        <a
+                            class="archive-row__file"
+                            href="assets/docs/proyectos/redes/516-DaríoNL-PARP605-RoutersWINLinux.docx"
+                            target="_blank"
+                            aria-label="Abrir Routers Windows Linux"
+                        >
+                            ↗
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- NETWORK LATENCY -->
+
+                    <article
+                        class="archive-row"
+                        data-project-row
+                        data-project="network-latency"
+                        data-category="redes"
+                        data-search="network latency view latencia monitorización red"
+                    >
+
+                        <button
+                            class="archive-row__main"
+                            type="button"
+                            data-open-project="network-latency"
+                        >
+
+                            <span class="archive-row__visual archive-row__visual--redes">
+                                <i></i>
+                                <strong>MS</strong>
+                            </span>
+
+
+                            <span class="archive-row__identity">
+
+                                <small>
+                                    MONITOR / LATENCY
+                                </small>
+
+                                <strong>
+                                    Network Latency View
+                                </strong>
+
+                            </span>
+
+
+                            <span class="archive-row__category">
+                                REDES
+                            </span>
+
+
+                            <span class="archive-row__type">
+                                DOCX
+                            </span>
+
+                        </button>
+
+
+                        <a
+                            class="archive-row__file"
+                            href="assets/docs/proyectos/redes/516-DaríoNL-PARP203-NetworkLatencyView.docx"
+                            target="_blank"
+                            aria-label="Abrir Network Latency View"
+                        >
+                            ↗
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- APACHE VIDEO -->
+
+                    <article
+                        class="archive-row"
+                        data-project-row
+                        data-project="apache-video"
+                        data-category="redes"
+                        data-search="apache vídeo youtube servidor web redes"
+                    >
+
+                        <button
+                            class="archive-row__main"
+                            type="button"
+                            data-open-project="apache-video"
+                        >
+
+                            <span class="archive-row__visual archive-row__visual--video">
+                                <i></i>
+                                <strong>▶</strong>
+                            </span>
+
+
+                            <span class="archive-row__identity">
+
+                                <small>
+                                    VIDEO / APACHE
+                                </small>
+
+                                <strong>
+                                    Práctica Apache
+                                </strong>
+
+                            </span>
+
+
+                            <span class="archive-row__category">
+                                REDES
+                            </span>
+
+
+                            <span class="archive-row__type">
+                                VIDEO
+                            </span>
+
+                        </button>
+
+
+                        <a
+                            class="archive-row__file"
+                            href="https://www.youtube.com/watch?v=M6qRpaWBIWA&t=1s"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Abrir vídeo de la práctica Apache"
+                        >
+                            ↗
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- CLI IP VLAN -->
+
+                    <article
+                        class="archive-row"
+                        data-project-row
+                        data-project="cli-ip-vlan"
+                        data-category="redes"
+                        data-search="cli ip vlan linux terminal redes interfaces"
+                    >
+
+                        <button
+                            class="archive-row__main"
+                            type="button"
+                            data-open-project="cli-ip-vlan"
+                        >
+
+                            <span class="archive-row__visual archive-row__visual--redes">
+                                <i></i>
+                                <strong>CLI</strong>
+                            </span>
+
+
+                            <span class="archive-row__identity">
+
+                                <small>
+                                    LINUX / NETWORK
+                                </small>
+
+                                <strong>
+                                    CLI · IP · VLAN en Linux
+                                </strong>
+
+                            </span>
+
+
+                            <span class="archive-row__category">
+                                REDES
+                            </span>
+
+
+                            <span class="archive-row__type">
+                                DOCX
+                            </span>
+
+                        </button>
+
+
+                        <a
+                            class="archive-row__file"
+                            href="assets/docs/proyectos/redes/516-DaríoNL-PARP601-CLI-IP-Linux-VLAN.docx"
+                            target="_blank"
+                            aria-label="Abrir CLI IP VLAN Linux"
+                        >
+                            ↗
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- SSMTP -->
+
+                    <article
+                        class="archive-row"
+                        data-project-row
+                        data-project="ssmtp-cli"
+                        data-category="redes"
+                        data-search="ssmtp cli shell linux mail correo terminal"
+                    >
+
+                        <button
+                            class="archive-row__main"
+                            type="button"
+                            data-open-project="ssmtp-cli"
+                        >
+
+                            <span class="archive-row__visual archive-row__visual--redes">
+                                <i></i>
+                                <strong>SMTP</strong>
+                            </span>
+
+
+                            <span class="archive-row__identity">
+
+                                <small>
+                                    MAIL / CLI
+                                </small>
+
+                                <strong>
+                                    Envío de correo con SSMTP
+                                </strong>
+
+                            </span>
+
+
+                            <span class="archive-row__category">
+                                REDES
+                            </span>
+
+
+                            <span class="archive-row__type">
+                                DOCX
+                            </span>
+
+                        </button>
+
+
+                        <a
+                            class="archive-row__file"
+                            href="assets/docs/proyectos/redes/516-DaríoNL-PARP504-SSMTP_CLI.docx"
+                            target="_blank"
+                            aria-label="Abrir práctica SSMTP CLI"
+                        >
+                            ↗
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- NETCAT -->
+
+                    <article
+                        class="archive-row"
+                        data-project-row
+                        data-project="netcat"
+                        data-category="redes"
+                        data-search="netcat nc herramientas red linux puertos tcp udp"
+                    >
+
+                        <button
+                            class="archive-row__main"
+                            type="button"
+                            data-open-project="netcat"
+                        >
+
+                            <span class="archive-row__visual archive-row__visual--cover">
+
+                                <img
+                                    src="assets/img/proyectos/netcat-portada.png"
+                                    alt=""
+                                >
+
+                            </span>
+
+
+                            <span class="archive-row__identity">
+
+                                <small>
+                                    NETWORK_TOOLS / NETCAT
+                                </small>
+
+                                <strong>
+                                    Herramientas de red · Netcat
+                                </strong>
+
+                            </span>
+
+
+                            <span class="archive-row__category">
+                                REDES
+                            </span>
+
+
+                            <span class="archive-row__type">
+                                DOCX
+                            </span>
+
+                        </button>
+
+
+                        <a
+                            class="archive-row__file"
+                            href="assets/docs/proyectos/redes/516-DaríoNL-PARP202-Netcat.docx"
+                            target="_blank"
+                            aria-label="Abrir práctica Netcat"
+                        >
+                            ↗
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- =================================================
+                         SISTEMAS
+                         ================================================= -->
+
+
+                    <!-- RESET PASSWORD -->
+
+                    <article
+                        class="archive-row"
+                        data-project-row
+                        data-project="reset-password-win"
+                        data-category="sistemas"
+                        data-search="reset password windows contraseña recuperación sistemas"
+                    >
+
+                        <button
+                            class="archive-row__main"
+                            type="button"
+                            data-open-project="reset-password-win"
+                        >
+
+                            <span class="archive-row__visual archive-row__visual--sistemas">
+                                <i></i>
+                                <strong>PASS</strong>
+                            </span>
+
+
+                            <span class="archive-row__identity">
+
+                                <small>
+                                    WINDOWS / RECOVERY
+                                </small>
+
+                                <strong>
+                                    Reset de contraseña en Windows
+                                </strong>
+
+                            </span>
+
+
+                            <span class="archive-row__category">
+                                SISTEMAS
+                            </span>
+
+
+                            <span class="archive-row__type">
+                                DOCX
+                            </span>
+
+                        </button>
+
+
+                        <a
+                            class="archive-row__file"
+                            href="assets/docs/proyectos/sistemas/516-DaríoNL-ISOP406-ResetPasswWIN.docx"
+                            target="_blank"
+                            aria-label="Abrir Reset Password Windows"
+                        >
+                            ↗
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- GESTIÓN CUENTAS -->
+
+                    <article
+                        class="archive-row"
+                        data-project-row
+                        data-project="gestion-cuentas"
+                        data-category="sistemas"
+                        data-search="cuentas usuarios windows linux gestión sistemas"
+                    >
+
+                        <button
+                            class="archive-row__main"
+                            type="button"
+                            data-open-project="gestion-cuentas"
+                        >
+
+                            <span class="archive-row__visual archive-row__visual--sistemas">
+                                <i></i>
+                                <strong>USR</strong>
+                            </span>
+
+
+                            <span class="archive-row__identity">
+
+                                <small>
+                                    USERS / ADMIN
+                                </small>
+
+                                <strong>
+                                    Gestión de cuentas · Windows / Linux
+                                </strong>
+
+                            </span>
+
+
+                            <span class="archive-row__category">
+                                SISTEMAS
+                            </span>
+
+
+                            <span class="archive-row__type">
+                                DOCX
+                            </span>
+
+                        </button>
+
+
+                        <a
+                            class="archive-row__file"
+                            href="assets/docs/proyectos/sistemas/516-DaríoNL-ISOP401-GestCuentasWinLinux.docx"
+                            target="_blank"
+                            aria-label="Abrir Gestión de cuentas"
+                        >
+                            ↗
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- MULTI DISK -->
+
+                    <article
+                        class="archive-row"
+                        data-project-row
+                        data-project="multi-disk"
+                        data-category="sistemas"
+                        data-search="multi disk discos almacenamiento sistemas"
+                    >
+
+                        <button
+                            class="archive-row__main"
+                            type="button"
+                            data-open-project="multi-disk"
+                        >
+
+                            <span class="archive-row__visual archive-row__visual--sistemas">
+                                <i></i>
+                                <strong>DISK</strong>
+                            </span>
+
+
+                            <span class="archive-row__identity">
+
+                                <small>
+                                    STORAGE / DISKS
+                                </small>
+
+                                <strong>
+                                    Multi Disk
+                                </strong>
+
+                            </span>
+
+
+                            <span class="archive-row__category">
+                                SISTEMAS
+                            </span>
+
+
+                            <span class="archive-row__type">
+                                DOCX
+                            </span>
+
+                        </button>
+
+
+                        <a
+                            class="archive-row__file"
+                            href="assets/docs/proyectos/sistemas/516-DaríoNL-ISOP304-MultiDisk.docx"
+                            target="_blank"
+                            aria-label="Abrir Multi Disk"
+                        >
+                            ↗
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- JPG PDF -->
+
+                    <article
+                        class="archive-row"
+                        data-project-row
+                        data-project="jpg-pdf"
+                        data-category="sistemas"
+                        data-search="jpg pdf formatos archivos windows linux sistemas"
+                    >
+
+                        <button
+                            class="archive-row__main"
+                            type="button"
+                            data-open-project="jpg-pdf"
+                        >
+
+                            <span class="archive-row__visual archive-row__visual--sistemas">
+                                <i></i>
+                                <strong>FILE</strong>
+                            </span>
+
+
+                            <span class="archive-row__identity">
+
+                                <small>
+                                    FILES / FORMAT
+                                </small>
+
+                                <strong>
+                                    JPG / PDF
+                                </strong>
+
+                            </span>
+
+
+                            <span class="archive-row__category">
+                                SISTEMAS
+                            </span>
+
+
+                            <span class="archive-row__type">
+                                DOCX
+                            </span>
+
+                        </button>
+
+
+                        <a
+                            class="archive-row__file"
+                            href="assets/docs/proyectos/sistemas/516-DaríoNL-ISOP211-JPG-PDF.docx"
+                            target="_blank"
+                            aria-label="Abrir práctica JPG PDF"
+                        >
+                            ↗
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- JAVA -->
+
+                    <article
+                        class="archive-row"
+                        data-project-row
+                        data-project="java-win-linux"
+                        data-category="sistemas"
+                        data-search="java windows linux aplicación sistemas"
+                    >
+
+                        <button
+                            class="archive-row__main"
+                            type="button"
+                            data-open-project="java-win-linux"
+                        >
+
+                            <span class="archive-row__visual archive-row__visual--sistemas">
+                                <i></i>
+                                <strong>JAVA</strong>
+                            </span>
+
+
+                            <span class="archive-row__identity">
+
+                                <small>
+                                    APP / JAVA
+                                </small>
+
+                                <strong>
+                                    Ejecutar Java en Windows y Linux
+                                </strong>
+
+                            </span>
+
+
+                            <span class="archive-row__category">
+                                SISTEMAS
+                            </span>
+
+
+                            <span class="archive-row__type">
+                                DOCX
+                            </span>
+
+                        </button>
+
+
+                        <a
+                            class="archive-row__file"
+                            href="assets/docs/proyectos/sistemas/516-DaríoNL-ISOP203-AppJavaWIN.docx"
+                            target="_blank"
+                            aria-label="Abrir aplicación Java Windows Linux"
+                        >
+                            ↗
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- CONFIG RED -->
+
+                    <article
+                        class="archive-row"
+                        data-project-row
+                        data-project="config-red-win-linux"
+                        data-category="sistemas"
+                        data-search="configuración red windows linux network sistemas"
+                    >
+
+                        <button
+                            class="archive-row__main"
+                            type="button"
+                            data-open-project="config-red-win-linux"
+                        >
+
+                            <span class="archive-row__visual archive-row__visual--sistemas">
+                                <i></i>
+                                <strong>NIC</strong>
+                            </span>
+
+
+                            <span class="archive-row__identity">
+
+                                <small>
+                                    SYSTEM / NETWORK
+                                </small>
+
+                                <strong>
+                                    Configuración de red · Windows / Linux
+                                </strong>
+
+                            </span>
+
+
+                            <span class="archive-row__category">
+                                SISTEMAS
+                            </span>
+
+
+                            <span class="archive-row__type">
+                                DOCX
+                            </span>
+
+                        </button>
+
+
+                        <a
+                            class="archive-row__file"
+                            href="assets/docs/proyectos/sistemas/516-DaríoNL-ISOP402-ConfigRedWinLinux.docx"
+                            target="_blank"
+                            aria-label="Abrir Configuración de red Windows Linux"
+                        >
+                            ↗
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- PERMISOS -->
+
+                    <article
+                        class="archive-row"
+                        data-project-row
+                        data-project="permisos"
+                        data-category="sistemas"
+                        data-search="particiones permisos linux seguridad sistemas"
+                    >
+
+                        <button
+                            class="archive-row__main"
+                            type="button"
+                            data-open-project="permisos"
+                        >
+
+                            <span class="archive-row__visual archive-row__visual--sistemas">
+                                <i></i>
+                                <strong>RWX</strong>
+                            </span>
+
+
+                            <span class="archive-row__identity">
+
+                                <small>
+                                    SYSTEM / PERMISSIONS
+                                </small>
+
+                                <strong>
+                                    Particiones y permisos
+                                </strong>
+
+                            </span>
+
+
+                            <span class="archive-row__category">
+                                SISTEMAS
+                            </span>
+
+
+                            <span class="archive-row__type">
+                                DOCX
+                            </span>
+
+                        </button>
+
+
+                        <a
+                            class="archive-row__file"
+                            href="assets/docs/proyectos/sistemas/DNL-Permisos.docx"
+                            target="_blank"
+                            aria-label="Abrir Particiones y permisos"
+                        >
+                            ↗
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- REPARAR -->
+
+                    <article
+                        class="archive-row"
+                        data-project-row
+                        data-project="repair-startup"
+                        data-category="sistemas"
+                        data-search="repair startup reparar arranque boot sistema"
+                    >
+
+                        <button
+                            class="archive-row__main"
+                            type="button"
+                            data-open-project="repair-startup"
+                        >
+
+                            <span class="archive-row__visual archive-row__visual--sistemas">
+                                <i></i>
+                                <strong>BOOT</strong>
+                            </span>
+
+
+                            <span class="archive-row__identity">
+
+                                <small>
+                                    RECOVERY / BOOT
+                                </small>
+
+                                <strong>
+                                    Reparación de arranque
+                                </strong>
+
+                            </span>
+
+
+                            <span class="archive-row__category">
+                                SISTEMAS
+                            </span>
+
+
+                            <span class="archive-row__type">
+                                DOCX
+                            </span>
+
+                        </button>
+
+
+                        <a
+                            class="archive-row__file"
+                            href="assets/docs/proyectos/sistemas/516-DaríoNL-ISOP304-Reparar.docx"
+                            target="_blank"
+                            aria-label="Abrir Reparación de arranque"
+                        >
+                            ↗
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- VIRTUALIZADORES -->
+
+                    <article
+                        class="archive-row"
+                        data-project-row
+                        data-project="virtualizadores"
+                        data-category="sistemas"
+                        data-search="virtualizadores virtualización máquinas virtuales sistemas"
+                    >
+
+                        <button
+                            class="archive-row__main"
+                            type="button"
+                            data-open-project="virtualizadores"
+                        >
+
+                            <span class="archive-row__visual archive-row__visual--cover">
+
+                                <img
+                                    src="assets/img/proyectos/sistemas-portada.png"
+                                    alt=""
+                                >
+
+                            </span>
+
+
+                            <span class="archive-row__identity">
+
+                                <small>
+                                    VIRTUALIZATION / 01
+                                </small>
+
+                                <strong>
+                                    Instalación en virtualizadores
+                                </strong>
+
+                            </span>
+
+
+                            <span class="archive-row__category">
+                                SISTEMAS
+                            </span>
+
+
+                            <span class="archive-row__type">
+                                DOCX
+                            </span>
+
+                        </button>
+
+
+                        <a
+                            class="archive-row__file"
+                            href="assets/docs/proyectos/sistemas/516-DaríoNL-ISO101-InstalarVirtualizadores.docx"
+                            target="_blank"
+                            aria-label="Abrir Instalación en virtualizadores"
+                        >
+                            ↗
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- INTERIOR PC -->
+
+                    <article
+                        class="archive-row"
+                        data-project-row
+                        data-project="interior-pc"
+                        data-category="sistemas"
+                        data-search="interior pc hardware componentes ordenador sistemas"
+                    >
+
+                        <button
+                            class="archive-row__main"
+                            type="button"
+                            data-open-project="interior-pc"
+                        >
+
+                            <span class="archive-row__visual archive-row__visual--sistemas">
+                                <i></i>
+                                <strong>HW</strong>
+                            </span>
+
+
+                            <span class="archive-row__identity">
+
+                                <small>
+                                    HARDWARE / PC
+                                </small>
+
+                                <strong>
+                                    Interior de un PC
+                                </strong>
+
+                            </span>
+
+
+                            <span class="archive-row__category">
+                                SISTEMAS
+                            </span>
+
+
+                            <span class="archive-row__type">
+                                PPTX
+                            </span>
+
+                        </button>
+
+
+                        <a
+                            class="archive-row__file"
+                            href="assets/docs/proyectos/sistemas/DNL-INTERIOR_PC.pptx"
+                            target="_blank"
+                            aria-label="Abrir presentación Interior PC"
+                        >
+                            ↗
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- MONTAJE -->
+
+                    <article
+                        class="archive-row"
+                        data-project-row
+                        data-project="montaje-superficie"
+                        data-category="sistemas"
+                        data-search="montaje desmontaje ordenador superficie hardware pc"
+                    >
+
+                        <button
+                            class="archive-row__main"
+                            type="button"
+                            data-open-project="montaje-superficie"
+                        >
+
+                            <span class="archive-row__visual archive-row__visual--sistemas">
+                                <i></i>
+                                <strong>PC</strong>
+                            </span>
+
+
+                            <span class="archive-row__identity">
+
+                                <small>
+                                    HARDWARE / BUILD
+                                </small>
+
+                                <strong>
+                                    Montaje y desmontaje en superficie
+                                </strong>
+
+                            </span>
+
+
+                            <span class="archive-row__category">
+                                SISTEMAS
+                            </span>
+
+
+                            <span class="archive-row__type">
+                                DOCX
+                            </span>
+
+                        </button>
+
+
+                        <a
+                            class="archive-row__file"
+                            href="assets/docs/proyectos/sistemas/DNL-MONTAJE%20EN%20SURPERFICIE.docx"
+                            target="_blank"
+                            aria-label="Abrir Montaje en superficie"
+                        >
+                            ↗
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- GIT -->
+
+                    <article
+                        class="archive-row"
+                        data-project-row
+                        data-project="git-github"
+                        data-category="sistemas"
+                        data-search="git github control versiones repositorios sistemas"
+                    >
+
+                        <button
+                            class="archive-row__main"
+                            type="button"
+                            data-open-project="git-github"
+                        >
+
+                            <span class="archive-row__visual archive-row__visual--sistemas">
+                                <i></i>
+                                <strong>GIT</strong>
+                            </span>
+
+
+                            <span class="archive-row__identity">
+
+                                <small>
+                                    VERSION_CONTROL
+                                </small>
+
+                                <strong>
+                                    Git / GitHub
+                                </strong>
+
+                            </span>
+
+
+                            <span class="archive-row__category">
+                                SISTEMAS
+                            </span>
+
+
+                            <span class="archive-row__type">
+                                DOCX
+                            </span>
+
+                        </button>
+
+
+                        <a
+                            class="archive-row__file"
+                            href="assets/docs/proyectos/sistemas/516-DaríoNL-ISOP411-Git-GitHub.docx"
+                            target="_blank"
+                            aria-label="Abrir práctica Git GitHub"
+                        >
+                            ↗
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- FDISK -->
+
+                    <article
+                        class="archive-row"
+                        data-project-row
+                        data-project="fdisk-gparted"
+                        data-category="sistemas"
+                        data-search="fdisk parted gparted live cd ubuntu particiones discos"
+                    >
+
+                        <button
+                            class="archive-row__main"
+                            type="button"
+                            data-open-project="fdisk-gparted"
+                        >
+
+                            <span class="archive-row__visual archive-row__visual--sistemas">
+                                <i></i>
+                                <strong>PART</strong>
+                            </span>
+
+
+                            <span class="archive-row__identity">
+
+                                <small>
+                                    STORAGE / PARTITIONS
+                                </small>
+
+                                <strong>
+                                    fdisk · parted · GParted
+                                </strong>
+
+                            </span>
+
+
+                            <span class="archive-row__category">
+                                SISTEMAS
+                            </span>
+
+
+                            <span class="archive-row__type">
+                                DOCX
+                            </span>
+
+                        </button>
+
+
+                        <a
+                            class="archive-row__file"
+                            href="assets/docs/proyectos/sistemas/516-DaríoNL-ISOP303-fdisk-GParted.docx"
+                            target="_blank"
+                            aria-label="Abrir práctica fdisk GParted"
+                        >
+                            ↗
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- LICENCIAS -->
+
+                    <article
+                        class="archive-row"
+                        data-project-row
+                        data-project="licencias"
+                        data-category="sistemas"
+                        data-search="licencias software sistemas operativo"
+                    >
+
+                        <button
+                            class="archive-row__main"
+                            type="button"
+                            data-open-project="licencias"
+                        >
+
+                            <span class="archive-row__visual archive-row__visual--sistemas">
+                                <i></i>
+                                <strong>LIC</strong>
+                            </span>
+
+
+                            <span class="archive-row__identity">
+
+                                <small>
+                                    SOFTWARE / LICENSE
+                                </small>
+
+                                <strong>
+                                    Licencias
+                                </strong>
+
+                            </span>
+
+
+                            <span class="archive-row__category">
+                                SISTEMAS
+                            </span>
+
+
+                            <span class="archive-row__type">
+                                DOCX
+                            </span>
+
+                        </button>
+
+
+                        <a
+                            class="archive-row__file"
+                            href="assets/docs/proyectos/sistemas/516-DaríoNL-ISOP102-Licencias.docx"
+                            target="_blank"
+                            aria-label="Abrir práctica Licencias"
+                        >
+                            ↗
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- IDIOMA -->
+
+                    <article
+                        class="archive-row"
+                        data-project-row
+                        data-project="idioma-win-linux"
+                        data-category="sistemas"
+                        data-search="idioma windows ubuntu linux language sistemas"
+                    >
+
+                        <button
+                            class="archive-row__main"
+                            type="button"
+                            data-open-project="idioma-win-linux"
+                        >
+
+                            <span class="archive-row__visual archive-row__visual--sistemas">
+                                <i></i>
+                                <strong>LANG</strong>
+                            </span>
+
+
+                            <span class="archive-row__identity">
+
+                                <small>
+                                    OS / LANGUAGE
+                                </small>
+
+                                <strong>
+                                    Idioma adicional · Windows / Ubuntu
+                                </strong>
+
+                            </span>
+
+
+                            <span class="archive-row__category">
+                                SISTEMAS
+                            </span>
+
+
+                            <span class="archive-row__type">
+                                DOCX
+                            </span>
+
+                        </button>
+
+
+                        <a
+                            class="archive-row__file"
+                            href="assets/docs/proyectos/sistemas/516-DaríoNL-ISOP211-IdiomaWIN-Linux.docx"
+                            target="_blank"
+                            aria-label="Abrir Idioma Windows Linux"
+                        >
+                            ↗
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- UPGRADE -->
+
+                    <article
+                        class="archive-row"
+                        data-project-row
+                        data-project="upgrade"
+                        data-category="sistemas"
+                        data-search="upgrade actualizaciones sistemas operativos update"
+                    >
+
+                        <button
+                            class="archive-row__main"
+                            type="button"
+                            data-open-project="upgrade"
+                        >
+
+                            <span class="archive-row__visual archive-row__visual--sistemas">
+                                <i></i>
+                                <strong>UP</strong>
+                            </span>
+
+
+                            <span class="archive-row__identity">
+
+                                <small>
+                                    OS / UPDATE
+                                </small>
+
+                                <strong>
+                                    Tipos de actualizaciones
+                                </strong>
+
+                            </span>
+
+
+                            <span class="archive-row__category">
+                                SISTEMAS
+                            </span>
+
+
+                            <span class="archive-row__type">
+                                DOCX
+                            </span>
+
+                        </button>
+
+
+                        <a
+                            class="archive-row__file"
+                            href="assets/docs/proyectos/sistemas/516-DaríoNL-ISOP215-Upgrade.docx"
+                            target="_blank"
+                            aria-label="Abrir Tipos de actualizaciones"
+                        >
+                            ↗
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- MULTIBOOT -->
+
+                    <article
+                        class="archive-row"
+                        data-project-row
+                        data-project="multiboot"
+                        data-category="sistemas"
+                        data-search="multiboot windows linux arranque dual boot"
+                    >
+
+                        <button
+                            class="archive-row__main"
+                            type="button"
+                            data-open-project="multiboot"
+                        >
+
+                            <span class="archive-row__visual archive-row__visual--sistemas">
+                                <i></i>
+                                <strong>BOOT</strong>
+                            </span>
+
+
+                            <span class="archive-row__identity">
+
+                                <small>
+                                    BOOT / MULTI
+                                </small>
+
+                                <strong>
+                                    Multiboot · Windows / Linux
+                                </strong>
+
+                            </span>
+
+
+                            <span class="archive-row__category">
+                                SISTEMAS
+                            </span>
+
+
+                            <span class="archive-row__type">
+                                DOCX
+                            </span>
+
+                        </button>
+
+
+                        <a
+                            class="archive-row__file"
+                            href="assets/docs/proyectos/sistemas/516-DaríoNL-ISOP304-Multiboot.docx"
+                            target="_blank"
+                            aria-label="Abrir Multiboot"
+                        >
+                            ↗
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- =================================================
+                         DESARROLLO
+                         ================================================= -->
+
+
+                    <!-- CAPITALES -->
+
+                    <article
+                        class="archive-row"
+                        data-project-row
+                        data-project="capitales"
+                        data-category="desarrollo"
+                        data-search="capitales python tkinter juego programación desarrollo banderas"
+                    >
+
+                        <button
+                            class="archive-row__main"
+                            type="button"
+                            data-open-project="capitales"
+                        >
+
+                            <span class="archive-row__visual archive-row__visual--desarrollo">
+                                <i></i>
+                                <strong>PY</strong>
+                            </span>
+
+
+                            <span class="archive-row__identity">
+
+                                <small>
+                                    PYTHON / GAME
+                                </small>
+
+                                <strong>
+                                    Juego de Capitales
+                                </strong>
+
+                            </span>
+
+
+                            <span class="archive-row__category">
+                                DESARROLLO
+                            </span>
+
+
+                            <span class="archive-row__type">
+                                PY
+                            </span>
+
+                        </button>
+
+
+                        <a
+                            class="archive-row__file"
+                            href="assets/docs/proyectos/desarrollo/DNL-Capitales.py"
+                            target="_blank"
+                            aria-label="Abrir código de Capitales"
+                        >
+                            ↗
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- HTML -->
+
+                    <article
+                        class="archive-row"
+                        data-project-row
+                        data-project="html-project"
+                        data-category="desarrollo"
+                        data-search="html css web desarrollo frontend"
+                    >
+
+                        <button
+                            class="archive-row__main"
+                            type="button"
+                            data-open-project="html-project"
+                        >
+
+                            <span class="archive-row__visual archive-row__visual--cover">
+
+                                <img
+                                    src="assets/img/proyectos/web-portada.png"
+                                    alt=""
+                                >
+
+                            </span>
+
+
+                            <span class="archive-row__identity">
+
+                                <small>
+                                    WEB / FRONTEND
+                                </small>
+
+                                <strong>
+                                    Proyecto HTML
+                                </strong>
+
+                            </span>
+
+
+                            <span class="archive-row__category">
+                                DESARROLLO
+                            </span>
+
+
+                            <span class="archive-row__type">
+                                ZIP
+                            </span>
+
+                        </button>
+
+
+                        <a
+                            class="archive-row__file"
+                            href="assets/docs/proyectos/desarrollo/DNL-HTML.zip"
+                            aria-label="Abrir proyecto HTML"
+                        >
+                            ↗
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- JUEGO NÚMEROS -->
+
+                    <article
+                        class="archive-row"
+                        data-project-row
+                        data-project="juego-numeros"
+                        data-category="desarrollo"
+                        data-search="juego números powerpoint ppt desarrollo lógica"
+                    >
+
+                        <button
+                            class="archive-row__main"
+                            type="button"
+                            data-open-project="juego-numeros"
+                        >
+
+                            <span class="archive-row__visual archive-row__visual--desarrollo">
+                                <i></i>
+                                <strong>01</strong>
+                            </span>
+
+
+                            <span class="archive-row__identity">
+
+                                <small>
+                                    LOGIC / GAME
+                                </small>
+
+                                <strong>
+                                    Juego de números
+                                </strong>
+
+                            </span>
+
+
+                            <span class="archive-row__category">
+                                DESARROLLO
+                            </span>
+
+
+                            <span class="archive-row__type">
+                                PPTX
+                            </span>
+
+                        </button>
+
+
+                        <a
+                            class="archive-row__file"
+                            href="assets/docs/proyectos/desarrollo/DNL-JUEGO_NUMEROS_PPT.pptx"
+                            target="_blank"
+                            aria-label="Abrir Juego de números"
+                        >
+                            ↗
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- DIAGRAMA FLUJO -->
+
+                    <article
+                        class="archive-row"
+                        data-project-row
+                        data-project="diagrama-flujo"
+                        data-category="desarrollo"
+                        data-search="diagrama flujo visio desarrollo lógica"
+                    >
+
+                        <button
+                            class="archive-row__main"
+                            type="button"
+                            data-open-project="diagrama-flujo"
+                        >
+
+                            <span class="archive-row__visual archive-row__visual--desarrollo">
+                                <i></i>
+                                <strong>FLOW</strong>
+                            </span>
+
+
+                            <span class="archive-row__identity">
+
+                                <small>
+                                    LOGIC / FLOW
+                                </small>
+
+                                <strong>
+                                    Diagrama de flujo
+                                </strong>
+
+                            </span>
+
+
+                            <span class="archive-row__category">
+                                DESARROLLO
+                            </span>
+
+
+                            <span class="archive-row__type">
+                                VSDX
+                            </span>
+
+                        </button>
+
+
+                        <a
+                            class="archive-row__file"
+                            href="assets/docs/proyectos/desarrollo/DNL-DiagramaFlujo.vsdx"
+                            target="_blank"
+                            aria-label="Abrir Diagrama de flujo"
+                        >
+                            ↗
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- =================================================
+                         BASES DE DATOS
+                         ================================================= -->
+
+
+                    <!-- EXCEL -->
+
+                    <article
+                        class="archive-row"
+                        data-project-row
+                        data-project="ejercicios-excel"
+                        data-category="bbdd"
+                        data-search="excel ejercicios hojas cálculo bases datos"
+                    >
+
+                        <button
+                            class="archive-row__main"
+                            type="button"
+                            data-open-project="ejercicios-excel"
+                        >
+
+                            <span class="archive-row__visual archive-row__visual--bbdd">
+                                <i></i>
+                                <strong>XLS</strong>
+                            </span>
+
+
+                            <span class="archive-row__identity">
+
+                                <small>
+                                    DATA / EXCEL
+                                </small>
+
+                                <strong>
+                                    Ejercicios Excel
+                                </strong>
+
+                            </span>
+
+
+                            <span class="archive-row__category">
+                                BBDD
+                            </span>
+
+
+                            <span class="archive-row__type">
+                                XLSX
+                            </span>
+
+                        </button>
+
+
+                        <a
+                            class="archive-row__file"
+                            href="assets/docs/proyectos/bbdd/DNL-EJERCICIOS_EXCEL.xlsx"
+                            target="_blank"
+                            aria-label="Abrir Ejercicios Excel"
+                        >
+                            ↗
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- REFERENCIAS CRUZADAS -->
+
+                    <article
+                        class="archive-row"
+                        data-project-row
+                        data-project="referencias-cruzadas"
+                        data-category="bbdd"
+                        data-search="access referencias cruzadas consultas base datos"
+                    >
+
+                        <button
+                            class="archive-row__main"
+                            type="button"
+                            data-open-project="referencias-cruzadas"
+                        >
+
+                            <span class="archive-row__visual archive-row__visual--bbdd">
+                                <i></i>
+                                <strong>DB</strong>
+                            </span>
+
+
+                            <span class="archive-row__identity">
+
+                                <small>
+                                    ACCESS / QUERY
+                                </small>
+
+                                <strong>
+                                    Referencias cruzadas
+                                </strong>
+
+                            </span>
+
+
+                            <span class="archive-row__category">
+                                BBDD
+                            </span>
+
+
+                            <span class="archive-row__type">
+                                ACCDB
+                            </span>
+
+                        </button>
+
+
+                        <a
+                            class="archive-row__file"
+                            href="assets/docs/proyectos/bbdd/DNL-REFERENCIAS_CRUZADAS.accdb"
+                            aria-label="Abrir Referencias cruzadas"
+                        >
+                            ↗
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- DER -->
+
+                    <article
+                        class="archive-row"
+                        data-project-row
+                        data-project="der"
+                        data-category="bbdd"
+                        data-search="der diagrama entidad relación base datos visio"
+                    >
+
+                        <button
+                            class="archive-row__main"
+                            type="button"
+                            data-open-project="der"
+                        >
+
+                            <span class="archive-row__visual archive-row__visual--bbdd">
+                                <i></i>
+                                <strong>DER</strong>
+                            </span>
+
+
+                            <span class="archive-row__identity">
+
+                                <small>
+                                    DATA_MODEL / ER
+                                </small>
+
+                                <strong>
+                                    Diagrama Entidad-Relación
+                                </strong>
+
+                            </span>
+
+
+                            <span class="archive-row__category">
+                                BBDD
+                            </span>
+
+
+                            <span class="archive-row__type">
+                                VSDX
+                            </span>
+
+                        </button>
+
+
+                        <a
+                            class="archive-row__file"
+                            href="assets/docs/proyectos/bbdd/DNL-DER.vsdx"
+                            aria-label="Abrir Diagrama Entidad Relación"
+                        >
+                            ↗
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- EJERCICIOS BBDD -->
+
+                    <article
+                        class="archive-row"
+                        data-project-row
+                        data-project="ejercicios-bbdd"
+                        data-category="bbdd"
+                        data-search="access ejercicios bases datos tablas consultas"
+                    >
+
+                        <button
+                            class="archive-row__main"
+                            type="button"
+                            data-open-project="ejercicios-bbdd"
+                        >
+
+                            <span class="archive-row__visual archive-row__visual--bbdd">
+                                <i></i>
+                                <strong>DB</strong>
+                            </span>
+
+
+                            <span class="archive-row__identity">
+
+                                <small>
+                                    ACCESS / PRACTICE
+                                </small>
+
+                                <strong>
+                                    Ejercicios BBDD
+                                </strong>
+
+                            </span>
+
+
+                            <span class="archive-row__category">
+                                BBDD
+                            </span>
+
+
+                            <span class="archive-row__type">
+                                ACCDB
+                            </span>
+
+                        </button>
+
+
+                        <a
+                            class="archive-row__file"
+                            href="assets/docs/proyectos/bbdd/DNL-EJERCICIOS_BBDD.accdb"
+                            aria-label="Abrir Ejercicios BBDD"
+                        >
+                            ↗
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- INFORMES -->
+
+                    <article
+                        class="archive-row"
+                        data-project-row
+                        data-project="informes-bbdd"
+                        data-category="bbdd"
+                        data-search="access informes bases datos reportes"
+                    >
+
+                        <button
+                            class="archive-row__main"
+                            type="button"
+                            data-open-project="informes-bbdd"
+                        >
+
+                            <span class="archive-row__visual archive-row__visual--bbdd">
+                                <i></i>
+                                <strong>RPT</strong>
+                            </span>
+
+
+                            <span class="archive-row__identity">
+
+                                <small>
+                                    ACCESS / REPORTS
+                                </small>
+
+                                <strong>
+                                    Informes
+                                </strong>
+
+                            </span>
+
+
+                            <span class="archive-row__category">
+                                BBDD
+                            </span>
+
+
+                            <span class="archive-row__type">
+                                ACCDB
+                            </span>
+
+                        </button>
+
+
+                        <a
+                            class="archive-row__file"
+                            href="assets/docs/proyectos/bbdd/DNL-INFORMES.accdb"
+                            aria-label="Abrir Informes Access"
+                        >
+                            ↗
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- FACTURA -->
+
+                    <article
+                        class="archive-row"
+                        data-project-row
+                        data-project="factura-moratalaz"
+                        data-category="bbdd"
+                        data-search="factura empresa moratalaz excel hoja cálculo"
+                    >
+
+                        <button
+                            class="archive-row__main"
+                            type="button"
+                            data-open-project="factura-moratalaz"
+                        >
+
+                            <span class="archive-row__visual archive-row__visual--bbdd">
+                                <i></i>
+                                <strong>XLS</strong>
+                            </span>
+
+
+                            <span class="archive-row__identity">
+
+                                <small>
+                                    EXCEL / DOCUMENT
+                                </small>
+
+                                <strong>
+                                    Factura · Empresa Moratalaz
+                                </strong>
+
+                            </span>
+
+
+                            <span class="archive-row__category">
+                                BBDD
+                            </span>
+
+
+                            <span class="archive-row__type">
+                                XLSX
+                            </span>
+
+                        </button>
+
+
+                        <a
+                            class="archive-row__file"
+                            href="assets/docs/proyectos/bbdd/DNL-FACTURA_EMPRESA_MORATALAZ.xlsx"
+                            target="_blank"
+                            aria-label="Abrir Factura Empresa Moratalaz"
+                        >
+                            ↗
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- CONSULTAS ACCIÓN -->
+
+                    <article
+                        class="archive-row"
+                        data-project-row
+                        data-project="consultas-accion"
+                        data-category="bbdd"
+                        data-search="access consultas acción base datos queries"
+                    >
+
+                        <button
+                            class="archive-row__main"
+                            type="button"
+                            data-open-project="consultas-accion"
+                        >
+
+                            <span class="archive-row__visual archive-row__visual--bbdd">
+                                <i></i>
+                                <strong>SQL</strong>
+                            </span>
+
+
+                            <span class="archive-row__identity">
+
+                                <small>
+                                    ACCESS / ACTION_QUERY
+                                </small>
+
+                                <strong>
+                                    Consultas de acción
+                                </strong>
+
+                            </span>
+
+
+                            <span class="archive-row__category">
+                                BBDD
+                            </span>
+
+
+                            <span class="archive-row__type">
+                                ACCDB
+                            </span>
+
+                        </button>
+
+
+                        <a
+                            class="archive-row__file"
+                            href="assets/docs/proyectos/bbdd/DNL-CONSULTAS_ACCION.accdb"
+                            aria-label="Abrir Consultas de acción"
+                        >
+                            ↗
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- =================================================
+                         CASOS REALES
+                         ================================================= -->
+
+
+                    <!-- DIARIO CAMPO -->
+
+                    <article
+                        class="archive-row"
+                        data-project-row
+                        data-project="diario-campo"
+                        data-category="casos"
+                        data-search="roma diario campo erasmus universidad pontificia prácticas caso real experiencia"
+                    >
+
+                        <button
+                            class="archive-row__main"
+                            type="button"
+                            data-open-project="diario-campo"
+                        >
+
+                            <span class="archive-row__visual archive-row__visual--cover">
+
+                                <img
+                                    src="assets/img/proyectos/erasmus-roma-portada.png"
+                                    alt=""
+                                >
+
+                            </span>
+
+
+                            <span class="archive-row__identity">
+
+                                <small>
+                                    REAL_CASE / ROMA
+                                </small>
+
+                                <strong>
+                                    Diario de campo · Erasmus+
+                                </strong>
+
+                            </span>
+
+
+                            <span class="archive-row__category">
+                                CASO REAL
+                            </span>
+
+
+                            <span class="archive-row__type">
+                                DOCX
+                            </span>
+
+                        </button>
+
+
+                        <a
+                            class="archive-row__file"
+                            href="assets/docs/proyectos/casos%20reales/DNL-DiarioCampo.docx"
+                            target="_blank"
+                            aria-label="Abrir Diario de campo"
+                        >
+                            ↗
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- =================================================
+                         DOCUMENTOS
+                         ================================================= -->
+
+
+                    <!-- ANEXO ROMA -->
+
+                    <article
+                        class="archive-row"
+                        data-project-row
+                        data-project="anexo-roma"
+                        data-category="documentos"
+                        data-search="anexo roma erasmus documento prácticas"
+                    >
+
+                        <button
+                            class="archive-row__main"
+                            type="button"
+                            data-open-project="anexo-roma"
+                        >
+
+                            <span class="archive-row__visual archive-row__visual--documentos">
+                                <i></i>
+                                <strong>PDF</strong>
+                            </span>
+
+
+                            <span class="archive-row__identity">
+
+                                <small>
+                                    DOCUMENT / ERASMUS
+                                </small>
+
+                                <strong>
+                                    Anexo Roma
+                                </strong>
+
+                            </span>
+
+
+                            <span class="archive-row__category">
+                                DOCUMENTOS
+                            </span>
+
+
+                            <span class="archive-row__type">
+                                PDF
+                            </span>
+
+                        </button>
+
+
+                        <a
+                            class="archive-row__file"
+                            href="assets/docs/documentos/DNL-AnexoRoma.pdf"
+                            target="_blank"
+                            aria-label="Abrir Anexo Roma"
+                        >
+                            ↗
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- B2 -->
+
+                    <article
+                        class="archive-row"
+                        data-project-row
+                        data-project="b2"
+                        data-category="documentos"
+                        data-search="b2 inglés oxford certificado idioma"
+                    >
+
+                        <button
+                            class="archive-row__main"
+                            type="button"
+                            data-open-project="b2"
+                        >
+
+                            <span class="archive-row__visual archive-row__visual--documentos">
+                                <i></i>
+                                <strong>B2</strong>
+                            </span>
+
+
+                            <span class="archive-row__identity">
+
+                                <small>
+                                    CERTIFICATE / ENGLISH
+                                </small>
+
+                                <strong>
+                                    Certificación B2
+                                </strong>
+
+                            </span>
+
+
+                            <span class="archive-row__category">
+                                DOCUMENTOS
+                            </span>
+
+
+                            <span class="archive-row__type">
+                                PDF
+                            </span>
+
+                        </button>
+
+
+                        <a
+                            class="archive-row__file"
+                            href="assets/docs/documentos/DNL-B2.pdf"
+                            target="_blank"
+                            aria-label="Abrir certificado B2"
+                        >
+                            ↗
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- CV -->
+
+                    <article
+                        class="archive-row"
+                        data-project-row
+                        data-project="cv"
+                        data-category="documentos"
+                        data-search="curriculum curriculum vitae cv dario nieto"
+                    >
+
+                        <button
+                            class="archive-row__main"
+                            type="button"
+                            data-open-project="cv"
+                        >
+
+                            <span class="archive-row__visual archive-row__visual--documentos">
+                                <i></i>
+                                <strong>CV</strong>
+                            </span>
+
+
+                            <span class="archive-row__identity">
+
+                                <small>
+                                    DOCUMENT / PROFILE
+                                </small>
+
+                                <strong>
+                                    Currículum Vitae
+                                </strong>
+
+                            </span>
+
+
+                            <span class="archive-row__category">
+                                DOCUMENTOS
+                            </span>
+
+
+                            <span class="archive-row__type">
+                                PDF
+                            </span>
+
+                        </button>
+
+
+                        <a
+                            class="archive-row__file"
+                            href="assets/docs/documentos/DNL-CV.pdf"
+                            target="_blank"
+                            aria-label="Abrir Currículum Vitae"
+                        >
+                            ↗
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- NOTAS -->
+
+                    <article
+                        class="archive-row"
+                        data-project-row
+                        data-project="notas-gm"
+                        data-category="documentos"
+                        data-search="notas grado medio smr expediente calificaciones 10"
+                    >
+
+                        <button
+                            class="archive-row__main"
+                            type="button"
+                            data-open-project="notas-gm"
+                        >
+
+                            <span class="archive-row__visual archive-row__visual--documentos">
+                                <i></i>
+                                <strong>10</strong>
+                            </span>
+
+
+                            <span class="archive-row__identity">
+
+                                <small>
+                                    ACADEMIC / RECORD
+                                </small>
+
+                                <strong>
+                                    Notas Grado Medio
+                                </strong>
+
+                            </span>
+
+
+                            <span class="archive-row__category">
+                                DOCUMENTOS
+                            </span>
+
+
+                            <span class="archive-row__type">
+                                PDF
+                            </span>
+
+                        </button>
+
+
+                        <a
+                            class="archive-row__file"
+                            href="assets/docs/documentos/DNL-NotasGM.pdf"
+                            target="_blank"
+                            aria-label="Abrir notas de Grado Medio"
+                        >
+                            ↗
+                        </a>
+
+                    </article>
+
+                </div>
+
+
+
+                <!-- =========================================
+                     EMPTY STATE
+                     ========================================= -->
+
+                <div
+                    class="archive-empty"
+                    data-archive-empty
+                    hidden
+                >
+
+                    <span>
+                        404 / NO_MATCH
+                    </span>
+
+                    <strong>
+                        No hay elementos con ese filtro.
+                    </strong>
+
+                    <p>
+                        Prueba con otra categoría o modifica la búsqueda.
+                    </p>
+
+                </div>
+
+
+
+                <!-- =========================================
+                     FOOT STATUS
+                     ========================================= -->
+
+                <div class="archive-explorer__footer">
+
+                    <span>
+                        RESULTS
+                    </span>
+
+                    <strong data-results-count>
+                        58 / 58
+                    </strong>
+
+                    <span>
+                        PROJECT_ARCHIVE / DNL
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             PROJECT INSPECTOR
+             ================================================= -->
+
+        <div
+            class="project-inspector-backdrop"
+            data-inspector-backdrop
+            hidden
+        ></div>
+
+
+        <aside
+            class="project-inspector"
+            data-project-inspector
+            aria-hidden="true"
+        >
+
+            <div class="project-inspector__top">
+
+                <div>
+
+                    <span>
+                        PROJECT_INSPECTOR
+                    </span>
+
+                    <strong>
+                        ACTIVE_FILE
+                    </strong>
+
+                </div>
+
+
+                <button
+                    type="button"
+                    data-close-inspector
+                    aria-label="Cerrar ficha del proyecto"
+                >
+                    ×
+                </button>
+
+            </div>
+
+
+
+            <div
+                class="project-inspector__visual"
+                data-inspector-visual
+            >
+
+                <div class="project-inspector__visual-system">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                    <strong data-inspector-symbol>
+                        DNL
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="project-inspector__content">
+
+                <div class="project-inspector__meta">
+
+                    <span data-inspector-category>
+                        CATEGORY
+                    </span>
+
+                    <strong data-inspector-type>
+                        FILE
+                    </strong>
+
+                </div>
+
+
+                <p
+                    class="project-inspector__code"
+                    data-inspector-code
+                >
+                    PROJECT / 00
+                </p>
+
+
+                <h2 data-inspector-title>
+                    Proyecto
+                </h2>
+
+
+                <p
+                    class="project-inspector__summary"
+                    data-inspector-summary
+                >
+                    Selecciona un elemento del archivo para consultar
+                    su ficha.
+                </p>
+
+
+
+                <div class="project-inspector__data">
+
+                    <div>
+
+                        <span>
+                            CONTEXTO
+                        </span>
+
+                        <p data-inspector-context>
+                            —
+                        </p>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            OBJETIVO
+                        </span>
+
+                        <p data-inspector-objective>
+                            —
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="project-inspector__stack">
+
+                    <span>
+                        STACK / CONCEPTS
+                    </span>
+
+                    <div data-inspector-tags></div>
+
+                </div>
+
+
+
+                <div class="project-inspector__evidence">
+
+                    <div>
+
+                        <span>
+                            EVIDENCE
+                        </span>
+
+                        <strong data-inspector-evidence>
+                            Documento técnico
+                        </strong>
+
+                    </div>
+
+
+                    <a
+                        href="#"
+                        target="_blank"
+                        data-inspector-file
+                    >
+                        Abrir archivo
+                        <span aria-hidden="true">
+                            ↗
+                        </span>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="project-inspector__bottom">
+
+                <span>
+                    DNL / PROJECT_ARCHIVE
+                </span>
+
+                <strong>
+                    VERIFIED_SOURCE
+                </strong>
+
+            </div>
+
+        </aside>
+
+
+
+        <!-- =================================================
+             05 · NEXT
+             ================================================= -->
+
+        <section
+            class="next-section"
+            data-reveal
+        >
+
+            <div class="next-section__route">
+
+                <span></span>
+
+                <i></i>
+
+                <strong>
+                    NEXT_HOP
+                </strong>
+
+            </div>
+
+
+            <div class="next-section__content">
+
+                <p class="section-code">
+                    05 / CONTACTO
+                </p>
+
+
+                <h2>
+                    Ya has visto lo que hago.
+                    <br>
+                    Ahora podemos hablar.
+                </h2>
+
+
+                <a
+                    href="contacto.html"
+                    class="next-link"
+                >
+
+                    <span>
+                        Ir a Contacto
+                    </span>
+
+                    <strong aria-hidden="true">
+                        →
+                    </strong>
+
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <footer class="site-footer">
+
+<p class="site-footer__legal">
+    © <span data-current-year></span> Darío Nieto Lorente ·
+    Código bajo licencia MIT ·
+    Contenido propio: todos los derechos reservados ·
+    <a href="assets/docs/documentos/licencia.html">
+        Licencia y derechos
+    </a>
+
+        <br>
+
+    <button
+  type="button"
+  class="footer-link"
+  data-cookie-settings
+>
+  Configurar cookies
+</button>
+</p>
+
+    </footer>
+
+</body>
+
+</html>

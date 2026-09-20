@@ -1,0 +1,1604 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+
+<head>
+    
+<!-- Google Analytics: se carga únicamente tras consentimiento -->
+<script>
+  window.DTV_ANALYTICS = {
+    id: "G-ZKTD705NXM",
+    storageKey: "dtv_analytics_consent"
+  };
+
+  window.dataLayer = window.dataLayer || [];
+
+  window.gtag = function () {
+    dataLayer.push(arguments);
+  };
+
+  window.dtvLoadAnalytics = function () {
+    if (window.__dtvAnalyticsLoaded) return;
+
+    window.__dtvAnalyticsLoaded = true;
+
+    const script = document.createElement("script");
+    script.async = true;
+    script.src =
+      "https://www.googletagmanager.com/gtag/js?id=" +
+      window.DTV_ANALYTICS.id;
+
+    document.head.appendChild(script);
+
+    gtag("js", new Date());
+    gtag("config", window.DTV_ANALYTICS.id);
+  };
+
+  try {
+    const consent = localStorage.getItem(
+      window.DTV_ANALYTICS.storageKey
+    );
+
+    if (consent === "accepted") {
+      window.dtvLoadAnalytics();
+    }
+  } catch (error) {
+    console.warn("No se pudo consultar el consentimiento.");
+  }
+</script>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Experiencia profesional y capacidades técnicas de Darío Nieto Lorente."
+    >
+
+    <meta
+        name="author"
+        content="Darío Nieto Lorente"
+    >
+
+    <title>
+        Experiencia · Darío Nieto Lorente
+    </title>
+
+    <link
+        rel="icon"
+        href="assets/img/avatar/icono.png"
+    >
+
+    <link
+        rel="stylesheet"
+        href="assets/css/experiencia.css"
+    >
+    <link
+    rel="stylesheet"
+    href="assets/css/shared.css"
+    >
+
+    <script
+    src="assets/js/main.js"
+    defer
+></script>
+
+    <script
+        src="assets/js/experiencia.js"
+        defer
+    ></script>
+</head>
+
+
+<body>
+
+    <a
+        class="skip-link"
+        href="#contenido"
+    >
+        Saltar al contenido
+    </a>
+
+
+    <canvas
+        class="ops-background"
+        data-ops-background
+        aria-hidden="true"
+    ></canvas>
+
+
+    <!-- =====================================================
+         HEADER
+         ===================================================== -->
+
+    <header class="site-header">
+
+        <div class="site-header__inner">
+
+            <a
+                class="brand"
+                href="index.html"
+                aria-label="Ir al Inicio"
+            >
+
+                <img
+                    class="brand__avatar"
+                    src="assets/img/avatar/icono.png"
+                    alt=""
+                >
+
+                <span class="brand__identity">
+
+                    <strong>
+                        DARÍO NIETO LORENTE
+                    </strong>
+
+                    <span>
+                        Portfolio Personal
+                    </span>
+
+                </span>
+
+            </a>
+
+
+            <nav
+                class="site-nav"
+                data-navigation
+                aria-label="Navegación principal"
+            >
+
+                <a href="index.html">
+                    Inicio
+                </a>
+
+                <a href="sobre-mi.html">
+                    Sobre mí
+                </a>
+
+                <a href="formacion.html">
+                    Formación
+                </a>
+
+                <a
+                    href="experiencia.html"
+                    class="is-active"
+                    aria-current="page"
+                >
+                    Experiencia
+                </a>
+
+                <a href="proyectos.html">
+                    Proyectos
+                </a>
+
+                <a href="contacto.html">
+                    Contacto
+                </a>
+
+            </nav>
+
+
+            <div class="site-header__actions">
+
+                <button
+                    class="theme-toggle"
+                    type="button"
+                    data-theme-toggle
+                    aria-label="Activar modo oscuro"
+                >
+
+                    <img
+                        class="theme-toggle__icon theme-toggle__icon--light"
+                        src="assets/img/iconos/modo-claro.svg"
+                        alt=""
+                    >
+
+                    <img
+                        class="theme-toggle__icon theme-toggle__icon--dark"
+                        src="assets/img/iconos/modo-oscuro.svg"
+                        alt=""
+                    >
+
+                </button>
+
+
+                <button
+                    class="menu-toggle"
+                    type="button"
+                    data-menu-toggle
+                    aria-expanded="false"
+                    aria-label="Abrir menú"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <main id="contenido">
+
+
+        <!-- =================================================
+             01 · HERO
+             ================================================= -->
+
+        <section class="experience-hero">
+
+            <div class="experience-hero__meta">
+
+                <span>OPS / EXPERIENCE</span>
+                <span>REAL_ENVIRONMENTS</span>
+                <span>STATUS / RUNNING</span>
+
+            </div>
+
+
+            <div class="experience-hero__content">
+
+                <p class="section-code">
+                    01 / EXPERIENCIA
+                </p>
+
+
+                <h1>
+                    Cuando deja de ser
+                    <span>una práctica.</span>
+                </h1>
+
+
+                <p class="experience-hero__lead">
+                    Trabajar en tecnología cambia el contexto.
+                    <br>
+                    Ya no basta con que algo funcione una vez: Tiene que
+                    funcionar mientras hay personas dependiendo de ello.
+                </p>
+
+
+                <p class="experience-hero__text">
+                    Roma fue mi primer entorno profesional real.
+                    <br>
+                    Después llegaron ASIR y el Instituto de Actuarios de
+                    España, donde actualmente compagino formación y trabajo
+                    técnico.
+                </p>
+
+
+                <a
+                    class="action-link"
+                    href="#roma"
+                >
+                    Entrar en operaciones
+                    <span>↓</span>
+                </a>
+
+            </div>
+
+
+
+            <!-- PROCESOS EN PARALELO -->
+
+            <div class="parallel-system">
+
+                <div class="parallel-system__header">
+
+                    <span>
+                        PROCESS_MANAGER
+                    </span>
+
+                    <strong>
+                        2 RUNNING
+                    </strong>
+
+                </div>
+
+
+                <div class="parallel-system__core">
+
+                    <div class="parallel-process">
+
+                        <div class="parallel-process__meta">
+
+                            <span>
+                                PID / 01
+                            </span>
+
+                            <strong>
+                                ASIR
+                            </strong>
+
+                            <small>
+                                SEP 2025 → NOW
+                            </small>
+
+                        </div>
+
+
+                        <div class="parallel-process__track">
+
+                            <span></span>
+
+                        </div>
+
+
+                        <p>
+                            Formación superior
+                        </p>
+
+                    </div>
+
+
+                    <div class="parallel-process parallel-process--work">
+
+                        <div class="parallel-process__meta">
+
+                            <span>
+                                PID / 02
+                            </span>
+
+                            <strong>
+                                IAE · TÉCNICO IT
+                            </strong>
+
+                            <small>
+                                MAR 2026 → NOW
+                            </small>
+
+                        </div>
+
+
+                        <div class="parallel-process__track">
+
+                            <span></span>
+
+                        </div>
+
+
+                        <p>
+                            Jornada parcial · Presencial
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="parallel-system__footer">
+
+                    <span>
+                        MODE
+                    </span>
+
+                    <strong>
+                        STUDY + WORK
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             02 · ROMA
+             ================================================= -->
+
+        <section
+            class="rome-section"
+            id="roma"
+        >
+
+            <header
+                class="section-heading"
+                data-reveal
+            >
+
+                <div>
+
+                    <p class="section-code">
+                        02 / FIRST_REAL_ENVIRONMENT
+                    </p>
+
+                    <h2>
+                        Roma.
+                        <br>
+                        Primera entrada en producción.
+                    </h2>
+
+                </div>
+
+
+                <p>
+                    Las prácticas Erasmus+ en la Universidad Pontificia
+                    de la Santa Cruz fueron mi primer contacto prolongado
+                    con un departamento informático real.
+                </p>
+
+            </header>
+
+
+
+            <div class="rome-system">
+
+                <div
+                    class="rome-system__visual"
+                    data-reveal
+                >
+
+                    <img
+                        src="assets/img/personal/dario-roma2.jpg"
+                        alt="Darío durante su estancia profesional en Roma"
+                    >
+
+
+                    <div class="rome-system__visual-meta">
+
+                        <span>
+                            ROMA / IT
+                        </span>
+
+                        <strong>
+                            10.03.2025 — 23.05.2025
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+
+                <div
+                    class="rome-console"
+                    data-reveal
+                >
+
+                    <div class="rome-console__top">
+
+                        <span>
+                            AUXILIAR INFORMÁTICO
+                        </span>
+
+                        <strong>
+                            PUSC / ERASMUS+
+                        </strong>
+
+                    </div>
+
+
+                    <div class="rome-console__intro">
+
+                        <p>
+                            WORK_CONTEXT / 01
+                        </p>
+
+                        <h3>
+                            Soporte, eventos y sistemas en un entorno internacional.
+                        </h3>
+
+                        <p>
+                            Presté asistencia técnica en aulas, estaciones de
+                            trabajo y salas de control utilizadas para eventos
+                            y retransmisiones.
+                        </p>
+
+                    </div>
+
+
+                    <div class="rome-operations">
+
+                        <div>
+                            <span>01</span>
+                            <p>Preparación de eventos y streaming con OBS Studio.</p>
+                        </div>
+
+                        <div>
+                            <span>02</span>
+                            <p>Soporte a docentes en Windows y macOS.</p>
+                        </div>
+
+                        <div>
+                            <span>03</span>
+                            <p>Gestión de accesos físicos mediante Axess.</p>
+                        </div>
+
+                        <div>
+                            <span>04</span>
+                            <p>Clonación y despliegue de equipos con Clonezilla.</p>
+                        </div>
+
+                        <div>
+                            <span>05</span>
+                            <p>Redes básicas y despliegue de estaciones de trabajo.</p>
+                        </div>
+
+                        <div>
+                            <span>06</span>
+                            <p>Mantenimiento de impresoras, proyectores y periféricos.</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="rome-console__language">
+
+                        <span>
+                            INTERNATIONAL_CONTEXT
+                        </span>
+
+                        <p>
+                            Italiano como idioma principal y uso de inglés
+                            en tareas y eventos internacionales.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- EVIDENCIAS SIMPLES -->
+
+            <div
+                class="rome-evidence"
+                data-reveal
+            >
+
+                <a
+                    href="assets/docs/proyectos/casos reales/DNL-DiarioCampo.docx"
+                    target="_blank"
+                >
+
+                    <span>
+                        EVIDENCE / 01
+                    </span>
+
+                    <strong>
+                        Diario de campo
+                    </strong>
+
+                    <i>↗</i>
+
+                </a>
+
+
+                <a
+                    href="assets/docs/documentos/DNL-AnexoRoma.pdf"
+                    target="_blank"
+                >
+
+                    <span>
+                        EVIDENCE / 02
+                    </span>
+
+                    <strong>
+                        Anexo Erasmus+
+                    </strong>
+
+                    <i>↗</i>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             03 · IAE
+             ================================================= -->
+
+        <section class="iae-section">
+
+            <header
+                class="section-heading"
+                data-reveal
+            >
+
+                <div>
+
+                    <p class="section-code">
+                        03 / CURRENT_OPERATIONS
+                    </p>
+
+                    <h2>
+                        Un puesto en el IAE.
+                        <br>
+                        Varios sistemas conectados.
+                    </h2>
+
+                </div>
+
+
+                <p>
+                    Desde marzo de 2026 trabajo como Técnico Informático
+                    en el Instituto de Actuarios de España a jornada parcial,
+                    mientras curso ASIR.
+                    <br>
+                    Mi trabajo atraviesa web, infraestructura, soporte,
+                    colaboración y audiovisual.
+                    <br>
+                    <a href="https://actuarios.org/" target="_blank">WEB DEL IAE</a>
+                </p>
+
+            </header>
+
+
+
+            <!-- COMMAND CENTER -->
+
+            <div
+                class="ops-center"
+                data-ops-center
+                data-reveal
+            >
+
+
+                <!-- MAPA -->
+
+                <div class="ops-map">
+
+                    <div class="ops-map__rings" aria-hidden="true">
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                    </div>
+
+
+                    <div class="ops-map__cross" aria-hidden="true">
+
+                        <i></i>
+                        <i></i>
+
+                    </div>
+
+
+                    <div class="ops-map__core">
+
+                        <img
+                            src="assets/img/avatar/icono.png"
+                            alt=""
+                        >
+
+                        <span>
+                            DNL
+                        </span>
+
+                        <strong>
+                            IT TECH
+                        </strong>
+
+                        <small>
+                            ACTIVE
+                        </small>
+
+                    </div>
+
+
+
+                    <button
+                        class="ops-node ops-node--web is-active"
+                        type="button"
+                        data-ops-node="web"
+                    >
+                        <span>01</span>
+                        <strong>WEB</strong>
+                    </button>
+
+
+                    <button
+                        class="ops-node ops-node--infra"
+                        type="button"
+                        data-ops-node="infra"
+                    >
+                        <span>02</span>
+                        <strong>INFRA</strong>
+                    </button>
+
+
+                    <button
+                        class="ops-node ops-node--support"
+                        type="button"
+                        data-ops-node="support"
+                    >
+                        <span>03</span>
+                        <strong>SUPPORT</strong>
+                    </button>
+
+
+                    <button
+                        class="ops-node ops-node--collab"
+                        type="button"
+                        data-ops-node="collab"
+                    >
+                        <span>04</span>
+                        <strong>COLLAB</strong>
+                    </button>
+
+
+                    <button
+                        class="ops-node ops-node--av"
+                        type="button"
+                        data-ops-node="av"
+                    >
+                        <span>05</span>
+                        <strong>A/V</strong>
+                    </button>
+
+
+                    <span
+                        class="ops-map__packet"
+                        aria-hidden="true"
+                    ></span>
+
+                </div>
+
+
+
+                <!-- OUTPUT -->
+
+                <div
+                    class="ops-output"
+                    aria-live="polite"
+                >
+
+                    <div class="ops-output__top">
+
+                        <span>
+                            SELECTED_MODULE
+                        </span>
+
+                        <strong data-ops-status>
+                            WEB / ACTIVE
+                        </strong>
+
+                    </div>
+
+
+                    <div class="ops-output__body">
+
+                        <p
+                            class="ops-output__code"
+                            data-ops-code
+                        >
+                            MODULE / 01
+                        </p>
+
+
+                        <h3 data-ops-title>
+                            Plataformas web y gestión
+                        </h3>
+
+
+                        <p data-ops-description>
+                            Administración de WordPress y Elementor,
+                            trabajando con plugins, formularios, materiales,
+                            usuarios, roles y permisos. Gestión de Zoho y de
+                            las conexiones e integraciones existentes mediante API.
+                        </p>
+
+
+                        <div
+                            class="ops-output__stack"
+                            data-ops-stack
+                        >
+
+                            <span>WordPress</span>
+                            <span>Elementor</span>
+                            <span>Zoho</span>
+                            <span>API</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="ops-output__footer">
+
+                        <span>
+                            ROLE / TÉCNICO INFORMÁTICO
+                        </span>
+
+                        <strong>
+                            IAE · 2026—NOW
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <a
+                class="linkedin-reference"
+                href="https://www.linkedin.com/in/dar%C3%ADo-nieto-lorente/"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-reveal
+            >
+
+                <span>
+                    EXTERNAL_PROFILE
+                </span>
+
+                <strong>
+                    Ver experiencia profesional en LinkedIn
+                </strong>
+
+                <i>
+                    ↗
+                </i>
+
+            </a>
+
+        </section>
+
+
+
+        <!-- =================================================
+             04 · CAPACIDADES
+             ================================================= -->
+
+        <section class="capabilities-section">
+
+            <header
+                class="section-heading"
+                data-reveal
+            >
+
+                <div>
+
+                    <p class="section-code">
+                        04 / CAPABILITY_ENGINE
+                    </p>
+
+                    <h2>
+                        No es una lista de tecnologías.
+                        <br>
+                        Es un sistema de capacidades.
+                    </h2>
+
+                </div>
+
+
+                <p>
+                    Esta capa resume capacidades técnicas de mi perfil.
+                    <br>
+                    No representa únicamente lo utilizado en el Instituto:
+                    reúne competencias desarrolladas en formación, proyectos
+                    y experiencia.
+                </p>
+
+            </header>
+
+
+
+            <div
+                class="capability-engine"
+                data-capability-engine
+            >
+
+
+                <!-- NETWORK BACKBONE -->
+
+                <div
+                    class="network-backbone"
+                    data-reveal
+                >
+
+                    <div class="network-backbone__heading">
+
+                        <div>
+
+                            <span>
+                                PRIMARY_BUS / NETWORK
+                            </span>
+
+                            <strong>
+                                REDES
+                            </strong>
+
+                        </div>
+
+
+                        <small>
+                            5 NODES
+                        </small>
+
+                    </div>
+
+
+                    <div class="network-route">
+
+                        <div
+                            class="network-route__line"
+                            aria-hidden="true"
+                        ></div>
+
+
+                        <button
+                            type="button"
+                            class="capability-node is-active"
+                            data-capability="standards"
+                        >
+                            <span>01</span>
+                            <strong>Estándares técnicos</strong>
+                            <i></i>
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="capability-node"
+                            data-capability="topology"
+                        >
+                            <span>02</span>
+                            <strong>Topologías</strong>
+                            <i></i>
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="capability-node"
+                            data-capability="services"
+                        >
+                            <span>03</span>
+                            <strong>Servicios en red</strong>
+                            <i></i>
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="capability-node"
+                            data-capability="cabling"
+                        >
+                            <span>04</span>
+                            <strong>Cableado estructurado</strong>
+                            <i></i>
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="capability-node"
+                            data-capability="monitor"
+                        >
+                            <span>05</span>
+                            <strong>Análisis y monitorización</strong>
+                            <i></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- OUTPUT CENTRAL -->
+
+                <div
+                    class="capability-output"
+                    data-reveal
+                    aria-live="polite"
+                >
+
+                    <div class="capability-output__radar" aria-hidden="true">
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                        <i></i>
+
+                    </div>
+
+
+                    <div class="capability-output__content">
+
+                        <p data-capability-code>
+                            NETWORK / 01
+                        </p>
+
+                        <h3 data-capability-title>
+                            Aplicación de estándares técnicos
+                        </h3>
+
+                        <span data-capability-text>
+                            Base para diseñar, desplegar y documentar
+                            infraestructura de red con criterios técnicos.
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- SECONDARY STACK -->
+
+                <div
+                    class="secondary-stack"
+                    data-reveal
+                >
+
+                    <div class="secondary-stack__heading">
+
+                        <span>
+                            SECONDARY_BUS
+                        </span>
+
+                        <strong>
+                            OTROS
+                        </strong>
+
+                    </div>
+
+
+                    <button
+                        type="button"
+                        data-capability="office"
+                    >
+                        <small>01</small>
+                        <strong>Microsoft Office 365</strong>
+                        <span>OFIMÁTICA</span>
+                    </button>
+
+
+                    <button
+                        type="button"
+                        data-capability="systems"
+                    >
+                        <small>02</small>
+                        <strong>Windows / Linux</strong>
+                        <span>SISTEMAS</span>
+                    </button>
+
+
+                    <button
+                        type="button"
+                        data-capability="databases"
+                    >
+                        <small>03</small>
+                        <strong>Bases de datos</strong>
+                        <span>ADMIN</span>
+                    </button>
+
+
+                    <button
+                        type="button"
+                        data-capability="frontend"
+                    >
+                        <small>04</small>
+                        <strong>HTML / CSS</strong>
+                        <span>WEB</span>
+                    </button>
+
+
+                    <button
+                        type="button"
+                        data-capability="cms"
+                    >
+                        <small>05</small>
+                        <strong>WordPress / Zoho</strong>
+                        <span>CMS / CRM</span>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             05 · UPRO
+             ================================================= -->
+
+        <section
+            class="live-case"
+            data-live-case
+        >
+
+            <div
+                class="live-case__header"
+                data-reveal
+            >
+
+                <div>
+
+                    <p class="section-code">
+                        05 / REAL_CASE
+                    </p>
+
+                    <h2>
+                        Y entonces todo
+                        <span>está en directo.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="live-case__status">
+
+                    <i></i>
+
+                    <span>
+                        LIVE_OPERATIONS
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="live-stage">
+
+
+                <!-- FOTO -->
+
+                <div class="live-stage__visual">
+
+                    <img
+                        src="assets/img/proyectos/evento-iae-upro-portada.png"
+                        alt="Equipo y asistentes durante el evento UPRO"
+                    >
+
+
+                    <div class="live-stage__visual-overlay">
+
+                        <span>
+                            IAE / UPRO
+                        </span>
+
+                        <strong>
+                            REAL CASE
+                        </strong>
+
+                    </div>
+
+
+                    <div class="live-stage__metrics">
+
+                        <div>
+                            <strong>+200</strong>
+                            <span>Asistentes</span>
+                        </div>
+
+                        <div>
+                            <strong>HYBRID</strong>
+                            <span>Sesiones</span>
+                        </div>
+
+                        <div>
+                            <strong>LIVE</strong>
+                            <span>Operativa</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PANEL DERECHO -->
+
+                <div class="live-control">
+
+                    <div class="live-control__top">
+
+                        <span>
+                            CONTROL_ROOM
+                        </span>
+
+                        <strong data-live-label>
+                            PREPARATION
+                        </strong>
+
+                    </div>
+
+
+                    <div class="live-control__progress">
+
+                        <span></span>
+
+                    </div>
+
+
+                    <div class="live-control__steps">
+
+
+                        <article
+                            class="live-step is-active"
+                            data-live-step="0"
+                        >
+
+                            <span class="live-step__number">
+                                01
+                            </span>
+
+                            <div>
+
+                                <small>
+                                    PREPARATION
+                                </small>
+
+                                <h3>
+                                    Antes del directo.
+                                </h3>
+
+                                <p>
+                                    Preparación de plataforma, evidencias,
+                                    equipos, contenidos y coordinación.
+                                    <br>
+                                    Gran parte del resultado se decide antes
+                                    de que llegue el primer asistente.
+                                </p>
+
+                            </div>
+
+                        </article>
+
+
+
+                        <article
+                            class="live-step"
+                            data-live-step="1"
+                        >
+
+                            <span class="live-step__number">
+                                02
+                            </span>
+
+                            <div>
+
+                                <small>
+                                    OPERATIONS
+                                </small>
+
+                                <h3>
+                                    Todo conectado.
+                                </h3>
+
+                                <p>
+                                    Administración de la plataforma UPRO,
+                                    soporte técnico y coordinación operativa
+                                    entre personas, tecnología y producción.
+                                </p>
+
+                            </div>
+
+                        </article>
+
+
+
+                        <article
+                            class="live-step"
+                            data-live-step="2"
+                        >
+
+                            <span class="live-step__number">
+                                03
+                            </span>
+
+                            <div>
+
+                                <small>
+                                    CONTROL_ROOM
+                                </small>
+
+                                <h3>
+                                    Cuando no existe “volver a intentar”.
+                                </h3>
+
+                                <p>
+                                    Trabajo desde sala de control con audio,
+                                    vídeo, presentaciones y sesiones híbridas
+                                    funcionando en tiempo real.
+                                </p>
+
+                            </div>
+
+                        </article>
+
+
+
+                        <article
+                            class="live-step"
+                            data-live-step="3"
+                        >
+
+                            <span class="live-step__number">
+                                04
+                            </span>
+
+                            <div>
+
+                                <small>
+                                    RESULT
+                                </small>
+
+                                <h3>
+                                    Tecnología + organización + personas.
+                                </h3>
+
+                                <p>
+                                    La experiencia confirmó algo importante:
+                                    En momentos de presión, la diferencia la
+                                    marca todo lo que se ha preparado antes y
+                                    cómo se coordina el equipo.
+                                </p>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div
+                class="live-case__conclusion"
+                data-reveal
+            >
+
+                <p>
+                    No fue el proyecto con las tecnologías más complejas.
+                    <br>
+                    Fue uno de los contextos donde más importaba que
+                    <strong>todo funcionara cuando tenía que funcionar.</strong>
+                </p>
+
+
+                <a
+                    href="https://www.linkedin.com/feed/update/urn:li:activity:7468670698157441024/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Ver publicación del evento en LinkedIn
+                    <span>↗</span>
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             06 · COMMUNITY
+             ================================================= -->
+
+        <section class="community-section">
+
+            <header
+                class="section-heading"
+                data-reveal
+            >
+
+                <div>
+
+                    <p class="section-code">
+                        06 / EXPERIENCE_COMMUNITY
+                    </p>
+
+                    <h2>
+                        Experiencia fuera del puesto.
+                    </h2>
+
+                </div>
+
+
+                <p>
+                    No son empleos.
+                    <br>
+                    Son situaciones en las que también he tenido que
+                    colaborar, organizarme y aportar.
+                </p>
+
+            </header>
+
+
+
+            <div class="community-log">
+
+
+                <article
+                    data-reveal
+                >
+
+                    <div class="community-log__date">
+
+                        <span>
+                            NOV
+                        </span>
+
+                        <strong>
+                            2024
+                        </strong>
+
+                    </div>
+
+
+                    <div class="community-log__line">
+                        <i></i>
+                    </div>
+
+
+                    <div class="community-log__content">
+
+                        <p>
+                            COMMUNITY / LOGISTICS
+                        </p>
+
+                        <h3>
+                            Apoyo durante la DANA
+                        </h3>
+
+                        <span>
+                            Realicé tareas de almacenaje, tanto recibir productos y almacenarlos como montarlos en camiones.
+                            <br>
+                            Estos productos serian destinados a las víctimas de la DANA en Valencia.
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+
+                <article
+                    data-reveal
+                >
+
+                    <div class="community-log__date">
+
+                        <span>
+                            OCT
+                        </span>
+
+                        <strong>
+                            2023
+                        </strong>
+
+                    </div>
+
+
+                    <div class="community-log__line">
+                        <i></i>
+                    </div>
+
+
+                    <div class="community-log__content">
+
+                        <p>
+                            COMMUNITY / SUPPORT
+                        </p>
+
+                        <h3>
+                            Enseñanza a adolescentes sobre montaje y mantenimiento de equipos.
+                        </h3>
+
+                        <span>
+                            Participación como profesor para la fundación Cáritas.
+                        </span>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             07 · NEXT
+             ================================================= -->
+
+        <section
+            class="next-section"
+            data-reveal
+        >
+
+            <div class="next-section__signal">
+
+                <span></span>
+
+                <i></i>
+
+                <strong>
+                    NEXT_HOP
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <p class="section-code">
+                    07 / PROYECTOS
+                </p>
+
+                <h2>
+                    La experiencia enseña el contexto.
+                    <br>
+                    Los proyectos enseñan cómo trabajo.
+                </h2>
+
+
+                <a
+                    href="proyectos.html"
+                    class="next-link"
+                >
+                    <span>
+                        Entrar en Proyectos
+                    </span>
+
+                    <strong>
+                        →
+                    </strong>
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <footer class="site-footer">
+
+<p class="site-footer__legal">
+    © <span data-current-year></span> Darío Nieto Lorente ·
+    Código bajo licencia MIT ·
+    Contenido propio: todos los derechos reservados ·
+    <a href="assets/docs/documentos/licencia.html">
+        Licencia y derechos
+    </a>
+
+        <br>
+
+    <button
+  type="button"
+  class="footer-link"
+  data-cookie-settings
+>
+  Configurar cookies
+</button>
+</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+
+  <head>
+   
+<!-- Google Analytics: se carga únicamente tras consentimiento -->
+<script>
+  window.DTV_ANALYTICS = {
+    id: "G-ZKTD705NXM",
+    storageKey: "dtv_analytics_consent"
+  };
+
+  window.dataLayer = window.dataLayer || [];
+
+  window.gtag = function () {
+    dataLayer.push(arguments);
+  };
+
+  window.dtvLoadAnalytics = function () {
+    if (window.__dtvAnalyticsLoaded) return;
+
+    window.__dtvAnalyticsLoaded = true;
+
+    const script = document.createElement("script");
+    script.async = true;
+    script.src =
+      "https://www.googletagmanager.com/gtag/js?id=" +
+      window.DTV_ANALYTICS.id;
+
+    document.head.appendChild(script);
+
+    gtag("js", new Date());
+    gtag("config", window.DTV_ANALYTICS.id);
+  };
+
+  try {
+    const consent = localStorage.getItem(
+      window.DTV_ANALYTICS.storageKey
+    );
+
+    if (consent === "accepted") {
+      window.dtvLoadAnalytics();
+    }
+  } catch (error) {
+    console.warn("No se pudo consultar el consentimiento.");
+  }
+</script>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+      content="Portfolio personal de Darío Nieto Lorente, técnico informático especializado en sistemas y redes.">
+
+    <meta name="author" content="Darío Nieto Lorente">
+
+    <meta name="theme-color" content="#edf3f6">
+
+    <title>
+      Darío Nieto Lorente · Sistemas, Redes e IT
+    </title>
+
+    <link rel="icon" href="assets/img/avatar/icono.png">
+
+    <link rel="stylesheet" href="assets/css/index.css">
+
+    <link
+    rel="stylesheet"
+    href="assets/css/shared.css"
+    >
+
+    <script
+    src="assets/js/main.js"
+    defer
+></script>
+
+    <script src="assets/js/index.js" defer></script>
+  </head>
+
+
+  <body>
+
+    <a class="skip-link" href="#contenido">
+      Saltar al contenido
+    </a>
+
+
+    <!-- =====================================================
+         FONDO TÉCNICO ANIMADO
+         ===================================================== -->
+
+    <canvas class="network-background" data-network-background aria-hidden="true"></canvas>
+
+
+    <!-- =====================================================
+         HEADER
+         ===================================================== -->
+
+    <header class="site-header" data-header>
+
+      <div class="site-header__inner">
+
+        <a class="brand" href="index.html" aria-label="Ir al Inicio">
+
+          <img class="brand__avatar" src="assets/img/avatar/icono.png" alt="">
+
+          <span class="brand__identity">
+
+            <strong>
+              DARÍO NIETO LORENTE
+            </strong>
+
+            <span>
+              Portfolio Personal
+            </span>
+
+          </span>
+
+        </a>
+
+
+        <nav class="site-nav" data-navigation aria-label="Navegación principal">
+
+          <a class="site-nav__link is-active" href="index.html" aria-current="page">
+            Inicio
+          </a>
+
+          <a class="site-nav__link" href="sobre-mi.html">
+            Sobre mí
+          </a>
+
+          <a class="site-nav__link" href="formacion.html">
+            Formación
+          </a>
+
+          <a class="site-nav__link" href="experiencia.html">
+            Experiencia
+          </a>
+
+          <a class="site-nav__link" href="proyectos.html">
+            Proyectos
+          </a>
+
+          <a class="site-nav__link" href="contacto.html">
+            Contacto
+          </a>
+
+        </nav>
+
+
+        <div class="site-header__actions">
+
+          <button class="theme-toggle" type="button" data-theme-toggle aria-label="Activar modo oscuro"
+            title="Cambiar modo de visualización">
+
+            <img class="theme-toggle__icon theme-toggle__icon--light" src="assets/img/iconos/modo-claro.svg" alt="">
+
+            <img class="theme-toggle__icon theme-toggle__icon--dark" src="assets/img/iconos/modo-oscuro.svg" alt="">
+
+          </button>
+
+
+          <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-label="Abrir menú">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+          </button>
+
+        </div>
+
+      </div>
+
+    </header>
+
+
+    <main id="contenido">
+
+
+      <!-- =================================================
+             01 · HERO
+             ================================================= -->
+
+      <section class="hero" aria-labelledby="hero-title">
+
+        <div class="hero__technical-index" aria-hidden="true">
+          <span>01</span>
+          <span>DNL / HOME</span>
+          <span>40.4168° N</span>
+          <span>STATUS / ACTIVE</span>
+        </div>
+
+
+        <div class="hero__content">
+
+          <p class="hero__role">
+            Técnico informático de sistemas y redes
+          </p>
+
+
+          <h1 class="hero__title" id="hero-title">
+            <span>DARÍO</span>
+            <span>NIETO LORENTE</span>
+          </h1>
+
+
+          <div class="hero__statement">
+
+            <p>
+              Informático de redes y sistemas con ambición profesional,
+              exigencia personal, curiosidad por la cultura y una forma
+              de trabajar basada en
+              <span class="hero__rotating-word" data-rotating-word
+                data-words="aprender|organizar|gestionar|analizar|pensar" aria-hidden="true">
+                aprender
+              </span>
+            </p>
+
+            <span class="sr-only">
+              aprender, organizar, gestionar, analizar y pensar.
+            </span>
+
+          </div>
+
+
+          <p class="hero__personal">
+            Trabajo con sistemas y redes, pero no me interesa quedarme
+            únicamente en ejecutar una tarea.
+            <br>
+            Me gusta entender qué ocurre por debajo, ordenar el problema,
+            documentarlo y sacar una forma mejor de hacerlo la siguiente vez.
+            <br>
+            Esa mezcla de técnica, criterio y curiosidad es la que quiero
+            enseñar en este portfolio.
+          </p>
+
+
+          <div class="hero__actions">
+
+            <a class="action-link action-link--primary" href="#portfolio-map">
+              Explorar el portfolio
+              <span aria-hidden="true">↓</span>
+            </a>
+
+            <a class="action-link" href="#proyectos-destacados">
+              Ver proyectos destacados
+              <span aria-hidden="true">↘</span>
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="hero__visual" data-reveal>
+
+          <figure class="hero-photo">
+
+            <div class="hero-photo__frame">
+
+              <img src="assets/img/personal/dario-inicio.jpg" alt="Darío Nieto Lorente" class="hero-photo__image">
+
+              <div class="hero-photo__coordinates" aria-hidden="true">
+                <span>IMG / PROFILE_01</span>
+                <span>SYS.NET</span>
+              </div>
+
+              <span class="hero-photo__node hero-photo__node--one" aria-hidden="true"></span>
+
+              <span class="hero-photo__node hero-photo__node--two" aria-hidden="true"></span>
+
+            </div>
+
+
+            <figcaption>
+
+              <span>
+                PROFILE / 01
+              </span>
+
+              <strong>
+                Sistemas · Redes · IT
+              </strong>
+
+            </figcaption>
+
+          </figure>
+
+
+          <div class="profile-terminal">
+
+            <div class="profile-terminal__top">
+
+              <span></span>
+              <span></span>
+              <span></span>
+
+              <p>
+                dario@portfolio:~
+              </p>
+
+            </div>
+
+
+            <div class="profile-terminal__body">
+
+              <p class="terminal-command">
+                <span>$</span>
+                profile --summary
+              </p>
+
+              <div class="terminal-output">
+
+                <p>&gt; enfoque</p>
+
+                <p>
+                  redes_sistemas=<strong>true</strong>
+                </p>
+
+                <p>
+                  documentacion=<strong>true</strong>
+                </p>
+
+                <p>
+                  pensamiento=<strong>propio</strong>
+                </p>
+
+                <p>
+                  aprendizaje=<strong>continuo</strong>
+                </p>
+
+              </div>
+
+              <p class="terminal-status">
+                Status:
+                <strong>Building</strong>
+                <span class="terminal-cursor"></span>
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="hero__route" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+      </section>
+
+
+
+      <!-- =================================================
+             02 · QUÉ ENCONTRARÁS
+             ================================================= -->
+
+      <section class="portfolio-section" id="portfolio-map">
+
+        <header class="section-heading" data-reveal>
+
+          <div>
+
+            <p class="section-code">
+              02 / PORTFOLIO_MAP
+            </p>
+
+            <h2>
+              No es una colección de páginas.
+              <br>
+              Es un mapa de cómo trabajo y quién soy.
+            </h2>
+
+          </div>
+
+
+          <p>
+            Cada sección enseña una parte distinta del perfil.
+            <br>
+            La idea no es repetir información, sino conectar persona,
+            formación, experiencia y trabajo técnico.
+          </p>
+
+        </header>
+
+
+        <div class="portfolio-map" data-portfolio-map data-active-node="about" data-reveal>
+
+          <svg class="portfolio-map__connections" viewBox="0 0 1000 540" preserveAspectRatio="none" aria-hidden="true">
+
+            <path data-map-line="about" d="M500 270 C390 250 290 170 185 118" />
+
+            <path data-map-line="education" d="M500 270 C600 210 705 145 815 112" />
+
+            <path data-map-line="experience" d="M500 270 C650 280 755 300 875 307" />
+
+            <path data-map-line="projects" d="M500 270 C405 335 310 395 205 428" />
+
+            <path data-map-line="contact" d="M500 270 C560 360 625 420 705 455" />
+
+          </svg>
+
+
+          <div class="portfolio-map__core">
+
+            <span class="portfolio-map__core-index">
+              NODE / 00
+            </span>
+
+            <strong>
+              DNL
+            </strong>
+
+            <p>
+              PORTFOLIO
+            </p>
+
+            <span class="portfolio-map__pulse"></span>
+
+          </div>
+
+
+          <a class="portfolio-node portfolio-node--about is-active" href="sobre-mi.html" data-map-node="about"
+            data-map-title="Sobre mí" data-map-copy="Persona, cultura, deporte y forma de pensar.">
+
+            <span class="portfolio-node__point"></span>
+
+            <span class="portfolio-node__index">
+              01
+            </span>
+
+            <strong>
+              Sobre mí
+            </strong>
+
+            <small>
+              Persona / Cultura
+            </small>
+
+          </a>
+
+
+          <a class="portfolio-node portfolio-node--education" href="formacion.html" data-map-node="education"
+            data-map-title="Formación" data-map-copy="Evolución académica, idiomas, Erasmus y aprendizaje.">
+
+            <span class="portfolio-node__point"></span>
+
+            <span class="portfolio-node__index">
+              02
+            </span>
+
+            <strong>
+              Formación
+            </strong>
+
+            <small>
+              Aprendizaje / Evolución
+            </small>
+
+          </a>
+
+
+          <a class="portfolio-node portfolio-node--experience" href="experiencia.html" data-map-node="experience"
+            data-map-title="Experiencia" data-map-copy="Trabajo real, infraestructura y herramientas profesionales.">
+
+            <span class="portfolio-node__point"></span>
+
+            <span class="portfolio-node__index">
+              03
+            </span>
+
+            <strong>
+              Experiencia
+            </strong>
+
+            <small>
+              Trabajo / Tecnología
+            </small>
+
+          </a>
+
+
+          <a class="portfolio-node portfolio-node--projects" href="proyectos.html" data-map-node="projects"
+            data-map-title="Proyectos" data-map-copy="Prácticas, documentación, casos reales y trabajo técnico.">
+
+            <span class="portfolio-node__point"></span>
+
+            <span class="portfolio-node__index">
+              04
+            </span>
+
+            <strong>
+              Proyectos
+            </strong>
+
+            <small>
+              Sistemas / Redes
+            </small>
+
+          </a>
+
+
+          <a class="portfolio-node portfolio-node--contact" href="contacto.html" data-map-node="contact"
+            data-map-title="Contacto" data-map-copy="Un punto directo para seguir hablando.">
+
+            <span class="portfolio-node__point"></span>
+
+            <span class="portfolio-node__index">
+              05
+            </span>
+
+            <strong>
+              Contacto
+            </strong>
+
+            <small>
+              Connect / Next hop
+            </small>
+
+          </a>
+
+
+          <div class="portfolio-map__output" aria-live="polite">
+
+            <p>
+              SELECTED_NODE
+            </p>
+
+            <strong data-map-output-title>
+              Sobre mí
+            </strong>
+
+            <span data-map-output-copy>
+              Persona, cultura, deporte y forma de pensar.
+            </span>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- =================================================
+             03 · PROYECTOS DESTACADOS
+             ================================================= -->
+
+      <section class="featured-section" id="proyectos-destacados">
+
+        <header class="section-heading section-heading--projects" data-reveal>
+
+          <div>
+
+            <p class="section-code">
+              03 / FEATURED_WORK
+            </p>
+
+            <h2>
+              Tres trabajos.
+              <br>
+              Tres formas de demostrarlo.
+            </h2>
+
+          </div>
+
+
+          <p>
+            Redes, sistemas y resolución técnica.
+            <br>
+            El resto del archivo está en Proyectos.
+          </p>
+
+        </header>
+
+
+        <div class="featured-projects">
+
+
+          <!-- CABLEADO -->
+
+          <article class="featured-project featured-project--primary" data-reveal>
+
+            <div class="featured-project__index">
+
+              <span>
+                01
+              </span>
+
+              <p>
+                INFRAESTRUCTURA
+              </p>
+
+            </div>
+
+
+            <figure class="featured-project__visual">
+
+              <img src="assets/img/proyectos/cableado-portada.png" alt="Portada del proyecto de cableado estructurado">
+
+              <figcaption>
+                PROJECT / CABLING
+              </figcaption>
+
+            </figure>
+
+
+            <div class="featured-project__content">
+
+              <p class="featured-project__status">
+                <span></span>
+                Destacado
+              </p>
+
+              <h3>
+                Cableado estructurado
+              </h3>
+
+              <p>
+                Diseño y documentación de una infraestructura de
+                cableado estructurado.
+                <br>
+                Un trabajo donde organización, planificación y
+                criterio técnico importan tanto como el resultado.
+              </p>
+
+              <div class="featured-project__meta">
+
+                <span>
+                  TYPE: Infraestructura
+                </span>
+
+                <span>
+                  FILE: ZIP
+                </span>
+
+              </div>
+
+
+              <a class="project-link" href="assets/docs/proyectos/destacados/DNL-CableadoEstructurado.zip" download>
+                Descargar proyecto
+                <span aria-hidden="true">↘</span>
+              </a>
+
+            </div>
+
+          </article>
+
+
+
+          <!-- PRUEBA FINAL -->
+
+          <article class="featured-project featured-project--reverse" data-reveal>
+
+            <div class="featured-project__index">
+
+              <span>
+                02
+              </span>
+
+              <p>
+                SISTEMAS / REDES
+              </p>
+
+            </div>
+
+
+            <figure class="featured-project__visual">
+
+              <img src="assets/img/proyectos/prueba-final-smr-portada.png" alt="Portada de la Prueba Final de SMR">
+
+              <figcaption>
+                PROJECT / FINAL_TEST
+              </figcaption>
+
+            </figure>
+
+
+            <div class="featured-project__content">
+
+              <p class="featured-project__status">
+                <span></span>
+                Destacado
+              </p>
+
+              <h3>
+                Prueba Final SMR
+              </h3>
+
+              <p>
+                Una prueba global para reunir conocimientos técnicos
+                y resolverlos como un conjunto.
+                <br>
+                No se trata de una herramienta concreta, sino de
+                demostrar cómo se conecta todo lo aprendido.
+              </p>
+
+              <div class="featured-project__meta">
+
+                <span>
+                  TYPE: Proyecto global
+                </span>
+
+                <span>
+                  FILE: DOCX
+                </span>
+
+              </div>
+
+
+              <a class="project-link" href="assets/docs/proyectos/destacados/DNL-PruebaFinal.docx" download>
+                Descargar proyecto
+                <span aria-hidden="true">↘</span>
+              </a>
+
+            </div>
+
+          </article>
+
+
+
+          <!-- LVM -->
+
+          <article class="featured-project featured-project--lvm" data-reveal>
+
+            <div class="featured-project__index">
+
+              <span>
+                03
+              </span>
+
+              <p>
+                SISTEMAS
+              </p>
+
+            </div>
+
+
+            <div class="featured-project__visual lvm-diagram" aria-label="Diagrama visual de Logical Volume Manager">
+
+              <div class="lvm-diagram__header">
+
+                <span>
+                  STORAGE_TOPOLOGY
+                </span>
+
+                <span>
+                  LVM / ACTIVE
+                </span>
+
+              </div>
+
+
+              <div class="lvm-diagram__physical">
+
+                <div>
+                  <span>PV_01</span>
+                  <strong>/dev/sdb1</strong>
+                </div>
+
+                <div>
+                  <span>PV_02</span>
+                  <strong>/dev/sdc1</strong>
+                </div>
+
+              </div>
+
+
+              <div class="lvm-diagram__connector" aria-hidden="true"></div>
+
+
+              <div class="lvm-diagram__vg">
+
+                <span>
+                  VG
+                </span>
+
+                <strong>
+                  vg_system
+                </strong>
+
+              </div>
+
+
+              <div class="lvm-diagram__connector" aria-hidden="true"></div>
+
+
+              <div class="lvm-diagram__logical">
+
+                <div>
+                  <span>LV_ROOT</span>
+                  <strong>40G</strong>
+                </div>
+
+                <div>
+                  <span>LV_DATA</span>
+                  <strong>80G</strong>
+                </div>
+
+                <div>
+                  <span>FREE</span>
+                  <strong>20G</strong>
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <div class="featured-project__content">
+
+              <p class="featured-project__status">
+                <span></span>
+                Destacado
+              </p>
+
+              <h3>
+                LVM
+              </h3>
+
+              <p>
+                Gestión lógica del almacenamiento en Linux.
+                <br>
+                Un proyecto perfecto para mostrar la diferencia entre
+                memorizar comandos y comprender la estructura que hay
+                detrás.
+              </p>
+
+              <div class="featured-project__meta">
+
+                <span>
+                  TYPE: Linux
+                </span>
+
+                <span>
+                  FILE: DOCX
+                </span>
+
+              </div>
+
+
+              <a class="project-link" href="assets/docs/proyectos/destacados/DNL-LVM.docx" download>
+                Descargar proyecto
+                <span aria-hidden="true">↘</span>
+              </a>
+
+            </div>
+
+          </article>
+
+        </div>
+
+
+        <div class="featured-section__next" data-reveal>
+
+          <div>
+
+            <span>
+              30+ archivos técnicos
+            </span>
+
+            <p>
+              Redes · Sistemas · Desarrollo · BBDD · Casos reales
+            </p>
+
+          </div>
+
+
+          <a class="action-link action-link--primary" href="proyectos.html">
+            Explorar todo el archivo
+            <span aria-hidden="true">→</span>
+          </a>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- =================================================
+             04 · PROCESO
+             ================================================= -->
+
+      <section class="process-section" data-process-section>
+
+        <div class="process-section__header">
+
+          <div>
+
+            <p class="section-code">
+              04 / TRACE_DARIO
+            </p>
+
+            <h2>
+              Antes que una herramienta:
+              <br>
+              Un proceso.
+            </h2>
+
+          </div>
+
+
+          <p>
+            Una forma sencilla de resumir cómo intento enfrentarme
+            a un problema técnico.
+          </p>
+
+        </div>
+
+
+        <div class="process-layout">
+
+          <div class="process-route">
+
+            <div class="process-route__track" aria-hidden="true">
+              <span></span>
+            </div>
+
+
+            <ol class="process-route__steps">
+
+              <li data-process-step>
+
+                <span class="process-route__node">
+                  01
+                </span>
+
+                <div>
+                  <strong>
+                    Observar
+                  </strong>
+
+                  <small>
+                    Entender antes de tocar.
+                  </small>
+                </div>
+
+              </li>
+
+
+              <li data-process-step>
+
+                <span class="process-route__node">
+                  02
+                </span>
+
+                <div>
+                  <strong>
+                    Analizar
+                  </strong>
+
+                  <small>
+                    Separar síntoma y causa.
+                  </small>
+                </div>
+
+              </li>
+
+
+              <li data-process-step>
+
+                <span class="process-route__node">
+                  03
+                </span>
+
+                <div>
+                  <strong>
+                    Organizar
+                  </strong>
+
+                  <small>
+                    Dar orden al problema.
+                  </small>
+                </div>
+
+              </li>
+
+
+              <li data-process-step>
+
+                <span class="process-route__node">
+                  04
+                </span>
+
+                <div>
+                  <strong>
+                    Ejecutar
+                  </strong>
+
+                  <small>
+                    Aplicar con criterio.
+                  </small>
+                </div>
+
+              </li>
+
+
+              <li data-process-step>
+
+                <span class="process-route__node">
+                  05
+                </span>
+
+                <div>
+                  <strong>
+                    Documentar
+                  </strong>
+
+                  <small>
+                    Convertirlo en aprendizaje.
+                  </small>
+                </div>
+
+              </li>
+
+            </ol>
+
+          </div>
+
+
+          <aside class="process-terminal" data-reveal>
+
+            <div class="process-terminal__header">
+
+              <span>
+                PROCESS / DNL
+              </span>
+
+              <span class="process-terminal__live">
+                LIVE
+              </span>
+
+            </div>
+
+
+            <div class="process-terminal__body">
+
+              <p>
+                <span>Input:</span>
+                Problema
+              </p>
+
+              <p>
+                <span>Analysis:</span>
+                <strong>Active</strong>
+              </p>
+
+              <p>
+                <span>Organization:</span>
+                <strong>Active</strong>
+              </p>
+
+              <p>
+                <span>Execution:</span>
+                <strong>Ready</strong>
+              </p>
+
+              <p>
+                <span>Documentation:</span>
+                <strong>Enabled</strong>
+              </p>
+
+            </div>
+
+
+            <div class="process-terminal__footer">
+
+              <span>
+                next_hop:
+              </span>
+
+              <strong>
+                /sobre-mi
+              </strong>
+
+            </div>
+
+          </aside>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- =================================================
+             05 · SIGUIENTE
+             ================================================= -->
+
+      <section class="next-section" data-reveal>
+
+        <p class="section-code">
+          NEXT / 01
+        </p>
+
+
+        <div class="next-section__content">
+
+          <h2>
+            La parte técnica explica lo que hago.
+            <br>
+            La siguiente página explica mejor desde dónde lo hago.
+          </h2>
+
+
+          <a class="next-section__link" href="sobre-mi.html">
+
+            <span>
+              Conocer a Darío
+            </span>
+
+            <strong aria-hidden="true">
+              →
+            </strong>
+
+          </a>
+
+        </div>
+
+
+        <div class="next-section__signal" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+      </section>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <footer class="site-footer">
+
+<p class="site-footer__legal">
+    © <span data-current-year></span> Darío Nieto Lorente ·
+    Código bajo licencia MIT ·
+    Contenido propio: todos los derechos reservados ·
+    <a href="assets/docs/documentos/licencia.html">
+        Licencia y derechos
+    </a>
+
+        <br>
+
+    <button
+  type="button"
+  class="footer-link"
+  data-cookie-settings
+>
+  Configurar cookies
+</button>
+</p>
+    </footer>
+
+  </body>
+
+</html>

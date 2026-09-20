@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+   
+<!-- Google Analytics: se carga únicamente tras consentimiento -->
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Licencia y derechos de autor del portfolio de Darío Nieto Lorente."
+    >
+
+    <meta
+        name="author"
+        content="Darío Nieto Lorente"
+    >
+
+    <title>
+        Licencia y derechos · Darío Nieto Lorente
+    </title>
+
+
+    <style>
+
+        /* =====================================================
+           LICENCIA · DARÍO NIETO LORENTE
+           Documento autónomo · Sin JavaScript · Sin animaciones
+           ===================================================== */
+
+
+        :root {
+            color-scheme: light dark;
+
+            --bg: #edf3f6;
+            --surface: #f7fafb;
+            --surface-soft: #e8f0f3;
+
+            --ink: #0d1820;
+            --text: #334750;
+            --muted: #6d818b;
+            --quiet: #91a2aa;
+
+            --cyan: #058eae;
+            --green: #23895a;
+
+            --line: rgba(20, 53, 68, 0.1);
+            --line-strong: rgba(20, 53, 68, 0.22);
+
+            --sans:
+                Inter,
+                "Segoe UI",
+                Arial,
+                sans-serif;
+
+            --mono:
+                "SFMono-Regular",
+                Consolas,
+                "Liberation Mono",
+                monospace;
+
+            --max-width: 920px;
+        }
+
+
+        @media (prefers-color-scheme: dark) {
+
+            :root {
+                --bg: #061118;
+                --surface: #0b1a23;
+                --surface-soft: #102832;
+
+                --ink: #eef7f8;
+                --text: #bfd0d7;
+                --muted: #7a919b;
+                --quiet: #526b76;
+
+                --cyan: #4ac3dd;
+                --green: #61d89a;
+
+                --line: rgba(199, 229, 237, 0.085);
+                --line-strong: rgba(199, 229, 237, 0.18);
+            }
+
+        }
+
+
+        * {
+            box-sizing: border-box;
+        }
+
+
+        html {
+            background: var(--bg);
+        }
+
+
+        body {
+            margin: 0;
+
+            min-width: 320px;
+
+            background: var(--bg);
+
+            color: var(--text);
+
+            font-family: var(--sans);
+
+            line-height: 1.7;
+
+            -webkit-font-smoothing: antialiased;
+        }
+
+
+        a {
+            color: inherit;
+
+            text-decoration: none;
+        }
+
+
+        a:focus-visible {
+            outline:
+                2px solid
+                var(--cyan);
+
+            outline-offset: 3px;
+        }
+
+
+        ::selection {
+            background: var(--cyan);
+
+            color: #fff;
+        }
+
+
+        /* =====================================================
+           HEADER
+           ===================================================== */
+
+        .header {
+            border-bottom:
+                1px solid
+                var(--line);
+        }
+
+
+        .header__inner {
+            width:
+                min(
+                    calc(100% - 2.2rem),
+                    var(--max-width)
+                );
+
+            margin-inline: auto;
+
+            min-height: 4.5rem;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            gap: 2rem;
+        }
+
+
+        .brand {
+            display: grid;
+
+            gap: 0.1rem;
+        }
+
+
+        .brand strong {
+            color: var(--ink);
+
+            font-size: 0.77rem;
+
+            letter-spacing: 0.04em;
+        }
+
+
+        .brand span {
+            color: var(--muted);
+
+            font-family: var(--mono);
+
+            font-size: 0.57rem;
+        }
+
+
+        .back-link {
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: 0.55rem;
+
+            color: var(--muted);
+
+            font-family: var(--mono);
+
+            font-size: 0.58rem;
+        }
+
+
+        .back-link:hover {
+            color: var(--cyan);
+        }
+
+
+        /* =====================================================
+           MAIN
+           ===================================================== */
+
+        main {
+            width:
+                min(
+                    calc(100% - 2.2rem),
+                    var(--max-width)
+                );
+
+            margin-inline: auto;
+
+            padding:
+                clamp(4rem, 8vw, 7rem)
+                0;
+        }
+
+
+        .document-meta {
+            display: flex;
+
+            justify-content: space-between;
+
+            gap: 1rem;
+
+            margin-bottom: 2.2rem;
+
+            padding-bottom: 0.7rem;
+
+            border-bottom:
+                1px solid
+                var(--line);
+
+            color: var(--quiet);
+
+            font-family: var(--mono);
+
+            font-size: 0.53rem;
+        }
+
+
+        .document-meta strong {
+            color: var(--green);
+
+            font-weight: 600;
+        }
+
+
+        .eyebrow {
+            margin:
+                0 0
+                0.7rem;
+
+            color: var(--cyan);
+
+            font-family: var(--mono);
+
+            font-size: 0.6rem;
+
+            letter-spacing: 0.08em;
+        }
+
+
+        h1 {
+            max-width: 11ch;
+
+            margin:
+                0 0
+                1.5rem;
+
+            color: var(--ink);
+
+            font-size:
+                clamp(
+                    3rem,
+                    8vw,
+                    5.8rem
+                );
+
+            font-weight: 760;
+
+            line-height: 0.9;
+
+            letter-spacing: -0.065em;
+        }
+
+
+        .intro {
+            max-width: 48rem;
+
+            margin-bottom: 4rem;
+
+            color: var(--muted);
+
+            font-size:
+                clamp(
+                    1rem,
+                    2vw,
+                    1.18rem
+                );
+        }
+
+
+        /* =====================================================
+           SUMMARY
+           ===================================================== */
+
+        .license-summary {
+            display: grid;
+
+            grid-template-columns:
+                repeat(
+                    2,
+                    minmax(0, 1fr)
+                );
+
+            margin-bottom: 4rem;
+
+            border-top:
+                1px solid
+                var(--line-strong);
+
+            border-left:
+                1px solid
+                var(--line-strong);
+        }
+
+
+        .license-summary__item {
+            padding:
+                clamp(1.4rem, 4vw, 2.2rem);
+
+            border-right:
+                1px solid
+                var(--line-strong);
+
+            border-bottom:
+                1px solid
+                var(--line-strong);
+
+            background: var(--surface);
+        }
+
+
+        .license-summary__item > span {
+            display: block;
+
+            margin-bottom: 0.65rem;
+
+            color: var(--cyan);
+
+            font-family: var(--mono);
+
+            font-size: 0.53rem;
+        }
+
+
+        .license-summary__item h2 {
+            margin:
+                0 0
+                0.8rem;
+
+            color: var(--ink);
+
+            font-size: 1.25rem;
+
+            letter-spacing: -0.025em;
+        }
+
+
+        .license-summary__item p {
+            margin: 0;
+
+            color: var(--muted);
+
+            font-size: 0.87rem;
+        }
+
+
+        .license-summary__item--content > span {
+            color: var(--green);
+        }
+
+
+        /* =====================================================
+           SECTIONS
+           ===================================================== */
+
+        .legal-section {
+            display: grid;
+
+            grid-template-columns:
+                minmax(9rem, 0.3fr)
+                minmax(0, 1fr);
+
+            gap:
+                clamp(2rem, 7vw, 5rem);
+
+            padding:
+                3rem 0;
+
+            border-top:
+                1px solid
+                var(--line);
+        }
+
+
+        .legal-section__index {
+            color: var(--quiet);
+
+            font-family: var(--mono);
+
+            font-size: 0.55rem;
+        }
+
+
+        .legal-section__content h2 {
+            margin:
+                0 0
+                1rem;
+
+            color: var(--ink);
+
+            font-size:
+                clamp(
+                    1.7rem,
+                    4vw,
+                    2.5rem
+                );
+
+            line-height: 1;
+
+            letter-spacing: -0.045em;
+        }
+
+
+        .legal-section__content p {
+            max-width: 47rem;
+
+            margin:
+                0 0
+                1rem;
+
+            color: var(--text);
+
+            font-size: 0.9rem;
+        }
+
+
+        .legal-section__content p:last-child {
+            margin-bottom: 0;
+        }
+
+
+        .legal-section__content strong {
+            color: var(--ink);
+        }
+
+
+        .scope-list {
+            margin:
+                1.5rem 0
+                0;
+
+            padding: 0;
+
+            list-style: none;
+        }
+
+
+        .scope-list li {
+            display: grid;
+
+            grid-template-columns:
+                1.2rem
+                minmax(0, 1fr);
+
+            gap: 0.65rem;
+
+            padding:
+                0.65rem 0;
+
+            border-bottom:
+                1px solid
+                var(--line);
+
+            color: var(--muted);
+
+            font-size: 0.85rem;
+        }
+
+
+        .scope-list li::before {
+            content: "→";
+
+            color: var(--cyan);
+
+            font-family: var(--mono);
+        }
+
+
+        /* =====================================================
+           MIT LICENSE
+           ===================================================== */
+
+        .mit-license {
+            margin-top: 1.6rem;
+
+            padding:
+                clamp(1.2rem, 4vw, 2rem);
+
+            overflow-x: auto;
+
+            border:
+                1px solid
+                var(--line-strong);
+
+            background: var(--surface-soft);
+
+            color: var(--text);
+
+            font-family: var(--mono);
+
+            font-size: 0.69rem;
+
+            line-height: 1.7;
+
+            white-space: pre-wrap;
+        }
+
+
+        /* =====================================================
+           NOTICE
+           ===================================================== */
+
+        .notice {
+            margin-top: 4rem;
+
+            padding:
+                1.3rem
+                1.5rem;
+
+            border-left:
+                2px solid
+                var(--cyan);
+
+            background: var(--surface);
+
+            color: var(--muted);
+
+            font-size: 0.78rem;
+        }
+
+
+        .notice strong {
+            color: var(--ink);
+        }
+
+
+        /* =====================================================
+           FOOTER
+           ===================================================== */
+
+        footer {
+            width:
+                min(
+                    calc(100% - 2.2rem),
+                    var(--max-width)
+                );
+
+            margin-inline: auto;
+
+            padding:
+                1.5rem 0
+                2rem;
+
+            border-top:
+                1px solid
+                var(--line);
+
+            color: var(--quiet);
+
+            font-family: var(--mono);
+
+            font-size: 0.52rem;
+
+            text-align: center;
+        }
+
+
+        /* =====================================================
+           RESPONSIVE
+           ===================================================== */
+
+        @media (max-width: 680px) {
+
+            .document-meta span:nth-child(2) {
+                display: none;
+            }
+
+
+            .license-summary {
+                grid-template-columns: 1fr;
+            }
+
+
+            .legal-section {
+                grid-template-columns: 1fr;
+
+                gap: 0.75rem;
+            }
+
+
+            .header__inner {
+                align-items: flex-start;
+
+                flex-direction: column;
+
+                justify-content: center;
+
+                padding:
+                    0.9rem 0;
+            }
+
+
+            footer {
+                text-align: left;
+            }
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <header class="header">
+
+        <div class="header__inner">
+
+            <a
+                class="brand"
+                href="../../../index.html"
+            >
+                <strong>
+                    DARÍO NIETO LORENTE
+                </strong>
+
+                <span>
+                    Portfolio Personal
+                </span>
+            </a>
+
+
+            <a
+                class="back-link"
+                href="../../../index.html"
+            >
+                ← Volver al portfolio
+            </a>
+
+        </div>
+
+    </header>
+
+
+
+    <main>
+
+        <div class="document-meta">
+
+            <span>
+                LEGAL / LICENSE
+            </span>
+
+            <span>
+                DOCUMENT / 01
+            </span>
+
+            <strong>
+                PUBLIC
+            </strong>
+
+        </div>
+
+
+        <p class="eyebrow">
+            LICENCIA Y DERECHOS
+        </p>
+
+
+        <h1>
+            Código abierto.
+            <br>
+            Contenido propio.
+        </h1>
+
+
+        <p class="intro">
+            Este portfolio diferencia expresamente entre su código fuente
+            y el contenido personal, académico y profesional que contiene.
+            La licencia MIT se aplica al código indicado a continuación;
+            no convierte el resto del contenido del sitio en material de
+            libre reutilización.
+        </p>
+
+
+
+        <!-- =================================================
+             RESUMEN
+             ================================================= -->
+
+        <div class="license-summary">
+
+            <section class="license-summary__item">
+
+                <span>
+                    SOURCE_CODE / MIT
+                </span>
+
+                <h2>
+                    Código
+                </h2>
+
+                <p>
+                    El código HTML, CSS y JavaScript original desarrollado
+                    por Darío Nieto Lorente para este portfolio se distribuye
+                    bajo los términos de la licencia MIT.
+                </p>
+
+            </section>
+
+
+            <section class="license-summary__item license-summary__item--content">
+
+                <span>
+                    CONTENT / RESERVED
+                </span>
+
+                <h2>
+                    Contenido
+                </h2>
+
+                <p>
+                    Los textos, fotografías, documentos, proyectos y demás
+                    contenido original de Darío Nieto Lorente permanecen
+                    protegidos por derechos de autor.
+                    Todos los derechos reservados.
+                </p>
+
+            </section>
+
+        </div>
+
+
+
+        <!-- =================================================
+             01 · CÓDIGO
+             ================================================= -->
+
+        <section class="legal-section">
+
+            <div class="legal-section__index">
+                01 / CODE
+            </div>
+
+
+            <div class="legal-section__content">
+
+                <h2>
+                    Código bajo licencia MIT.
+                </h2>
+
+
+                <p>
+                    Salvo que se indique expresamente lo contrario,
+                    el código fuente original de este portfolio creado
+                    por <strong>Darío Nieto Lorente</strong> puede ser
+                    utilizado, copiado, modificado, fusionado, publicado,
+                    distribuido, sublicenciado o incorporado a otros
+                    proyectos conforme a los términos de la licencia MIT.
+                </p>
+
+
+                <p>
+                    La conservación del aviso de copyright y del texto de
+                    la licencia forma parte de las condiciones de dicha
+                    licencia.
+                </p>
+
+
+                <ul class="scope-list">
+
+                    <li>
+                        HTML original del portfolio.
+                    </li>
+
+                    <li>
+                        CSS original y sistemas visuales desarrollados
+                        específicamente para este portfolio.
+                    </li>
+
+                    <li>
+                        JavaScript original utilizado para la interacción
+                        y funcionamiento del portfolio.
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             02 · CONTENIDO
+             ================================================= -->
+
+        <section class="legal-section">
+
+            <div class="legal-section__index">
+                02 / CONTENT
+            </div>
+
+
+            <div class="legal-section__content">
+
+                <h2>
+                    La licencia MIT no cubre el contenido.
+                </h2>
+
+
+                <p>
+                    La licencia MIT indicada en este sitio
+                    <strong>no se extiende automáticamente</strong>
+                    a los materiales personales, académicos o profesionales
+                    publicados dentro del portfolio.
+                </p>
+
+
+                <p>
+                    Salvo indicación expresa en un archivo concreto,
+                    los siguientes materiales originales de Darío Nieto
+                    Lorente se consideran protegidos por derechos de autor
+                    y se mantienen con todos los derechos reservados:
+                </p>
+
+
+                <ul class="scope-list">
+
+                    <li>
+                        Fotografías e imágenes personales.
+                    </li>
+
+                    <li>
+                        Textos y redacción del portfolio.
+                    </li>
+
+                    <li>
+                        Currículum Vitae.
+                    </li>
+
+                    <li>
+                        Certificados y documentación académica.
+                    </li>
+
+                    <li>
+                        Memorias, diarios, presentaciones y documentación
+                        de proyectos.
+                    </li>
+
+                    <li>
+                        Material audiovisual original.
+                    </li>
+
+                    <li>
+                        Diseños, gráficos y recursos propios que no formen
+                        parte exclusivamente del código fuente.
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             03 · TERCEROS
+             ================================================= -->
+
+        <section class="legal-section">
+
+            <div class="legal-section__index">
+                03 / THIRD_PARTY
+            </div>
+
+
+            <div class="legal-section__content">
+
+                <h2>
+                    Material de terceros.
+                </h2>
+
+
+                <p>
+                    Algunas capturas, marcas, nombres comerciales,
+                    logotipos, interfaces, tecnologías o materiales que
+                    puedan aparecer dentro de documentos y proyectos
+                    pertenecen a sus respectivos titulares.
+                </p>
+
+
+                <p>
+                    Su aparición dentro del portfolio no implica que
+                    Darío Nieto Lorente sea titular de dichos elementos
+                    ni que estos queden sometidos a la licencia MIT de
+                    este proyecto.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             04 · MIT
+             ================================================= -->
+
+        <section class="legal-section">
+
+            <div class="legal-section__index">
+                04 / MIT
+            </div>
+
+
+            <div class="legal-section__content">
+
+                <h2>
+                    MIT License.
+                </h2>
+
+
+                <pre class="mit-license">MIT License
+
+Copyright (c) 2026 Darío Nieto Lorente
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of the software and associated documentation files (the 'Software'), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.</pre>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             05 · RESUMEN FINAL
+             ================================================= -->
+
+        <section class="legal-section">
+
+            <div class="legal-section__index">
+                05 / SUMMARY
+            </div>
+
+
+            <div class="legal-section__content">
+
+                <h2>
+                    En resumen.
+                </h2>
+
+
+                <p>
+                    Puedes reutilizar el
+                    <strong>código original del portfolio</strong>
+                    respetando la licencia MIT.
+                </p>
+
+
+                <p>
+                    El
+                    <strong>contenido personal, académico y profesional</strong>
+                    no se publica bajo MIT y no queda autorizado para su
+                    reutilización general por el mero hecho de aparecer
+                    dentro de este repositorio o sitio web.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <div class="notice">
+
+            <strong>
+                Alcance:
+            </strong>
+
+            Esta página establece la intención de licencia aplicada al
+            portfolio. La presencia de material de terceros dentro de
+            documentos o proyectos no modifica las licencias o derechos
+            que correspondan a sus respectivos propietarios.
+
+        </div>
+
+        <section id="cookies" class="notice">
+        <h2><strong>Cookies y analítica</strong></h2>
+
+        <p>
+            Este sitio utiliza Google Analytics 4 únicamente cuando el usuario
+            acepta el uso de cookies analíticas.
+        </p>
+
+        <p>
+            La información recopilada se utiliza para obtener estadísticas sobre
+            el uso del portfolio, como las páginas visitadas y determinadas
+            interacciones, entre ellas la descarga del currículum y de proyectos.
+        </p>
+
+        <p>
+            Las cookies analíticas no son necesarias para el funcionamiento del
+            sitio y pueden rechazarse sin afectar a la navegación.
+        </p>
+
+        <p>
+            La elección del usuario se almacena localmente en su navegador para
+            recordar su preferencia.
+        </p>
+        </section>
+
+    </main>
+    
+
+
+
+    <footer>
+        © 2026 Darío Nieto Lorente ·
+        Código original bajo licencia MIT ·
+        Contenido propio: todos los derechos reservados.
+    </footer>
+
+</body>
+
+</html>

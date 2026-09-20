@@ -1,0 +1,306 @@
+/* =========================================================
+   DNL · SHARED
+   Ajustes globales del portfolio
+   ========================================================= */
+
+
+/* =========================================================
+   01 · MOBILE MENU FIX
+   ========================================================= */
+
+.menu-toggle {
+    padding: 0 !important;
+
+    overflow: hidden;
+}
+
+
+.menu-toggle span {
+    width: 1rem;
+    height: 1px;
+
+    display: block;
+
+    margin: 0 !important;
+
+    background:
+        var(--ink);
+
+    transform-origin:
+        center;
+}
+
+
+@media (max-width: 920px) {
+
+    .menu-toggle {
+        display: grid !important;
+
+        grid-template-rows:
+            repeat(3, 1px);
+
+        place-content:
+            center;
+
+        justify-items:
+            center;
+
+        gap:
+            0.28rem;
+
+        padding:
+            0 !important;
+    }
+
+}
+
+
+/* =========================================================
+   02 · FOOTER LEGAL
+   ========================================================= */
+
+.site-footer__legal {
+    grid-column:
+        1 / -1;
+
+    flex:
+        1 0 100%;
+
+    width:
+        100%;
+
+    margin:
+        0.65rem 0 0;
+
+    padding-top:
+        0.7rem;
+
+    border-top:
+        1px solid
+        var(--line);
+
+    color:
+        var(--quiet);
+
+    font-family:
+        var(--mono);
+
+    font-size:
+        0.48rem;
+
+    font-weight:
+        400;
+
+    line-height:
+        1.4;
+
+    text-align:
+        center;
+
+    white-space:
+        nowrap;
+}
+
+
+.site-footer__legal span {
+    display:
+        inline !important;
+
+    color:
+        inherit !important;
+
+    font:
+        inherit !important;
+}
+
+
+.site-footer__legal a {
+    display:
+        inline;
+
+    color:
+        var(--muted);
+
+    text-decoration:
+        underline;
+
+    text-decoration-color:
+        var(--line-strong);
+
+    text-underline-offset:
+        0.16rem;
+
+    transition:
+        color
+        180ms
+        ease,
+        text-decoration-color
+        180ms
+        ease;
+}
+
+
+.site-footer__legal a:hover {
+    color:
+        var(--cyan);
+
+    text-decoration-color:
+        var(--cyan);
+}
+
+
+@media (max-width: 760px) {
+
+    .site-footer__legal {
+        font-size:
+            0.46rem;
+
+        white-space:
+            normal;
+
+        text-align:
+            left;
+    }
+
+}
+
+/* =========================================================
+   COOKIE BANNER
+========================================================= */
+
+.cookie-banner {
+  position: fixed;
+  left: 50%;
+  bottom: 24px;
+  z-index: 9999;
+
+  width: min(720px, calc(100% - 32px));
+
+  transform: translateX(-50%);
+
+  background: rgba(12, 18, 24, 0.96);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.35),
+    0 0 0 1px rgba(255, 255, 255, 0.02);
+
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+.cookie-banner__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+
+  padding: 20px;
+}
+
+.cookie-banner__text {
+  flex: 1;
+}
+
+.cookie-banner__label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+
+  color: #8fd9e8;
+}
+
+.cookie-banner__text p {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 1.6;
+
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.cookie-banner__info {
+  display: inline-block;
+
+  margin-top: 8px;
+
+  font-size: 13px;
+
+  color: rgba(255, 255, 255, 0.55);
+  text-decoration: none;
+}
+
+.cookie-banner__info:hover {
+  color: #fff;
+}
+
+.cookie-banner__actions {
+  display: flex;
+  gap: 10px;
+
+  flex-shrink: 0;
+}
+
+.cookie-banner__button {
+  padding: 10px 16px;
+
+  font: inherit;
+  font-size: 13px;
+  font-weight: 600;
+
+  color: #fff;
+  background: transparent;
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 9px;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.cookie-banner__button:hover {
+  transform: translateY(-1px);
+}
+
+.cookie-banner__button--reject:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.cookie-banner__button--accept {
+  color: #061016;
+  background: #8fd9e8;
+  border-color: #8fd9e8;
+}
+
+.cookie-banner__button--accept:hover {
+  background: #abe8f2;
+  border-color: #abe8f2;
+}
+
+@media (max-width: 650px) {
+  .cookie-banner {
+    bottom: 16px;
+  }
+
+  .cookie-banner__content {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .cookie-banner__actions {
+    width: 100%;
+  }
+
+  .cookie-banner__button {
+    flex: 1;
+  }
+}

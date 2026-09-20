@@ -1,0 +1,1640 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+
+<head>
+    
+<!-- Google Analytics: se carga únicamente tras consentimiento -->
+<script>
+  window.DTV_ANALYTICS = {
+    id: "G-ZKTD705NXM",
+    storageKey: "dtv_analytics_consent"
+  };
+
+  window.dataLayer = window.dataLayer || [];
+
+  window.gtag = function () {
+    dataLayer.push(arguments);
+  };
+
+  window.dtvLoadAnalytics = function () {
+    if (window.__dtvAnalyticsLoaded) return;
+
+    window.__dtvAnalyticsLoaded = true;
+
+    const script = document.createElement("script");
+    script.async = true;
+    script.src =
+      "https://www.googletagmanager.com/gtag/js?id=" +
+      window.DTV_ANALYTICS.id;
+
+    document.head.appendChild(script);
+
+    gtag("js", new Date());
+    gtag("config", window.DTV_ANALYTICS.id);
+  };
+
+  try {
+    const consent = localStorage.getItem(
+      window.DTV_ANALYTICS.storageKey
+    );
+
+    if (consent === "accepted") {
+      window.dtvLoadAnalytics();
+    }
+  } catch (error) {
+    console.warn("No se pudo consultar el consentimiento.");
+  }
+</script>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Conoce la parte personal de Darío Nieto Lorente: Disciplina, cultura, Humanidad, habilidades blandas y forma de entender el liderazgo."
+    >
+
+    <meta
+        name="author"
+        content="Darío Nieto Lorente"
+    >
+
+    <meta
+        name="theme-color"
+        content="#edf3f6"
+    >
+
+    <title>
+        Sobre mí · Darío Nieto Lorente
+    </title>
+
+    <link
+        rel="icon"
+        href="assets/img/avatar/icono.png"
+    >
+
+    <link
+        rel="stylesheet"
+        href="assets/css/sobre-mi.css"
+    >
+    <link
+    rel="stylesheet"
+    href="assets/css/shared.css"
+    >
+
+    <script
+    src="assets/js/main.js"
+    defer
+></script>
+
+    <script
+        src="assets/js/sobre-mi.js"
+        defer
+    ></script>
+</head>
+
+
+<body>
+
+    <a
+        class="skip-link"
+        href="#contenido"
+    >
+        Saltar al contenido
+    </a>
+
+
+    <!-- =====================================================
+         FONDO
+         ===================================================== -->
+
+    <canvas
+        class="personal-background"
+        data-personal-background
+        aria-hidden="true"
+    ></canvas>
+
+
+    <!-- =====================================================
+         HEADER
+         ===================================================== -->
+
+    <header class="site-header">
+
+        <div class="site-header__inner">
+
+            <a
+                class="brand"
+                href="index.html"
+                aria-label="Ir al Inicio"
+            >
+
+                <img
+                    class="brand__avatar"
+                    src="assets/img/avatar/icono.png"
+                    alt=""
+                >
+
+                <span class="brand__identity">
+
+                    <strong>
+                        DARÍO NIETO LORENTE
+                    </strong>
+
+                    <span>
+                        Portfolio Personal
+                    </span>
+
+                </span>
+
+            </a>
+
+
+            <nav
+                class="site-nav"
+                data-navigation
+                aria-label="Navegación principal"
+            >
+
+                <a
+                    class="site-nav__link"
+                    href="index.html"
+                >
+                    Inicio
+                </a>
+
+                <a
+                    class="site-nav__link is-active"
+                    href="sobre-mi.html"
+                    aria-current="page"
+                >
+                    Sobre mí
+                </a>
+
+                <a
+                    class="site-nav__link"
+                    href="formacion.html"
+                >
+                    Formación
+                </a>
+
+                <a
+                    class="site-nav__link"
+                    href="experiencia.html"
+                >
+                    Experiencia
+                </a>
+
+                <a
+                    class="site-nav__link"
+                    href="proyectos.html"
+                >
+                    Proyectos
+                </a>
+
+                <a
+                    class="site-nav__link"
+                    href="contacto.html"
+                >
+                    Contacto
+                </a>
+
+            </nav>
+
+
+            <div class="site-header__actions">
+
+                <button
+                    class="theme-toggle"
+                    type="button"
+                    data-theme-toggle
+                    aria-label="Activar modo oscuro"
+                    title="Cambiar modo de visualización"
+                >
+
+                    <img
+                        class="theme-toggle__icon theme-toggle__icon--light"
+                        src="assets/img/iconos/modo-claro.svg"
+                        alt=""
+                    >
+
+                    <img
+                        class="theme-toggle__icon theme-toggle__icon--dark"
+                        src="assets/img/iconos/modo-oscuro.svg"
+                        alt=""
+                    >
+
+                </button>
+
+
+                <button
+                    class="menu-toggle"
+                    type="button"
+                    data-menu-toggle
+                    aria-expanded="false"
+                    aria-label="Abrir menú"
+                >
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <main id="contenido">
+
+
+        <!-- =================================================
+             01 · HERO
+             ================================================= -->
+
+        <section class="about-hero">
+
+            <div
+                class="about-hero__index"
+                aria-hidden="true"
+            >
+                <span>PERSON / 01</span>
+                <span>HUMAN LAYER</span>
+                <span>STATUS / CONNECTED</span>
+            </div>
+
+
+            <div class="about-hero__content">
+
+                <p class="section-code">
+                    01 / SOBRE_MÍ
+                </p>
+
+
+                <h1>
+                    Hay una persona
+                    <span>
+                        antes del técnico.
+                    </span>
+                </h1>
+
+
+                <p class="about-hero__lead">
+                    La informática explica una parte importante de mí.
+                    <br>
+                    Pero mi manera de trabajar también se ha construido fuera
+                    de una pantalla.
+                </p>
+
+
+                <p class="about-hero__text">
+                    El deporte me ha enseñado disciplina.
+                    <br>
+                    La cultura me obliga a mirar más lejos.
+                    <br>
+                    Y las personas me recuerdan que nada se construye solo.
+                </p>
+
+
+                <a
+                    class="action-link"
+                    href="#tres-ejes"
+                >
+                    Ver las conexiones
+                    <span aria-hidden="true">↓</span>
+                </a>
+
+            </div>
+
+
+            <div
+                class="identity-map"
+                data-identity-map
+                aria-hidden="true"
+            >
+
+                <div class="identity-map__orbit identity-map__orbit--one"></div>
+
+                <div class="identity-map__orbit identity-map__orbit--two"></div>
+
+                <div class="identity-map__orbit identity-map__orbit--three"></div>
+
+
+                <div class="identity-map__core">
+
+                    <img
+                        src="assets/img/avatar/icono.png"
+                        alt=""
+                    >
+
+                    <span>
+                        DNL
+                    </span>
+
+                </div>
+
+
+                <div class="identity-map__node identity-map__node--discipline">
+
+                    <span>01</span>
+
+                    <strong>
+                        Disciplina
+                    </strong>
+
+                </div>
+
+
+                <div class="identity-map__node identity-map__node--curiosity">
+
+                    <span>02</span>
+
+                    <strong>
+                        Curiosidad
+                    </strong>
+
+                </div>
+
+
+                <div class="identity-map__node identity-map__node--people">
+
+                    <span>03</span>
+
+                    <strong>
+                        Humanidad
+                    </strong>
+
+                </div>
+
+
+                <span class="identity-map__packet"></span>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             02 · TRES EJES
+             ================================================= -->
+
+        <section
+            class="axes-section"
+            id="tres-ejes"
+        >
+
+            <header
+                class="section-heading"
+                data-reveal
+            >
+
+                <div>
+
+                    <p class="section-code">
+                        02 / PERSONAL_NODES
+                    </p>
+
+                    <h2>
+                        Tres partes.
+                        <br>
+                        Una misma forma de avanzar.
+                    </h2>
+
+                </div>
+
+
+                <p>
+                    No son aficiones colocadas en una lista.
+                    <br>
+                    Son experiencias que terminan apareciendo también cuando
+                    estudio, trabajo o tengo que tomar una decisión.
+                </p>
+
+            </header>
+
+
+
+            <!-- =============================================
+                 DISCIPLINA
+                 ============================================= -->
+
+            <article
+                class="personal-axis personal-axis--discipline"
+                data-personal-axis="discipline"
+                data-reveal
+            >
+
+                <div class="personal-axis__meta">
+
+                    <span>
+                        NODE / 01
+                    </span>
+
+                    <p>
+                        DISCIPLINA
+                    </p>
+
+                </div>
+
+
+                <figure class="personal-axis__photo">
+
+                    <div class="personal-axis__image-frame">
+
+                        <img
+                            src="assets/img/personal/dario-deporte.jpg"
+                            alt="Darío practicando deporte"
+                        >
+
+                        <span
+                            class="personal-axis__coordinate"
+                            aria-hidden="true"
+                        >
+                            TRAIN / REPEAT / IMPROVE
+                        </span>
+
+                    </div>
+
+                </figure>
+
+
+                <div class="personal-axis__content">
+
+                    <p class="personal-axis__label">
+                        Deporte / Boxeo / Fútbol
+                    </p>
+
+                    <h3>
+                        La constancia también se entrena.
+                    </h3>
+
+                    <p>
+                        El boxeo es mi deporte principal.
+                        <br>
+                        Me gusta porque no permite esconderse detrás de una
+                        excusa durante demasiado tiempo.
+                    </p>
+
+                    <p>
+                        Obliga a repetir, corregir, escuchar y volver a intentarlo.
+                        <br><br>
+                        Es algo que siempre llevaré conmigo, da igual que cambie el puesto, las circustancias o la rama de estudio. El boxeo irá donde yo vaya.
+                    </p>
+
+                    <p>
+                        La exigencia en este deporte, termina apareciendo también cuando estudio
+                        o cuando quiero que un trabajo quede realmente bien.
+                    </p>
+
+                    <p>
+                        También he disfrutado del fútbol durante muchos años.
+                        <br>
+                        Compromiso, compañerismo y trabajo constante. Marcaron mi etapa en el fútbol de instituto.
+                    </p>
+
+
+                    <div class="personal-axis__output">
+
+                        <span>
+                            OUTPUT:
+                        </span>
+
+                        <strong>
+                            Ambición
+                        </strong>
+
+                        <strong>
+                            Responsabilidad
+                        </strong>
+
+                        <strong>
+                            Pasión
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- =============================================
+                 CURIOSIDAD
+                 ============================================= -->
+
+            <article
+                class="personal-axis personal-axis--curiosity"
+                data-personal-axis="curiosity"
+                data-reveal
+            >
+
+                <div class="personal-axis__meta">
+
+                    <span>
+                        NODE / 02
+                    </span>
+
+                    <p>
+                        CURIOSIDAD
+                    </p>
+
+                </div>
+
+
+                <figure class="personal-axis__photo">
+
+                    <div class="personal-axis__image-frame">
+
+                        <img
+                            src="assets/img/personal/dario-cultura.jpeg"
+                            alt="Darío durante su estancia en Roma"
+                        >
+
+                        <span
+                            class="personal-axis__coordinate"
+                            aria-hidden="true"
+                        >
+                            LIVE ABOARD / CULTURE / PERSPECTIVE
+                        </span>
+
+                    </div>
+
+                </figure>
+
+
+                <div class="personal-axis__content">
+
+                    <p class="personal-axis__label">
+                        Culture / Live Aboard
+                    </p>
+
+                    <h3>
+                        De las personas y la cultura, es de donde más se aprende.
+                    </h3>
+
+                    <p>
+                        Me apasiona la informática, pero no quiero que sea el
+                        único lenguaje de mi mundo.
+                    </p>
+
+                    <p>
+                        La cultura, la historia o una experiencia como
+                        vivir Roma me sirven para ampliar perspectiva.
+                        <br>
+                        Cuanto más contexto tengo, más preguntas aparecen.
+                        Y eso me gusta.
+                    </p>
+
+                    <p>
+                        Me gusta hablar, compartir, discutir con otras personas...
+                        <br> 
+                        Y de todo ello aprender.
+                    </p>
+
+
+                    <div class="personal-axis__output">
+
+                        <span>
+                            OUTPUT:
+                        </span>
+
+                        <strong>
+                            Análisis
+                        </strong>
+
+                        <strong>
+                            Adaptación
+                        </strong>
+
+                        <strong>
+                            Comunicación
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- =============================================
+                 Humanidad
+                 ============================================= -->
+
+            <article
+                class="personal-axis personal-axis--people"
+                data-personal-axis="people"
+                data-reveal
+            >
+
+                <div class="personal-axis__meta">
+
+                    <span>
+                        NODE / 03
+                    </span>
+
+                    <p>
+                        Humanidad
+                    </p>
+
+                </div>
+
+
+                <figure class="personal-axis__photo">
+
+                    <div class="personal-axis__image-frame">
+
+                        <img
+                            src="assets/img/personal/dario-personas.jpeg"
+                            alt="Darío compartiendo tiempo con Humanidad importantes para él"
+                        >
+
+                        <span
+                            class="personal-axis__coordinate"
+                            aria-hidden="true"
+                        >
+                            PEOPLE / LISTEN / CONNECT
+                        </span>
+
+                    </div>
+
+                </figure>
+
+
+                <div class="personal-axis__content">
+
+                    <p class="personal-axis__label">
+                        Familia / Amigos / Naturaleza
+                    </p>
+
+                    <h3>
+                        Crecer sin desconectarse de los demás.
+                    </h3>
+
+                    <p>
+                        Mi familia, mis amigos y los momentos fuera de la rutina
+                        son una parte importante de cómo entiendo el equilibrio.
+                    </p>
+
+                    <p>
+                        También me han enseñado algo que considero muy útil
+                        profesionalmente.
+                        <br><br>
+                        Saber escuchar, comunicar una idea y entender que no
+                        todo el mundo necesita recibirla de la misma manera.
+                    </p>
+
+                    <p>
+                        Destaco la naturaleza. Para mi, pasar tiempo en ella es de lo mejor.
+                        <br>
+                        Junto tranquilidad, reflexiones, momentos con mis amigos y con otros montañeros, aventuras y eso me da felicidad.
+                    </p>
+
+                    <div class="personal-axis__output">
+
+                        <span>
+                            OUTPUT:
+                        </span>
+
+                        <strong>
+                            Comunicación
+                        </strong>
+
+                        <strong>
+                            Adaptación
+                        </strong>
+
+                        <strong>
+                            Liderazgo
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </section>
+
+
+
+        <!-- =================================================
+             03 · CONSTELACIÓN DE HABILIDADES
+             ================================================= -->
+
+        <section class="skills-section">
+
+            <header
+                class="section-heading"
+                data-reveal
+            >
+
+                <div>
+
+                    <p class="section-code">
+                        03 / BEHAVIOUR_MAP
+                    </p>
+
+                    <h2>
+                        Las habilidades blandas
+                        también tienen origen.
+                    </h2>
+
+                </div>
+
+
+                <p>
+                    No quiero presentarlas como seis palabras aisladas.
+                    <br>
+                    Cada una se alimenta de experiencias y contextos diferentes.
+                </p>
+
+            </header>
+
+
+            <div
+                class="skills-map"
+                data-skills-map
+                data-active-skill="ambition"
+                data-reveal
+            >
+
+                <svg
+                    class="skills-map__lines"
+                    viewBox="0 0 1000 580"
+                    preserveAspectRatio="none"
+                    aria-hidden="true"
+                >
+
+                    <!-- AMBICIÓN -->
+
+                    <path
+                        data-skill-line="ambition"
+                        data-axis-link="discipline"
+                        d="M170 115 C260 130 300 180 410 230"
+                    />
+
+
+                    <!-- RESPONSABILIDAD -->
+
+                    <path
+                        data-skill-line="responsibility"
+                        data-axis-link="discipline"
+                        d="M110 290 C220 280 300 250 410 230"
+                    />
+
+                    <path
+                        data-skill-line="responsibility"
+                        data-axis-link="people"
+                        d="M110 290 C330 370 580 380 805 410"
+                    />
+
+
+                    <!-- ORGANIZACIÓN -->
+
+                    <path
+                        data-skill-line="organization"
+                        data-axis-link="discipline"
+                        d="M215 490 C270 390 330 280 410 230"
+                    />
+
+                    <path
+                        data-skill-line="organization"
+                        data-axis-link="curiosity"
+                        d="M215 490 C375 405 515 315 610 190"
+                    />
+
+
+                    <!-- COMUNICACIÓN -->
+
+                    <path
+                        data-skill-line="communication"
+                        data-axis-link="curiosity"
+                        d="M820 110 C745 125 675 145 610 190"
+                    />
+
+                    <path
+                        data-skill-line="communication"
+                        data-axis-link="people"
+                        d="M820 110 C860 220 850 310 805 410"
+                    />
+
+
+                    <!-- ADAPTACIÓN -->
+
+                    <path
+                        data-skill-line="adaptation"
+                        data-axis-link="discipline"
+                        d="M880 280 C700 250 570 235 410 230"
+                    />
+
+                    <path
+                        data-skill-line="adaptation"
+                        data-axis-link="curiosity"
+                        d="M880 280 C760 245 690 220 610 190"
+                    />
+
+                    <path
+                        data-skill-line="adaptation"
+                        data-axis-link="people"
+                        d="M880 280 C855 330 830 375 805 410"
+                    />
+
+
+                    <!-- LIDERAZGO -->
+
+                    <path
+                        data-skill-line="leadership"
+                        data-axis-link="people"
+                        d="M755 505 C775 470 790 440 805 410"
+                    />
+
+                </svg>
+
+
+                <!-- EJES -->
+
+                <div
+                    class="skills-map__axis skills-map__axis--discipline"
+                    data-axis="discipline"
+                >
+
+                    <span>01</span>
+
+                    <strong>
+                        Disciplina
+                    </strong>
+
+                </div>
+
+
+                <div
+                    class="skills-map__axis skills-map__axis--curiosity"
+                    data-axis="curiosity"
+                >
+
+                    <span>02</span>
+
+                    <strong>
+                        Curiosidad
+                    </strong>
+
+                </div>
+
+
+                <div
+                    class="skills-map__axis skills-map__axis--people"
+                    data-axis="people"
+                >
+
+                    <span>03</span>
+
+                    <strong>
+                        Humanidad
+                    </strong>
+
+                </div>
+
+
+
+                <!-- SKILLS -->
+
+                <button
+                    class="skill-node skill-node--ambition is-active"
+                    type="button"
+                    data-skill="ambition"
+                    data-skill-title="Ambición"
+                    data-skill-axes="discipline"
+                    data-skill-text="Querer avanzar sin conformarme únicamente con cumplir."
+                >
+
+                    <span>
+                        01
+                    </span>
+
+                    <strong>
+                        Ambición
+                    </strong>
+
+                </button>
+
+
+                <button
+                    class="skill-node skill-node--responsibility"
+                    type="button"
+                    data-skill="responsibility"
+                    data-skill-title="Responsabilidad"
+                    data-skill-axes="discipline people"
+                    data-skill-text="Responder por lo que hago y por la parte del trabajo que depende de mí."
+                >
+
+                    <span>
+                        02
+                    </span>
+
+                    <strong>
+                        Responsabilidad
+                    </strong>
+
+                </button>
+
+
+                <button
+                    class="skill-node skill-node--organization"
+                    type="button"
+                    data-skill="organization"
+                    data-skill-title="Organización y análisis"
+                    data-skill-axes="discipline curiosity"
+                    data-skill-text="Separar un problema, ordenar sus partes y decidir qué merece atención primero."
+                >
+
+                    <span>
+                        03
+                    </span>
+
+                    <strong>
+                        Organización
+                        <br>
+                        y análisis
+                    </strong>
+
+                </button>
+
+
+                <button
+                    class="skill-node skill-node--communication"
+                    type="button"
+                    data-skill="communication"
+                    data-skill-title="Comunicación"
+                    data-skill-axes="curiosity people"
+                    data-skill-text="Explicar una idea con claridad y adaptar el mensaje a quien tengo delante."
+                >
+
+                    <span>
+                        04
+                    </span>
+
+                    <strong>
+                        Comunicación
+                    </strong>
+
+                </button>
+
+
+                <button
+                    class="skill-node skill-node--adaptation"
+                    type="button"
+                    data-skill="adaptation"
+                    data-skill-title="Adaptación"
+                    data-skill-axes="discipline curiosity people"
+                    data-skill-text="Moverme entre situaciones diferentes sin perder el objetivo ni dejar de aprender."
+                >
+
+                    <span>
+                        05
+                    </span>
+
+                    <strong>
+                        Adaptación
+                    </strong>
+
+                </button>
+
+
+                <button
+                    class="skill-node skill-node--leadership"
+                    type="button"
+                    data-skill="leadership"
+                    data-skill-title="Liderazgo"
+                    data-skill-axes="people"
+                    data-skill-text="Ayudar a que el grupo avance sin necesidad de convertir el liderazgo en protagonismo."
+                >
+
+                    <span>
+                        06
+                    </span>
+
+                    <strong>
+                        Liderazgo
+                    </strong>
+
+                </button>
+
+
+                <div class="skills-map__output">
+
+                    <p>
+                        ACTIVE_SKILL
+                    </p>
+
+                    <strong data-skill-output-title>
+                        Ambición
+                    </strong>
+
+                    <span data-skill-output-text>
+                        Querer avanzar sin conformarme únicamente con cumplir.
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             04 · LIDERAZGO / PRINCIPIOS
+             ================================================= -->
+
+        <section class="principles-section">
+
+            <div
+                class="principles-section__header"
+                data-reveal
+            >
+
+                <p class="section-code">
+                    04 / PRINCIPLES
+                </p>
+
+                <h2>
+                    Liderar desde dentro.
+                </h2>
+
+            </div>
+
+
+            <div class="principles-layout">
+
+    <div
+        class="leadership-block"
+        data-reveal
+    >
+
+        <div
+            class="leadership-block__visual"
+            aria-hidden="true"
+        >
+
+            <div class="leadership-block__signal">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </div>
+
+            <img
+                src="assets/img/avatar/dario-liderar.png"
+                alt=""
+            >
+
+            <span class="leadership-block__visual-label">
+                LEAD / FROM_INSIDE
+            </span>
+
+        </div>
+
+
+        <div class="leadership-block__content">
+
+            <p class="leadership-block__label">
+                LEADERSHIP_MODEL / INTERNAL
+            </p>
+
+            <p class="leadership-block__lead">
+                Para mí liderar no consiste en ocupar siempre el centro.
+            </p>
+
+            <p>
+                Consiste en entender qué necesita el grupo, asumir
+                responsabilidad, delegar cuando corresponde y ser capaz
+                de comunicar una dirección.
+            </p>
+
+            <p>
+                A veces tocará hablar.
+                <br>
+                Otras veces será más útil escuchar.
+                <br>
+                Y otras, simplemente hacer bien tu parte para que el
+                resto pueda hacer la suya.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+            <div class="delegate-signal" data-reveal>
+
+                <div class="delegate-signal__top">
+
+                    <span class="delegate-signal__status">
+                        <i></i>
+                        DELEGADO / ACTIVE
+                    </span>
+
+                    <span>
+                        PEOPLE_SYSTEM / 01
+                    </span>
+
+                </div>
+
+                <div class="delegate-signal__content">
+
+                    <p class="delegate-signal__label">
+                        RESPONSABILIDAD EN GRUPO
+                    </p>
+
+                    <p class="delegate-signal__text">
+                        Soy delegado desde hace años, y es una responsabilidad que me
+                        ha ayudado a aprender a organizar, escuchar y apoyar al grupo.
+                        <br>
+                        Valoro especialmente cuando mis compañeros reconocen mi forma
+                        de ayudarles a aprender, expresarse mejor y utilizar términos
+                        técnicos con más seguridad.
+                    </p>
+
+                </div>
+
+
+                <div class="delegate-signal__route" aria-hidden="true">
+
+                    <div>
+                        <span></span>
+                        <small>LISTENING</small>
+                    </div>
+
+                    <i></i>
+
+                    <div>
+                        <span></span>
+                        <small>ORGANIZATION</small>
+                    </div>
+
+                    <i></i>
+
+                    <div>
+                        <span></span>
+                        <small>SUPPORT</small>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+<!-- =================================================
+     05 · MI LEMA
+     ================================================= -->
+
+<section
+    class="motto-section"
+    data-motto-section
+>
+
+    <header
+        class="motto-section__header"
+        data-reveal
+    >
+
+        <p class="section-code">
+            05 / MI_LEMA
+        </p>
+
+        <h2>
+            Ser feliz
+            <span>y pensar…</span>
+        </h2>
+
+        <p>
+            Mi lema resume dos ideas que intento mantener juntas.
+            <br>
+            Pulsa sobre cada una para ver qué significa para mí.
+        </p>
+
+    </header>
+
+
+    <div class="motto-flips">
+
+
+        <!-- =============================================
+             SER FELIZ
+             ============================================= -->
+
+        <article
+            class="motto-flip"
+            data-flip-card
+            data-reveal
+        >
+
+            <button
+                class="motto-flip__button"
+                type="button"
+                aria-pressed="false"
+                aria-label="Ver qué significa para Darío ser feliz"
+            >
+
+                <span class="motto-flip__inner">
+
+
+                    <!-- FRONTAL -->
+
+                    <span class="motto-flip__face motto-flip__face--front">
+
+                        <span class="motto-flip__top">
+
+                            <span>
+                                01
+                            </span>
+
+                            <small>
+                                LIFE / INTEGRATION
+                            </small>
+
+                        </span>
+
+
+                        <span class="motto-flip__front-content">
+
+                            <small>
+                                MI LEMA
+                            </small>
+
+                            <strong>
+                                Ser feliz.
+                            </strong>
+
+                        </span>
+
+
+                        <span class="motto-flip__action">
+
+                            <span>
+                                CLICK_TO_OPEN
+                            </span>
+
+                            <i>
+                                ↻
+                            </i>
+
+                        </span>
+
+                    </span>
+
+
+                    <!-- TRASERA -->
+
+                    <span class="motto-flip__face motto-flip__face--back">
+
+                        <span class="motto-flip__top">
+
+                            <span>
+                                01
+                            </span>
+
+                            <small>
+                                LIFE / DECODED
+                            </small>
+
+                        </span>
+
+
+                        <span class="motto-flip__back-content">
+
+                            <small>
+                                SER FELIZ
+                            </small>
+
+                            <strong>
+                                Juntar las partes.
+                            </strong>
+
+                            <span class="motto-flip__description">
+                                Para mí es saber integrar el trabajo,
+                                las experiencias, las personas, lo que aprendo
+                                y aquello que todavía quiero conseguir.
+                            </span>
+
+                        </span>
+
+
+                        <span class="motto-flip__tags">
+
+                            <span>Trabajo</span>
+                            <span>Experiencias</span>
+                            <span>Personas</span>
+                            <span>Aprendizaje</span>
+
+                        </span>
+
+
+                        <span class="motto-flip__action">
+
+                            <span>
+                                CLICK_TO_RETURN
+                            </span>
+
+                            <i>
+                                ↻
+                            </i>
+
+                        </span>
+
+                    </span>
+
+                </span>
+
+            </button>
+
+        </article>
+
+
+
+        <!-- =============================================
+             CONEXIÓN
+             ============================================= -->
+
+        <div
+            class="motto-flips__connector"
+            aria-hidden="true"
+        >
+
+            <span></span>
+
+            <strong>
+                +
+            </strong>
+
+            <span></span>
+
+        </div>
+
+
+
+        <!-- =============================================
+             PENSAR
+             ============================================= -->
+
+        <article
+            class="motto-flip"
+            data-flip-card
+            data-reveal
+        >
+
+            <button
+                class="motto-flip__button"
+                type="button"
+                aria-pressed="false"
+                aria-label="Ver qué significa para Darío pensar"
+            >
+
+                <span class="motto-flip__inner">
+
+
+                    <!-- FRONTAL -->
+
+                    <span class="motto-flip__face motto-flip__face--front">
+
+                        <span class="motto-flip__top">
+
+                            <span>
+                                02
+                            </span>
+
+                            <small>
+                                THOUGHT / OWN_CRITERIA
+                            </small>
+
+                        </span>
+
+
+                        <span class="motto-flip__front-content">
+
+                            <small>
+                                MI LEMA
+                            </small>
+
+                            <strong>
+                                Pensar…
+                            </strong>
+
+                        </span>
+
+
+                        <span class="motto-flip__action">
+
+                            <span>
+                                CLICK_TO_OPEN
+                            </span>
+
+                            <i>
+                                ↻
+                            </i>
+
+                        </span>
+
+                    </span>
+
+
+                    <!-- TRASERA -->
+
+                    <span class="motto-flip__face motto-flip__face--back">
+
+                        <span class="motto-flip__top">
+
+                            <span>
+                                02
+                            </span>
+
+                            <small>
+                                THOUGHT / DECODED
+                            </small>
+
+                        </span>
+
+
+                        <span class="motto-flip__back-content">
+
+                            <small>
+                                PENSAR
+                            </small>
+
+                            <strong>
+                                Tener criterio propio.
+                            </strong>
+
+                            <span class="motto-flip__description">
+                                Plantearme las cosas, entender por qué las hago
+                                y no limitarme a seguir un camino simplemente
+                                porque ya esté marcado.
+                            </span>
+
+                        </span>
+
+
+                        <span class="motto-flip__prompt">
+
+                            <span>
+                                &gt; Plantear
+                            </span>
+
+                            <span>
+                                &gt; Entender
+                            </span>
+
+                            <span>
+                                &gt; Cuestionar
+                            </span>
+
+                            <span>
+                                &gt; Decidir
+                            </span>
+
+                        </span>
+
+
+                        <span class="motto-flip__action">
+
+                            <span>
+                                CLICK_TO_RETURN
+                            </span>
+
+                            <i>
+                                ↻
+                            </i>
+
+                        </span>
+
+                    </span>
+
+                </span>
+
+            </button>
+
+        </article>
+
+    </div>
+
+
+    <div
+        class="motto-section__result"
+        data-reveal
+    >
+
+        <span></span>
+
+        <p>
+            LIFE + THOUGHT
+        </p>
+
+        <strong>
+            CONNECTED
+        </strong>
+
+        <span></span>
+
+    </div>
+
+</section>
+
+
+
+        <!-- =================================================
+             06 · SIGUIENTE
+             ================================================= -->
+
+        <section
+            class="next-section"
+            data-reveal
+        >
+
+            <div class="next-section__route">
+
+                <span class="next-section__route-dot"></span>
+
+                <span class="next-section__route-line"></span>
+
+                <span class="next-section__route-dot"></span>
+
+            </div>
+
+
+            <div class="next-section__content">
+
+                <p class="section-code">
+                    NEXT_HOP / FORMACIÓN
+                </p>
+
+                <h2>
+                    Todo esto también se ha ido formando con estudio,
+                    experiencias fuera de clase y aprendizaje continuo.
+                </h2>
+
+
+                <a
+                    class="next-link"
+                    href="formacion.html"
+                >
+
+                    <span>
+                        Ver mi formación
+                    </span>
+
+                    <strong aria-hidden="true">
+                        →
+                    </strong>
+
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <footer class="site-footer">
+
+<p class="site-footer__legal">
+    © <span data-current-year></span> Darío Nieto Lorente ·
+    Código bajo licencia MIT ·
+    Contenido propio: todos los derechos reservados ·
+    <a href="assets/docs/documentos/licencia.html">
+        Licencia y derechos
+    </a>
+
+    <br>
+
+    <button
+  type="button"
+  class="footer-link"
+  data-cookie-settings
+>
+  Configurar cookies
+</button>
+</p>
+    </footer>
+
+</body>
+
+</html>

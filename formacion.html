@@ -1,0 +1,1634 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+
+<head>
+
+<!-- Google Analytics: se carga únicamente tras consentimiento -->
+<script>
+  window.DTV_ANALYTICS = {
+    id: "G-ZKTD705NXM",
+    storageKey: "dtv_analytics_consent"
+  };
+
+  window.dataLayer = window.dataLayer || [];
+
+  window.gtag = function () {
+    dataLayer.push(arguments);
+  };
+
+  window.dtvLoadAnalytics = function () {
+    if (window.__dtvAnalyticsLoaded) return;
+
+    window.__dtvAnalyticsLoaded = true;
+
+    const script = document.createElement("script");
+    script.async = true;
+    script.src =
+      "https://www.googletagmanager.com/gtag/js?id=" +
+      window.DTV_ANALYTICS.id;
+
+    document.head.appendChild(script);
+
+    gtag("js", new Date());
+    gtag("config", window.DTV_ANALYTICS.id);
+  };
+
+  try {
+    const consent = localStorage.getItem(
+      window.DTV_ANALYTICS.storageKey
+    );
+
+    if (consent === "accepted") {
+      window.dtvLoadAnalytics();
+    }
+  } catch (error) {
+    console.warn("No se pudo consultar el consentimiento.");
+  }
+</script>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Formación de Darío Nieto Lorente: SMR, ASIR, Erasmus, idiomas, cursos, certificaciones y comunicación."
+    >
+
+    <meta
+        name="author"
+        content="Darío Nieto Lorente"
+    >
+
+    <meta
+        name="theme-color"
+        content="#edf3f6"
+    >
+
+    <title>
+        Formación · Darío Nieto Lorente
+    </title>
+
+    <link
+        rel="icon"
+        href="assets/img/avatar/icono.png"
+    >
+
+    <link
+        rel="stylesheet"
+        href="assets/css/formacion.css"
+    >
+    <link
+        rel="stylesheet"
+        href="assets/css/shared.css"
+    >
+    <script
+    src="assets/js/main.js"
+    defer
+></script>
+
+    <script
+        src="assets/js/formacion.js"
+        defer
+    ></script>
+</head>
+
+
+<body>
+
+    <a
+        class="skip-link"
+        href="#contenido"
+    >
+        Saltar al contenido
+    </a>
+
+
+    <canvas
+        class="formation-background"
+        data-formation-background
+        aria-hidden="true"
+    ></canvas>
+
+
+    <!-- =====================================================
+         HEADER
+         ===================================================== -->
+
+    <header class="site-header">
+
+        <div class="site-header__inner">
+
+            <a
+                class="brand"
+                href="index.html"
+                aria-label="Ir al Inicio"
+            >
+
+                <img
+                    class="brand__avatar"
+                    src="assets/img/avatar/icono.png"
+                    alt=""
+                >
+
+                <span class="brand__identity">
+
+                    <strong>
+                        DARÍO NIETO LORENTE
+                    </strong>
+
+                    <span>
+                        Portfolio Personal
+                    </span>
+
+                </span>
+
+            </a>
+
+
+            <nav
+                class="site-nav"
+                data-navigation
+                aria-label="Navegación principal"
+            >
+
+                <a
+                    class="site-nav__link"
+                    href="index.html"
+                >
+                    Inicio
+                </a>
+
+                <a
+                    class="site-nav__link"
+                    href="sobre-mi.html"
+                >
+                    Sobre mí
+                </a>
+
+                <a
+                    class="site-nav__link is-active"
+                    href="formacion.html"
+                    aria-current="page"
+                >
+                    Formación
+                </a>
+
+                <a
+                    class="site-nav__link"
+                    href="experiencia.html"
+                >
+                    Experiencia
+                </a>
+
+                <a
+                    class="site-nav__link"
+                    href="proyectos.html"
+                >
+                    Proyectos
+                </a>
+
+                <a
+                    class="site-nav__link"
+                    href="contacto.html"
+                >
+                    Contacto
+                </a>
+
+            </nav>
+
+
+            <div class="site-header__actions">
+
+                <button
+                    class="theme-toggle"
+                    type="button"
+                    data-theme-toggle
+                    aria-label="Activar modo oscuro"
+                >
+
+                    <img
+                        class="theme-toggle__icon theme-toggle__icon--light"
+                        src="assets/img/iconos/modo-claro.svg"
+                        alt=""
+                    >
+
+                    <img
+                        class="theme-toggle__icon theme-toggle__icon--dark"
+                        src="assets/img/iconos/modo-oscuro.svg"
+                        alt=""
+                    >
+
+                </button>
+
+
+                <button
+                    class="menu-toggle"
+                    type="button"
+                    data-menu-toggle
+                    aria-expanded="false"
+                    aria-label="Abrir menú"
+                >
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <main id="contenido">
+
+
+        <!-- =================================================
+             01 · HERO
+             ================================================= -->
+
+        <section class="formation-hero">
+
+            <div
+                class="formation-hero__index"
+                aria-hidden="true"
+            >
+                <span>EDU / 01</span>
+                <span>LEARNING_TOPOLOGY</span>
+                <span>STATUS / BUILDING</span>
+            </div>
+
+
+            <div class="formation-hero__content">
+
+                <p class="section-code">
+                    01 / FORMACIÓN
+                </p>
+
+
+                <h1>
+                    Aprender no ha sido
+                    <span>una línea recta.</span>
+                </h1>
+
+
+                <p class="formation-hero__lead">
+                    Primero construí una base.
+                    <br>
+                    Después empecé a conectar sistemas, redes, experiencias
+                    y nuevas formas de comunicar.
+                </p>
+
+
+                <p class="formation-hero__text">
+                    Mi formación académica tiene una dirección clara.
+                    <br>
+                    Los cursos, certificaciones e idiomas funcionan de otra
+                    manera: Son módulos que puedo seguir incorporando
+                    durante toda mi trayectoria.
+                </p>
+
+
+                <a
+                    class="action-link"
+                    href="#trayectoria-academica"
+                >
+                    Recorrer la formación
+                    <span aria-hidden="true">↓</span>
+                </a>
+
+            </div>
+
+
+            <!-- TOPOLOGÍA -->
+
+            <div
+                class="learning-topology"
+                aria-hidden="true"
+            >
+
+                <div class="learning-topology__route">
+
+                    <span></span>
+
+                </div>
+
+
+                <div class="learning-topology__node learning-topology__node--base">
+
+                    <small>
+                        01 / BASE
+                    </small>
+
+                    <strong>
+                        SMR
+                    </strong>
+
+                    <span>
+                        2023—2025
+                    </span>
+
+                </div>
+
+
+                <div class="learning-topology__node learning-topology__node--relay">
+
+                    <small>
+                        RELAY
+                    </small>
+
+                    <strong>
+                        ROMA
+                    </strong>
+
+                    <span>
+                        2025
+                    </span>
+
+                </div>
+
+
+                <div class="learning-topology__node learning-topology__node--specialization">
+
+                    <small>
+                        02 / SPECIALIZE
+                    </small>
+
+                    <strong>
+                        ASIR
+                    </strong>
+
+                    <span>
+                        2025—2027
+                    </span>
+
+                </div>
+
+
+                <div class="learning-topology__node learning-topology__node--next">
+
+                    <small>
+                        NEXT_LEVEL
+                    </small>
+
+                    <strong>
+                        MÁSTER
+                    </strong>
+
+                    <span>
+                        FUTURE
+                    </span>
+
+                </div>
+
+
+                <span class="learning-topology__packet"></span>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             02 · TRAYECTORIA ACADÉMICA
+             ================================================= -->
+
+        <section
+            class="academic-section"
+            id="trayectoria-academica"
+            data-academic-route
+        >
+
+            <header
+                class="section-heading"
+                data-reveal
+            >
+
+                <div>
+
+                    <p class="section-code">
+                        02 / ACADEMIC_BACKBONE
+                    </p>
+
+                    <h2>
+                        Una base.
+                        <br>
+                        Una especialización.
+                    </h2>
+
+                </div>
+
+
+                <p>
+                    Aquí sí mantengo una ruta clara.
+                    <br>
+                    Cada etapa académica contiene sus propios resultados,
+                    evidencias y aprendizajes.
+                </p>
+
+            </header>
+
+
+            <div class="academic-route">
+
+                <div
+                    class="academic-route__line"
+                    aria-hidden="true"
+                >
+                    <span></span>
+                </div>
+
+
+
+                <!-- =========================================
+                     SMR
+                     ========================================= -->
+
+                <article
+                    class="academic-stage academic-stage--smr"
+                    data-academic-stage
+                    data-reveal
+                >
+
+                    <div class="academic-stage__node">
+
+                        <span>
+                            01
+                        </span>
+
+                    </div>
+
+
+                    <div class="academic-stage__meta">
+
+                        <p>
+                            BASE / 2023—2025
+                        </p>
+
+                        <span>
+                            TAJAMAR
+                        </span>
+
+                    </div>
+
+
+                    <div class="academic-stage__main">
+
+                        <p class="academic-stage__type">
+                            Grado Medio
+                        </p>
+
+                        <h3>
+                            Sistemas Microinformáticos y Redes
+                        </h3>
+
+                        <p>
+                            La etapa donde construí la base técnica.
+                            <br>
+                            Sistemas, redes, hardware, soporte, documentación
+                            y una primera forma seria de trabajar con tecnología.
+                        </p>
+
+
+                        <div class="academic-stage__signals">
+
+                            <div>
+
+                                <span>
+                                    RESULTADO
+                                </span>
+
+                                <strong>
+                                    10 / 10
+                                </strong>
+
+                            </div>
+
+
+                            <div>
+
+                                <span>
+                                    MENCIONES
+                                </span>
+
+                                <strong>
+                                    3
+                                </strong>
+
+                            </div>
+
+
+                            <div>
+
+                                <span>
+                                    ESTADO
+                                </span>
+
+                                <strong>
+                                    COMPLETADO
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="academic-stage__evidence">
+
+                            <div>
+
+                                <p>
+                                    EVIDENCE / ACADEMIC
+                                </p>
+
+                                <strong>
+                                    Expediente y calificaciones
+                                </strong>
+
+                            </div>
+
+
+                            <a
+                                href="assets/docs/documentos/DNL-NotasGM.pdf"
+                                target="_blank"
+                            >
+                                Ver notas
+                                <span aria-hidden="true">↗</span>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =========================================
+                     ROMA · RELAY
+                     ========================================= -->
+
+                <aside
+                    class="academic-relay"
+                    data-academic-stage
+                    data-reveal
+                >
+
+                    <div class="academic-relay__node">
+
+                        <span></span>
+
+                    </div>
+
+
+                    <div class="academic-relay__visual">
+
+                        <img
+                            src="assets/img/personal/dario-roma1.jpg"
+                            alt="Darío durante su estancia en Roma"
+                        >
+
+                        <span>
+                            ROMA / ERASMUS+
+                        </span>
+
+                    </div>
+
+
+                    <div class="academic-relay__content">
+
+                        <p>
+                            ROUTE / DERIVATION
+                        </p>
+
+                        <h3>
+                            Roma no fue otro curso.
+                        </h3>
+
+                        <p>
+                            Entre SMR y ASIR apareció una experiencia
+                            internacional gracias al programa ERASMUS + que cambió el contexto.
+                            <br>
+                            Allí realicé prácticas profesionales reales.
+                        </p>
+
+
+                        <a
+                            href="experiencia.html#roma"
+                            class="route-link"
+                        >
+                            Ver experiencia en Roma
+                            <span aria-hidden="true">→</span>
+                        </a>
+
+                    </div>
+
+                </aside>
+
+
+
+                <!-- =========================================
+                     ASIR
+                     ========================================= -->
+
+                <article
+                    class="academic-stage academic-stage--asir"
+                    data-academic-stage
+                    data-reveal
+                >
+
+                    <div class="academic-stage__node">
+
+                        <span>
+                            02
+                        </span>
+
+                    </div>
+
+
+                    <div class="academic-stage__meta">
+
+                        <p>
+                            SPECIALIZE / 2025—2027
+                        </p>
+
+                        <span>
+                            TAJAMAR
+                        </span>
+
+                    </div>
+
+
+                    <div class="academic-stage__main">
+
+                        <p class="academic-stage__type">
+                            Grado Superior
+                        </p>
+
+                        <h3>
+                            Administración de Sistemas Informáticos en Red
+                        </h3>
+
+                        <p>
+                            La evolución natural de la base anterior.
+                            <br>
+                            Más profundidad en sistemas, redes,
+                            administración, infraestructura y servicios.
+                        </p>
+
+
+                        <div class="academic-stage__signals">
+
+                            <div>
+
+                                <span>
+                                    PRIMER CURSO
+                                </span>
+
+                                <strong>
+                                    9,2
+                                </strong>
+
+                            </div>
+
+
+                            <div>
+
+                                <span>
+                                    FOCO
+                                </span>
+
+                                <strong>
+                                    SYS / NET
+                                </strong>
+
+                            </div>
+
+
+                            <div>
+
+                                <span>
+                                    ESTADO
+                                </span>
+
+                                <strong class="signal-active">
+                                    ACTIVO
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="asir-focus">
+
+                            <span>
+                                Sistemas
+                            </span>
+
+                            <i></i>
+
+                            <span>
+                                Redes
+                            </span>
+
+                            <i></i>
+
+                            <span>
+                                Infraestructura
+                            </span>
+
+                            <i></i>
+
+                            <span>
+                                Administración
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =========================================
+                     FUTURO
+                     ========================================= -->
+
+                <div
+                    class="academic-next"
+                    data-academic-stage
+                    data-reveal
+                >
+
+                    <div class="academic-next__node">
+
+                        <span>
+                            ?
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <p>
+                            NEXT_LEVEL / FUTURE
+                        </p>
+
+                        <h3>
+                            Máster
+                        </h3>
+
+                        <span>
+                            El siguiente nivel académico llegará después.
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             03 · CURSOS Y CERTIFICACIONES
+             ================================================= -->
+
+        <section class="modules-section">
+
+            <header
+                class="section-heading"
+                data-reveal
+            >
+
+                <div>
+
+                    <p class="section-code">
+                        03 / LEARNING_MODULES
+                    </p>
+
+                    <h2>
+                        La formación académica termina.
+                        <br>
+                        Los módulos no.
+                    </h2>
+
+                </div>
+
+
+                <p>
+                    Cursos y certificaciones viven fuera de la trayectoria
+                    principal.
+                    <br>
+                    Así esta parte puede seguir creciendo sin convertir la
+                    página académica en una lista interminable.
+                </p>
+
+            </header>
+
+
+            <div class="modules-layout">
+
+                <div
+                    class="module-registry"
+                    data-module-registry
+                >
+
+
+                    <!-- ORATORIA -->
+
+                    <article
+                        class="learning-module is-open"
+                        data-learning-module
+                    >
+
+                        <button
+                            class="learning-module__header"
+                            type="button"
+                            data-module-toggle
+                            aria-expanded="true"
+                        >
+
+                            <span class="learning-module__index">
+                                01
+                            </span>
+
+
+                            <span class="learning-module__identity">
+
+                                <small>
+                                    CURSO
+                                </small>
+
+                                <strong>
+                                    Oratoria y comunicación
+                                </strong>
+
+                            </span>
+
+
+                            <span class="learning-module__period">
+                                2023—2024
+                            </span>
+
+
+                            <span
+                                class="learning-module__toggle"
+                                aria-hidden="true"
+                            >
+                                +
+                            </span>
+
+                        </button>
+
+
+                        <div class="learning-module__body">
+
+                            <div>
+
+                                <p>
+                                    TYPE / COMMUNICATION
+                                </p>
+
+                                <strong>
+                                    Hablar también se entrena.
+                                </strong>
+
+                            </div>
+
+
+                            <p>
+                                Trabajé expresión oral, estructura del mensaje
+                                y seguridad al comunicar.
+                                <br>
+                                Una competencia que después he podido trasladar
+                                al aula, al trabajo y a proyectos personales.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- CURSO INGLÉS -->
+
+                    <article
+                        class="learning-module"
+                        data-learning-module
+                    >
+
+                        <button
+                            class="learning-module__header"
+                            type="button"
+                            data-module-toggle
+                            aria-expanded="false"
+                        >
+
+                            <span class="learning-module__index">
+                                02
+                            </span>
+
+
+                            <span class="learning-module__identity">
+
+                                <small>
+                                    CURSO
+                                </small>
+
+                                <strong>
+                                    Inglés B2
+                                </strong>
+
+                            </span>
+
+
+                            <span class="learning-module__period">
+                                06 / 2024
+                            </span>
+
+
+                            <span
+                                class="learning-module__toggle"
+                                aria-hidden="true"
+                            >
+                                +
+                            </span>
+
+                        </button>
+
+
+                        <div class="learning-module__body">
+
+                            <div>
+
+                                <p>
+                                    TYPE / LANGUAGE
+                                </p>
+
+                                <strong>
+                                    Preparación B2.
+                                </strong>
+
+                            </div>
+
+
+                            <p>
+                                Formación intensiva orientada a consolidar un nivel B2
+                                de inglés.
+                                <br>
+                                El objetivo no era solo aprobar una prueba,
+                                sino ganar soltura para estudiar, comunicarme
+                                y trabajar con documentación técnica.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- CERTIFICACIÓN -->
+
+                    <article
+                        class="learning-module"
+                        data-learning-module
+                    >
+
+                        <button
+                            class="learning-module__header"
+                            type="button"
+                            data-module-toggle
+                            aria-expanded="false"
+                        >
+
+                            <span class="learning-module__index">
+                                03
+                            </span>
+
+
+                            <span class="learning-module__identity">
+
+                                <small>
+                                    CERTIFICACIÓN
+                                </small>
+
+                                <strong>
+                                    Oxford · B2
+                                </strong>
+
+                            </span>
+
+
+                            <span class="learning-module__period">
+                                CERTIFIED
+                            </span>
+
+
+                            <span
+                                class="learning-module__toggle"
+                                aria-hidden="true"
+                            >
+                                +
+                            </span>
+
+                        </button>
+
+
+                        <div class="learning-module__body">
+
+                            <div>
+
+                                <p>
+                                    TYPE / CERTIFICATE
+                                </p>
+
+                                <strong>
+                                    Inglés B2 acreditado.
+                                </strong>
+
+                            </div>
+
+
+                            <div>
+
+                                <p>
+                                    Certificación del nivel alcanzado.
+                                </p>
+
+                                <a
+                                    href="assets/docs/documentos/DNL-B2.pdf"
+                                    target="_blank"
+                                    class="module-document"
+                                >
+                                    Ver certificado
+                                    <span aria-hidden="true">↗</span>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- PANEL -->
+
+                <aside
+                    class="modules-terminal"
+                    data-reveal
+                >
+
+                    <div class="modules-terminal__header">
+
+                        <span>
+                            learning.registry
+                        </span>
+
+                        <strong>
+                            ACTIVE
+                        </strong>
+
+                    </div>
+
+
+                    <div class="modules-terminal__body">
+
+                        <p>
+                            <span>$</span>
+                            modules --list
+                        </p>
+
+
+                        <div>
+
+                            <p>
+                                communication
+                                <strong>[loaded]</strong>
+                            </p>
+
+                            <p>
+                                english_b2
+                                <strong>[loaded]</strong>
+                            </p>
+
+                            <p>
+                                oxford_cert
+                                <strong>[verified]</strong>
+                            </p>
+
+                            <p>
+                                future_modules
+                                <strong>[ready]</strong>
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="modules-terminal__footer">
+
+                        <span>
+                            ARCHITECTURE:
+                        </span>
+
+                        <strong>
+                            EXTENSIBLE
+                        </strong>
+
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             04 · COMPETENCIAS Y ACREDITACIONES
+             ================================================= -->
+
+        <section class="credentials-section">
+
+            <header
+                class="section-heading"
+                data-reveal
+            >
+
+                <div>
+
+                    <p class="section-code">
+                        04 / CAPABILITY_LAYER
+                    </p>
+
+                    <h2>
+                        Capacidades que amplían el contexto.
+                    </h2>
+
+                </div>
+
+
+                <p>
+                    Idiomas y acreditaciones no forman otra trayectoria.
+                    <br>
+                    Son capacidades que se conectan con todo lo demás.
+                </p>
+
+            </header>
+
+
+            <div class="capability-map">
+
+
+                <!-- ENGLISH -->
+
+                <article
+                    class="capability capability--english"
+                    data-reveal
+                >
+
+                    <div class="capability__top">
+
+                        <span>
+                            LANGUAGE / 01
+                        </span>
+
+                        <i></i>
+
+                    </div>
+
+
+                    <strong class="capability__value">
+                        B2
+                    </strong>
+
+
+                    <h3>
+                        Inglés
+                    </h3>
+
+
+                    <p>
+                        Nivel acreditado.
+                        <br>
+                        Útil para documentación técnica, aprendizaje
+                        y comunicación internacional.
+                    </p>
+
+
+                    <div class="capability__signal">
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- ITALIAN -->
+
+                <article
+                    class="capability capability--italian"
+                    data-reveal
+                >
+
+                    <div class="capability__top">
+
+                        <span>
+                            LANGUAGE / 02
+                        </span>
+
+                        <i></i>
+
+                    </div>
+
+
+                    <strong class="capability__value capability__value--word">
+                        BASIC
+                    </strong>
+
+
+                    <h3>
+                        Italiano
+                    </h3>
+
+
+                    <p>
+                        Conocimientos básicos desarrollados especialmente
+                        a partir de la estancia en Roma.
+                    </p>
+
+
+                    <div class="capability__signal">
+
+                        <span></span>
+                        <span></span>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- CARNET -->
+
+                <article
+                    class="capability capability--drive"
+                    data-reveal
+                >
+
+                    <div class="capability__top">
+
+                        <span>
+                            ACCREDITATION / 01
+                        </span>
+
+                        <i></i>
+
+                    </div>
+
+
+                    <strong class="capability__value capability__value--symbol">
+                        ✓
+                    </strong>
+
+
+                    <h3>
+                        Carnet de conducir
+                    </h3>
+
+
+                    <p>
+                        Acreditación adicional dentro del perfil personal
+                        y profesional.
+                    </p>
+
+
+                    <div class="capability__route">
+
+                        <span></span>
+
+                        <i></i>
+
+                        <span></span>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             05 · COMUNICACIÓN
+             ================================================= -->
+
+        <section class="communication-section">
+
+            <header
+                class="communication-section__header"
+                data-reveal
+            >
+
+                <div>
+
+                    <p class="section-code">
+                        05 / COMMUNICATION_LAYER
+                    </p>
+
+                    <h2>
+                        Aprender también sirve para tener algo que contar.
+                    </h2>
+
+                </div>
+
+
+                <p>
+                    Roma amplió mi formación mucho más allá de lo técnico.
+                    <br>
+                    Cultura, humanidad y comunicación acabaron conectándose.
+                </p>
+
+            </header>
+
+
+            <div class="communication-layout">
+
+
+                <!-- VIDEO -->
+
+                <div
+                    class="video-system"
+                    data-reveal
+                >
+
+                    <div class="video-system__top">
+
+                        <span>
+                            VIDEO_SIGNAL / ROMA
+                        </span>
+
+                        <strong>
+                            YOUTUBE
+                        </strong>
+
+                    </div>
+
+
+                    <div class="video-system__frame">
+
+                        <iframe
+                            src="https://www.youtube.com/embed/5t4QJTXoTk4?rel=0"
+                            title="Vídeo de Darío Nieto Lorente realizado en Roma"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allow="
+                                accelerometer;
+                                autoplay;
+                                clipboard-write;
+                                encrypted-media;
+                                gyroscope;
+                                picture-in-picture;
+                                web-share
+                            "
+                            allowfullscreen
+                        ></iframe>
+
+                    </div>
+
+
+                    <div class="video-system__footer">
+
+                        <span>
+                            COMMUNICATION / CULTURE / ROMA
+                        </span>
+
+                        <a
+                            href="https://www.youtube.com/watch?v=5t4QJTXoTk4"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Abrir en YouTube ↗
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- TEXTO -->
+
+                <div
+                    class="communication-story"
+                    data-reveal
+                >
+
+                    <p class="communication-story__label">
+                        FROM EXPERIENCE TO MESSAGE
+                    </p>
+
+
+                    <h3>
+                        Roma también me enseñó a comunicar.
+                    </h3>
+
+
+                    <p>
+                        Durante mi estancia viví de cerca un momento histórico, un cambio de Papa, aunque lamentablemente la causa fue la muerte del Papa Francisco.
+                        <br>
+                        Todo aquel contexto me hizo crecer también en una
+                        parte más humana.
+                    </p>
+
+
+                    <p>
+                        Este vídeo fue una forma de convertir esa experiencia
+                        en comunicación.
+                        <br>
+                        Preparar el contenido, ordenar las ideas y realizar
+                        una entrevista con un obispo exigía algo diferente
+                        a simplemente saber utilizar una herramienta.
+                    </p>
+
+
+                    <div class="communication-pipeline">
+
+                        <div>
+
+                            <span>
+                                01
+                            </span>
+
+                            <strong>
+                                Contexto
+                            </strong>
+
+                        </div>
+
+                        <i></i>
+
+                        <div>
+
+                            <span>
+                                02
+                            </span>
+
+                            <strong>
+                                Escuchar
+                            </strong>
+
+                        </div>
+
+                        <i></i>
+
+                        <div>
+
+                            <span>
+                                03
+                            </span>
+
+                            <strong>
+                                Preguntar
+                            </strong>
+
+                        </div>
+
+                        <i></i>
+
+                        <div>
+
+                            <span>
+                                04
+                            </span>
+
+                            <strong>
+                                Comunicar
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             06 · NEXT
+             ================================================= -->
+
+        <section
+            class="next-section"
+            data-reveal
+        >
+
+            <div class="next-section__route">
+
+                <span></span>
+
+                <i></i>
+
+                <strong>
+                    NEXT_HOP
+                </strong>
+
+            </div>
+
+
+            <div class="next-section__content">
+
+                <p class="section-code">
+                    06 / EXPERIENCIA
+                </p>
+
+
+                <h2>
+                    La formación me dio una base.
+                    <br>
+                    La experiencia me obligó a aplicarla.
+                </h2>
+
+
+                <a
+                    href="experiencia.html"
+                    class="next-link"
+                >
+
+                    <span>
+                        Ver experiencia profesional
+                    </span>
+
+                    <strong aria-hidden="true">
+                        →
+                    </strong>
+
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <footer class="site-footer">
+
+
+
+<p class="site-footer__legal">
+    © <span data-current-year></span> Darío Nieto Lorente ·
+    Código bajo licencia MIT ·
+    Contenido propio: todos los derechos reservados ·
+    <a href="assets/docs/documentos/licencia.html">
+        Licencia y derechos
+    </a>
+
+        <br>
+
+    <button
+  type="button"
+  class="footer-link"
+  data-cookie-settings
+>
+  Configurar cookies
+</button>
+</p>
+
+    </footer>
+
+</body>
+
+</html>
